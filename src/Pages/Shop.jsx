@@ -1,8 +1,12 @@
 import React from "react";
+import Header from "./../Components/Shop/Header";
 const Shop = () => {
   return (
     <>
-      <div className="shop">فروشگاه</div>
+      <div className="shop">
+        <Header />
+        فروشگاه
+      </div>
     </>
   );
 };

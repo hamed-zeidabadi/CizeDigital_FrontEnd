@@ -6,7 +6,7 @@ const NotFound = () => {
       <div className="p_404">
         404 Not Found Pages
         <br />
-        <Link to="/Home">HOME</Link>
+        <Link to="/">HOME</Link>
       </div>
     </>
   );
