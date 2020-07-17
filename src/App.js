@@ -9,6 +9,7 @@ import {
 import Home from "./Pages/Hame";
 import Shop from "./Pages/Shop";
 import Blog from "./Pages/Blog";
+import NotFound from "./Pages/NotFound";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
           <Route path="/home" exact component={Home} />
           <Route path="/shop" component={Shop} />
           <Route path="/blog" component={Blog} />
-          <Redirect to="/404" />
+          <Route path="/404" component={NotFound} />
+          <Redirect to="/404" component={NotFound} />
         </Switch>
       </Router>
     </>
