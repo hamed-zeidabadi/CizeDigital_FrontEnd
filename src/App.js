@@ -6,7 +6,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import Home from "./Pages/Hame";
+import Home from "./Pages/Home";
 import Shop from "./Pages/Shop";
 import Blog from "./Pages/Blog";
 import NotFound from "./Pages/NotFound";
