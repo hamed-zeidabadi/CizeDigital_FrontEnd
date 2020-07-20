@@ -1,10 +1,6 @@
 .header_home_nav {
-}
 
-.header {
-  &_home {
-    &_nav {
-      height: 20vh;
+      height: 10vh;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -12,11 +8,17 @@
       background-color: green;
       margin: 0 auto;
 
+    &_right{
+
+      display: flex;
+      width: 70%;
+
       & a {
         margin: 0 10px;
         color: white;
         text-decoration: none;
       }
+
     }
-  }
 }
+
