@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="header">
+      <div className="header_blog">
         <Link to="/">خانه</Link>
         <Link to="/shop">فروشگاه</Link>
         <Link to="/blog">بلاگ</Link>
