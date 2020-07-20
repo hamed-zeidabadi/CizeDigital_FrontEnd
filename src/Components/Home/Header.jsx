@@ -1,8 +1,7 @@
 import React from "react";
 import "./Header.scss";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import Hero from "./Hero";
+import Navbar from "./Navbar/Navbar";
+import Hero from "./Hero/Hero";
 
 const Header = () => {
   return (
