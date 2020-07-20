@@ -1,0 +1,15 @@
+.header_home_nav {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  margin: 0 auto;
+
+  & a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+}

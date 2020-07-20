@@ -1,15 +1,15 @@
 import React from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
 
 const Header = () => {
   return (
     <>
       <div className="header_home">
-        <Link to="/">خانه</Link>
-        <Link to="/shop">فروشگاه</Link>
-        <Link to="/blog">بلاگ</Link>
-        <Link to="/404">خطای ۴۰۴ </Link>
+        <Navbar />
+        <Hero />
       </div>
     </>
   );
