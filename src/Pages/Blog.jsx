@@ -5,7 +5,7 @@ const Blog = () => {
     <>
       <div className="blog">
         <Header />
-        بلاگ
+        ما بلاگ
       </div>
     </>
   );
