@@ -1,24 +1,40 @@
 .header_home_nav {
 
-      height: 10vh;
+      height: 7vh;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      background-color: green;
+      // background-color: green;
       margin: 0 auto;
 
     &_right{
 
       display: flex;
+      height: 100%;
       width: 70%;
+      justify-content: flex-start;
+      align-items: center;
+      // background-image: url(../../../Images/navbar_right_background.png);
+      background: linear-gradient(90deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
 
       & a {
         margin: 0 10px;
         color: white;
         text-decoration: none;
+        padding: 5px;
       }
 
+    }
+
+    &_left{
+
+      display: flex;
+      width: 30%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      background: linear-gradient(256deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
     }
 }
 
