@@ -1,5 +1,8 @@
 import React from "react";
 import "./Navbar.scss";
+import { AiFillShopping } from "react-icons/ai";
+import { FaUserAlt } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
