@@ -41,7 +41,7 @@
         
         & svg {
 
-          font-size: 1.5em;
+          font-size: 1.3em;
           align-items: center;
         }
 
@@ -82,9 +82,10 @@
       background-color: black;
 
       & a{
-        display: table;
-        margin: 0 auto;
-        margin-top: 1em;
+        
+        display: flex;
+        // justify-content: center;
+        align-items: center;
       }
 
      }
