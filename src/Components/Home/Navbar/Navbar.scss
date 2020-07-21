@@ -58,21 +58,33 @@
      &_rightItems{
 
        display: flex;
+       justify-content: flex-end;
+       width: 70%;
+       
+       & a{
+
+        margin: 10px;
+
+        :hover{
+          color: rgb(153, 151, 151) !important;
+        }
+
+       }
 
      }
 
      &_leftItem{
 
-      display: table;
+      display: flex;
       justify-content: center;
-      height: 8vh;
+      height: 7.5vh;
       width: 7vw;
       background-color: black;
 
       & a{
         display: table;
         margin: 0 auto;
-        margin-top: 1.2em;
+        margin-top: 1em;
       }
 
      }
