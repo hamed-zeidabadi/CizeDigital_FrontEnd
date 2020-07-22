@@ -1,10 +1,11 @@
 import React,{useState} from "react";
 import "./Navbar.scss";
+import RightMenu from './RightMenu/RightMenu'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -31,10 +32,7 @@ const Navbar = () => {
 
         <div className='header_home_nav_right'>
 
-          <Link to="/"  className='header_home_nav_right_home'>خانه</Link>
-          <Link to="/shop"  className='header_home_nav_right_shop'>فروشگاه</Link>
-          <Link to="/blog"  className='header_home_nav_right_blog'>بلاگ</Link>
-          <Link to="/404" >خطای ۴۰۴ </Link>
+          <RightMenu />
 
         </div>
 
