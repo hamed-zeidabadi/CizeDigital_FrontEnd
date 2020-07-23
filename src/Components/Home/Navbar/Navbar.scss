@@ -18,10 +18,14 @@
       background: linear-gradient(90deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
 
       & a {
-        margin: 0 10px;
+        display: table;
+        margin: 2.8vh .8em 0 0;
         color: white;
         text-decoration: none;
         padding: 5px;
+        display: table;
+        height: 7vh;
+        
       }
 
     }

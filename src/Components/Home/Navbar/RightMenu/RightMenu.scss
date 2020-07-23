@@ -5,8 +5,41 @@
     height: 6vh;
     width: 6vw;
     padding: 2px;
-  
+    margin: 0 20px;  
 
 }
+
+&_home{
+
+    position: relative;
+   
+    &_menu{
+
+        position: absolute;
+        color: black;
+        top: 2.8em;
+        opacity: 0;
+        // transition:linear .4s opacity;
+        transform: translateY(15px);
+        transition: transform .2s linear;
+        pointer-events: none;
+        height: 60vh;
+        width: 70vw;
+        border: 1px solid red;
+    }
+}
+
+}
+
+//has_sub و sub_menu
+//کلاس های اضافه شده به المنت هستن برای زمانی که قرار است مگا منو
+//نمایش داده شود
+
+.has_sub:hover .sub_menu{
+
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+    transition: transform .3s linear;
 
 }
