@@ -15,7 +15,8 @@ const Slider = () => {
             width: 300,
             height: 300,
             margin: "0 auto",
-          }}
+          }} 
+          
         >
           <Carousel
             ref={carousel}
