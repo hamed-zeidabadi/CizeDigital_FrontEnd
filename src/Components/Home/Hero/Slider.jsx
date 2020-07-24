@@ -1,12 +1,11 @@
 import React from "react";
 import "./Slider.scss";
-import Cover from "./Cover3D";
-
+import SwipeR from "./Swiper";
 const Slider = () => {
   return (
     <>
       <div className="slider_row">
-        <Cover />
+      <SwipeR />
       </div>
     </>
   );
