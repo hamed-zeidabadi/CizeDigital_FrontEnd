@@ -1,22 +1,145 @@
 .header_home_nav {
-}
 
-.header {
-  &_home {
-    &_nav {
-      height: 20vh;
+      height: 7vh;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      background-color: green;
       margin: 0 auto;
 
+    &_right{
+
+      display: flex;
+      height: 100%;
+      width: 70%;
+      justify-content: flex-start;
+      align-items: center;
+      // background-image: url(../../../Images/navbar_right_background.png);
+      background: linear-gradient(90deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
+
       & a {
-        margin: 0 10px;
+        display: table;
+        margin: 2.8vh .8em 0 0;
         color: white;
         text-decoration: none;
+        padding: 5px;
+        display: table;
+        height: 7vh;
+        
       }
+
     }
+
+    &_left{
+
+      display: flex;
+      width: 30%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(270deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
+       
+    
+
+        
+        & svg {
+
+          font-size: 1.3em;
+          align-items: center;
+        }
+
+        
+
+        & a{
+
+          color: #fff;
+          text-decoration: none;
+          display: block;
+
+        }
+
+     &_rightItems{
+
+       display: flex;
+       justify-content: flex-end;
+       width: 70%;
+       
+       & a{
+
+        margin: 10px;
+
+        :hover{
+          color: rgb(153, 151, 151) !important;
+        }
+
+       }
+
+     }
+
+     &_leftItem{
+
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 7.5vh;
+      width: 7vw;
+      transform: translate3d(0,0,0);
+      transition: transform 2s linear;
+      background-color: black;
+
+      & a{
+        
+        display: flex;
+        align-items: center;
+        // transition: width 1s ease-in-out,
+        // background-color 1s ease-out 1s;
+
+        :hover{
+          color: rgb(233, 59, 59);
+        }
+
+    
+      }
+
+      &_hidden{
+
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        left: 60px;
+        
+      }
+
+     }
+      
+      }
+
+    
+}
+
+//bottom classes visibel somewhere search icon is clicked !
+
+.search_menu{
+
+  color: #fff;
+  opacity: 1;
+  height: 7.5vh;
+  width:100vw ;
+  transform: translate3d(-32px,0,0);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #000;
+
+}
+
+.exit_search{
+
+  margin-right: 2em;
+
+  :hover{
+    color: rgb(233, 59, 59);
   }
 }
+
