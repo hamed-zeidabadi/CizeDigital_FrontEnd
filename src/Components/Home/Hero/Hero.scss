@@ -1,6 +1,7 @@
 .header {
   &_home {
     &_hero {
+      margin: 2px 0 0 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -13,7 +14,7 @@
     */
 
       &_right {
-        height: 75vh;
+        height: 91vh;
         width: 70%;
         border: 1px solid red;
         background-color: violet;
@@ -26,7 +27,7 @@
     */
 
       &_left {
-        height: 75vh;
+        height: 91vh;
         width: 30%;
         border: 1px solid blue;
 
