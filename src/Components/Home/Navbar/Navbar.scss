@@ -103,6 +103,7 @@
 
       &_hidden{
 
+       
         display: flex;
         position: absolute;
         justify-content: space-between;
@@ -123,6 +124,7 @@
 
 .search_menu{
 
+  z-index: 20;
   color: #fff;
   opacity: 1;
   height: 7.5vh;

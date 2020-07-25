@@ -70,17 +70,16 @@
 //کلاس های اضافه شده به المنت هستن برای زمانی که قرار است مگا منو
 //نمایش داده شود
 
-.has_sub_menu{
-
-    z-index: 10;
-
-    &:hover .sub_menu{
+.has_sub_menu:hover .sub_menu{
 
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0px);
      
-    
     }
+
+
+.sub_menu{
+    z-index: 10;
 }
 
