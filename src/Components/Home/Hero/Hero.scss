@@ -47,7 +47,10 @@
         &_bottom {
           width: 100%;
           height: 50%;
-          border: 1px solid yellow;
+          overflow: hidden;
+          justify-content: center;
+          align-self: center;
+          text-align: center;
         }
       }
     }
