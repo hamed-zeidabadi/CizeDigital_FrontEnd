@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import SwiperTop from "./SwiperTop";
 import Loading from "./Loading";
+import SwiperBottom from "./SwiperBottom";
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +27,9 @@ const Hero = () => {
                 <h3>نقد و بررسی</h3>
                 <SwiperTop />
               </div>
-              <div className="header_home_hero_left_bottom">پایین</div>
+              <div className="header_home_hero_left_bottom">
+                <SwiperBottom />
+              </div>
             </div>
           </>
         ) : (
