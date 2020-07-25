@@ -123,6 +123,42 @@ const RightMenu =()=>{
                     
                 </div>
 
+
+
+                             
+                <div className='header_home_nav_right_shop_menu_items'>
+
+                    <h4>دسته بندی ها</h4>
+
+                    <ul>
+                        <li> <a href='#'> هدفون</a> </li>
+                        <li> <a href='#'> هندزفری</a> </li>
+                        <li> <a href='#'> بلند گو</a> </li>
+                        <li> <a href='#'> قاب</a> </li>
+                        <li> <a href='#'> محافظ</a> </li>
+                    </ul>
+                        
+                    
+                </div>
+
+
+
+                                 
+                <div className='header_home_nav_right_shop_menu_items'>
+
+                    <h4>دسته بندی ها</h4>
+
+                    <ul>
+                        <li> <a href='#'> هدفون</a> </li>
+                        <li> <a href='#'> هندزفری</a> </li>
+                        <li> <a href='#'> بلند گو</a> </li>
+                        <li> <a href='#'> قاب</a> </li>
+                        <li> <a href='#'> محافظ</a> </li>
+                    </ul>
+                        
+                    
+                </div>
+
             </div>
 
 
