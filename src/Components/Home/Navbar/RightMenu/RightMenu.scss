@@ -17,11 +17,12 @@
 
         display: flex;
         height: 70vh;
-        width: 65vw;
+        width: 75vw;
         position: absolute;
-        color: black;
+        background-color: rgb(212, 208, 208);
         justify-content: space-between;
         align-items: center;
+        color: black;
         top: 2.8em;
         opacity: 0;
         padding: 20px;
@@ -29,8 +30,6 @@
         transform: translateY(15px);
         transition: transform .2s linear;
         pointer-events: none;
-       
-        border: 1px solid red;
 
         &_image{
 
@@ -40,7 +39,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 10px;
-            width: 60%;
+            width: 70%;
             height: 90%;
             padding: 0;
             
@@ -71,11 +70,17 @@
 //کلاس های اضافه شده به المنت هستن برای زمانی که قرار است مگا منو
 //نمایش داده شود
 
-.has_sub_menu:hover .sub_menu{
+.has_sub_menu{
 
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0px);
- 
+    z-index: 10;
 
+    &:hover .sub_menu{
+
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0px);
+     
+    
+    }
 }
+
