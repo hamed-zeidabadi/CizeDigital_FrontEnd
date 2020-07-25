@@ -15,7 +15,9 @@
       justify-content: flex-start;
       align-items: center;
       // background-image: url(../../../Images/navbar_right_background.png);
-      background: linear-gradient(90deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
+      // background: linear-gradient(90deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
+      background-color: #0074D9;
+      ;
 
       & a {
         display: table;
@@ -37,7 +39,8 @@
       height: 100%;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(270deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
+      // background: linear-gradient(270deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
+      background-color: #0074D9;
        
     
 
@@ -103,6 +106,7 @@
 
       &_hidden{
 
+       
         display: flex;
         position: absolute;
         justify-content: space-between;
@@ -123,6 +127,7 @@
 
 .search_menu{
 
+  z-index: 20;
   color: #fff;
   opacity: 1;
   height: 7.5vh;
