@@ -12,6 +12,10 @@
 &_home{
 
     position: relative;
+    &:hover{
+        color: rgb(243, 53, 53);
+    }
+
    
     &_menu{
 
@@ -74,6 +78,11 @@
 
 
     position: relative;
+
+    &:hover{
+        color: rgb(243, 53, 53);
+    }
+
 
 
  &_menu{
@@ -152,6 +161,92 @@
 
 }
 
+//********************************************
+//استایل های مگا منو قسمت بلاگ در صفحه اصلی
+
+&_blog{
+
+    position: relative;
+    &:hover{
+        color: rgb(243, 53, 53);
+    }
+
+    &_menu{
+
+        display: flex;
+        height: 35vh;
+        width: 35vw;
+        position: absolute;
+        opacity: 0;
+        background-color: rgb(212, 208, 208);
+        justify-content: space-around;
+        // align-items: center;
+        // color: black;
+        top: 2.8em;
+        flex-wrap: wrap;
+        padding: .5em;
+        transform: translateY(15px);
+        transition: transform .2s linear;
+        pointer-events: none;
+        border-radius:5px;
+      
+    
+        &_items{
+    
+            display: flex;
+            flex-direction: column;
+            // flex-wrap: wrap;
+            align-items: center;
+            height: 40%;
+            width: 30%;
+    
+    
+    
+              
+    
+        & h4 {
+    
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            position: relative;
+    
+            &::after{
+    
+                content: "";
+                position: absolute;
+                top: 1.7em;
+                width: 100%;
+                left: 0;
+                border-top: 1px solid #636364;
+            }
+        }
+    
+        & ul{
+    
+            list-style: none;
+            
+    
+            & a{
+                color: black;
+                display: block;
+                padding: 0;
+                margin: 0;
+                height: 2em;
+    
+                &:hover{
+    
+                    color: rgb(243, 53, 53);
+                }
+            }
+        }
+        }
+     }
+
+
+
+
+}
 
 
 

@@ -169,7 +169,48 @@ const RightMenu =()=>{
 
 
 
-        <Link to="/blog"  className='header_home_nav_right_blog'>بلاگ</Link>
+        <Link to="/blog"  className='header_home_nav_right_blog has_sub_menu'>بلاگ
+        
+
+            <div className='header_home_nav_right_blog_menu sub_menu'>
+
+                    
+                    <div className='header_home_nav_right_blog_menu_items'>
+
+                            <h4>جدیدترین ها</h4>
+
+                            <ul>
+                                <li> <a href='#'> خرید هدفون  </a> </li>
+                                <li> <a href='#'> خرید هندزفری</a> </li>
+                                <li> <a href='#'> خرید بلند گو </a> </li>
+                                <li> <a href='#'>  خرید قاب</a> </li>
+                                <li> <a href='#'>  خریدمحافظ</a> </li>
+                            </ul>
+                                
+                    </div>
+
+                    <div className='header_home_nav_right_blog_menu_items'>
+
+                                <h4>محبوب ترین ها</h4>
+
+                                <ul>
+                                    <li> <a href='#'> خرید هدفون  </a> </li>
+                                    <li> <a href='#'> خرید هندزفری</a> </li>
+                                    <li> <a href='#'> خرید بلند گو </a> </li>
+                                    <li> <a href='#'>  خرید قاب</a> </li>
+                                    <li> <a href='#'>  خریدمحافظ</a> </li>
+                                </ul>
+            
+                    </div>
+
+
+            </div>
+        
+        </Link>
+
+
+
+
         <Link to="/404" >خطای ۴۰۴ </Link>
 
         </>
