@@ -1,8 +1,8 @@
 import React from 'react'
 import './RightMenu.scss';
 import logo from '../../../../Images/mega_menu/home/output.png'
-import modern from '../../../../Images/mega_menu/home/home-modern.jpg'
-import elegant from '../../../../Images/mega_menu/home/home-elegant.jpg'
+import modern from '../../../../Images/mega_menu/home/home-modern.png'
+import elegant from '../../../../Images/mega_menu/home/home-elegant.png'
 import beauti from '../../../../Images/mega_menu/home/home-metro.jpg'
 import smart from '../../../../Images/mega_menu/home/home-stylist.jpg'
 import { Link } from "react-router-dom";
