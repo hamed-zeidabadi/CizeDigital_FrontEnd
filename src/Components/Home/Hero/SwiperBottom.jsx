@@ -1,10 +1,9 @@
 import React from "react";
 import Swiper from "react-id-swiper";
-
+import pic1 from "./paris.jpg";
 
 import "swiper/swiper.scss";
 import "./Swiper.scss";
-import Cube3D from "./Cube";
 
 const SwiperBottom = () => {
   const params = {
@@ -17,13 +16,16 @@ const SwiperBottom = () => {
   return (
     <Swiper {...params}>
       <div>
-        <Cube3D />
+        test test ...
+        <img src={pic1} alt="" style={{ width: "200px", height: "200px" }} />
       </div>
       <div>
-        <Cube3D />
+        test test ...
+        <img src={pic1} alt="" style={{ width: "200px", height: "200px" }} />
       </div>
       <div>
-        <Cube3D />
+        test test ...
+        <img src={pic1} alt="" style={{ width: "200px", height: "200px" }} />
       </div>
     </Swiper>
   );
