@@ -27,6 +27,7 @@ const Hero = () => {
                 <SwiperTop />
               </div>
               <div className="header_home_hero_left_bottom">
+                <h3> اسکرول عمودی</h3>
                 <SwiperBottom />
               </div>
             </div>
