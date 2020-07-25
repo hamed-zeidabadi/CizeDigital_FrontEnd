@@ -6,6 +6,9 @@ import SwiperTop from "./SwiperTop";
 import Loading from "./Loading";
 import SwiperBottom from "./SwiperBottom";
 
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/src/styled/cube-animation/cube-animation.scss";
+
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
@@ -28,7 +31,12 @@ const Hero = () => {
                 <SwiperTop />
               </div>
               <div className="header_home_hero_left_bottom">
-                <SwiperBottom />
+                <AwesomeSlider animation="cubeAnimation">
+                  <div data-src="/path/to/image-0.png" >1</div>
+                  <div data-src="/path/to/image-1.png" >2</div>
+                  <div data-src="/path/to/image-2.jpg" >3</div>
+                  
+                </AwesomeSlider>
               </div>
             </div>
           </>
