@@ -1,2 +1,20 @@
 .swiper {
+  &_top {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &_items {
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      &_img {
+        width:500px;
+        height:400px;
+      }
+    }
+  }
 }
