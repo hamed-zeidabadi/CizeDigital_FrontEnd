@@ -65,6 +65,39 @@
     }
 }
 
+
+
+//********************************************
+//استایل های مگا منو قسمت فروشگاه در صفحه اصلی
+
+&_shop{
+
+
+    position: relative;
+
+
+ &_menu{
+
+    position: absolute;
+
+
+
+    & ul{
+
+        list-style: none;
+    }
+ }
+    
+
+
+}
+
+
+
+
+
+
+
 }
 
 //has_sub و sub_menu
@@ -83,4 +116,8 @@
 .sub_menu{
     z-index: 10;
 }
+
+
+
+
 
