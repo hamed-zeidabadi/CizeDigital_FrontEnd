@@ -27,16 +27,6 @@ const SwipeR = () => {
         <div>
           <Single pic={pic1} txt="پاریس" />
         </div>
-
-        <div>
-          <Single pic={pic2} txt="مسکو" />
-        </div>
-        <div>
-          <Single pic={pic3} txt="آمستردام" />
-        </div>
-        <div>
-          <Single pic={pic1} txt="پاریس" />
-        </div>
       </Swiper>
     </>
   );
