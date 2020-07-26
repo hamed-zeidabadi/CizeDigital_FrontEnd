@@ -23,6 +23,7 @@ const Navbar = () => {
   }
 
 
+
  }
 
   return (
@@ -39,8 +40,8 @@ const Navbar = () => {
         <div className='header_home_nav_left'>
 
             <div className='header_home_nav_left_rightItems' >
-              <a href='#' className='header_home_nav_left_icons_cart'> <FaShoppingCart /></a>
               <a href='#' className='header_home_nav_left_icons_user'><FaUserAlt /></a>
+              <a href='#' className='header_home_nav_left_icons_cart'> <FaShoppingCart /></a>
             </div>
    
             <div className='header_home_nav_left_leftItem'>
