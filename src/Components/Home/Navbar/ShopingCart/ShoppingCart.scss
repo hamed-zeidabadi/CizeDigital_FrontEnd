@@ -1,0 +1,22 @@
+.header_home_nav_left_icons_cart{
+
+    display: block;
+    position: relative;
+
+}
+
+.basket_container{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    left: 0;
+    top: 0px;
+    color: black;
+    position: absolute;
+    border: 1px solid red;
+
+   
+}

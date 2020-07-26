@@ -5,6 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
+import ShopingCart from './ShopingCart/ShoppingCart'
 // import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -22,6 +23,9 @@ const Navbar = () => {
     search.classList.add("search_menu");
   }
 
+  //Managing BasketShop Modal
+
+  const [openBasket,setOpenBasket]=useState(false);
 
 
  }
@@ -41,7 +45,8 @@ const Navbar = () => {
 
             <div className='header_home_nav_left_rightItems' >
               <a href='#' className='header_home_nav_left_icons_user'><FaUserAlt /></a>
-              <a href='#' className='header_home_nav_left_icons_cart'> <FaShoppingCart /></a>
+              <ShopingCart/>
+            
             </div>
    
             <div className='header_home_nav_left_leftItem'>
