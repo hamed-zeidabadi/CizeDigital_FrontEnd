@@ -1,11 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Header from "../Components/Home/Header";
+import Deals from "./../Components/Home/Deals";
+import Loading from "../Components/Home/Hero/Loading";
 const Home = () => {
+  const [isLoading, setIsLoading] = React.useState(false);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(true);
+    }, 2000);
+  }, [isLoading]);
   return (
     <>
       <div className="home">
-        <Header />
+        {isLoading ? (
+          <>
+            <Header />
+            <Deals />
+          </>
+        ) : (
+          <Loading />
+        )}
       </div>
     </>
   );
