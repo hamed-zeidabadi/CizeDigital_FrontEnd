@@ -16,7 +16,8 @@
       &_right {
         height: 91vh;
         width: 70%;
-        border: 1px solid red;
+        background: url("../../../Images//blurred-background.jpg") center/cover
+          no-repeat;
       }
 
       /*
@@ -35,8 +36,10 @@
         &_top {
           width: 100%;
           height: 50%;
-          border: 1px solid green;
-          background-color: black;
+          overflow: hidden;
+          justify-content: center;
+          align-self: center;
+          text-align: center;
         }
 
         //bottom
@@ -44,9 +47,20 @@
         &_bottom {
           width: 100%;
           height: 50%;
-          border: 1px solid yellow;
+          overflow: hidden;
+          justify-content: center;
+          align-self: center;
+          text-align: center;
         }
       }
     }
   }
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid yellow;
 }
