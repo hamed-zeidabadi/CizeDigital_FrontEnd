@@ -1,11 +1,11 @@
 import React from "react";
 import "./Slider.scss";
-import SwipeR from "./Swiper";
+import Swiper from "./Swiper";
 const Slider = () => {
   return (
     <>
       <div className="slider_row">
-      <SwipeR />
+      <Swiper />
       </div>
     </>
   );
