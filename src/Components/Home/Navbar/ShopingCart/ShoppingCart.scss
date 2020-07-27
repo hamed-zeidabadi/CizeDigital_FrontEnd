@@ -11,10 +11,12 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    transform: translate3d(0,0,0);
+    transition: transform 1s linear;
     padding: 10px;
-    width: 30%;
-    height: 100vh;
-    background-color: #fff;
+    // width: 30%;
+    // height: 100vh;
+    // background-color: #fff;
     // z-index must heigher than search element in left navbar
     z-index: 25;
     left: 0;
@@ -22,6 +24,8 @@
     color: black;
     position: absolute;
     border: 1px solid red;
+    opacity: 0;
+    pointer-events: none;
 
 
    
@@ -29,22 +33,43 @@
    
 }
 
+.basket_modal{
+
+    opacity: 1;
+    padding: 10px;
+    width: 30%;
+    height: 100vh;
+    background-color: #fff;
+    left: 0;
+    top: 0px;
+    color: black;
+    position: absolute;
+    border: 1px solid red;
+    // transform: translate3d(0,0,0);
+    pointer-events: auto;
+
+
+}
+
 .basket_cart_items{
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    z-index: 22;
 
     &_exit_button{
 
         width: 10%;
+        color: black !important;
+        margin: 0 !important;
 
     }
 
     &_title{
         
-        width: 50%;
-        margin-right: 3em;
+        width: 70%;
+        margin-right: 4em;
         text-align: center;
         padding: 5px;
         border-bottom: 1px solid rgb(163, 158, 158);

@@ -12,7 +12,7 @@ const Navbar = () => {
 
  const [openSearch,setOpenSearch]=useState(false)
 
- const HandleOpen=()=>{
+ const HandleOpenSearch=()=>{
 
    setOpenSearch(!openSearch)
 
@@ -22,13 +22,26 @@ const Navbar = () => {
   } else {
     search.classList.add("search_menu");
   }
-
+ }
   //Managing BasketShop Modal
 
   const [openBasket,setOpenBasket]=useState(false);
 
+  const HandleOpenBasket=()=>{
 
- }
+    setOpenBasket(!openBasket)
+
+    const BasketContainer=document.querySelector('.basket_container')
+    if (openBasket) {
+      BasketContainer.classList.remove("basket_modal");
+    } else {
+      BasketContainer.classList.add("basket_modal");
+    }
+
+  }
+
+
+ 
 
   return (
     <>
@@ -45,19 +58,19 @@ const Navbar = () => {
 
             <div className='header_home_nav_left_rightItems' >
               <a href='#' className='header_home_nav_left_icons_user'><FaUserAlt /></a>
-              <ShopingCart/>
+              <ShopingCart  HandleOpenBasket={HandleOpenBasket} />
             
             </div>
    
             <div className='header_home_nav_left_leftItem'>
 
-                <a href='#' onClick={HandleOpen} >
+                <a href='#' onClick={HandleOpenSearch} >
                   <BsSearch />
                 </a>
 
                 <div className='header_home_nav_left_leftItem_hidden'>
                   
-                  <FaTimes  onClick={HandleOpen} className='exit_search'/>
+                  <FaTimes  onClick={HandleOpenSearch} className='exit_search'/>
                   <BsSearch /> 
                    
                 </div>

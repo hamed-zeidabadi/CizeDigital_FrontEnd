@@ -5,19 +5,23 @@ import './ShoppingCart.scss'
 
 
 
-const ShopingCart =()=>{
+const ShopingCart =(props)=>{
 
     return(
 
         <div>
 
-          <a href='#' className='header_home_nav_left_icons_cart'> <FaShoppingCart /> </a> 
+          <a href='#' className='header_home_nav_left_icons_cart'
+          onClick={()=>props.HandleOpenBasket()}
+          > <FaShoppingCart /> </a> 
 
           <div className='basket_container'>
 
             <div className='basket_cart_items'>
 
-              <FaTimes  className='basket_cart_items_exit_button' />
+              <a className='basket_cart_items_exit_button'
+              onClick={()=>props.HandleOpenBasket()}
+              ><FaTimes  /></a>
               <h3 className='basket_cart_items_title'>سبد خرید شما</h3>
         
             </div>
