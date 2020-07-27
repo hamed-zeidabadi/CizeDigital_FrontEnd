@@ -11,41 +11,29 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    transform: translate3d(0,0,0);
-    transition: transform 1s linear;
     padding: 10px;
-    // width: 30%;
-    // height: 100vh;
-    // background-color: #fff;
-    // z-index must heigher than search element in left navbar
     z-index: 25;
     left: 0;
     top: 0px;
     color: black;
     position: absolute;
-    border: 1px solid red;
     opacity: 0;
     pointer-events: none;
-
-
-   
-
    
 }
 
 .basket_modal{
 
     opacity: 1;
+    transition: opacity .2s linear;
     padding: 10px;
     width: 30%;
     height: 100vh;
     background-color: #fff;
     left: 0;
-    top: 0px;
+    top: 0;
     color: black;
     position: absolute;
-    border: 1px solid red;
-    // transform: translate3d(0,0,0);
     pointer-events: auto;
 
 
@@ -56,20 +44,23 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    z-index: 22;
+    z-index: 25;
+    width: 100%;
 
     &_exit_button{
 
         width: 10%;
         color: black !important;
         margin: 0 !important;
+        padding: 5px;
 
     }
 
     &_title{
         
-        width: 70%;
-        margin-right: 4em;
+        color: rgb(243, 62, 62) ;
+        width: 50%;
+        margin-right: 3em;
         text-align: center;
         padding: 5px;
         border-bottom: 1px solid rgb(163, 158, 158);
@@ -81,7 +72,6 @@
 
     display: block;
     color: black !important;
-    // border: 1px solid red;
     width: 100px;
     height: 30px;
     text-align: center;
@@ -90,7 +80,7 @@
 
 
     &:hover{
-        // color: red !important;
         background-color: rgb(243, 62, 62) !important;
+        transition: background-color .2s linear;
     }
 }
