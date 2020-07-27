@@ -53,6 +53,11 @@
         color: black !important;
         margin: 0 !important;
         padding: 5px;
+        z-index: 25;
+
+        & svg{
+            font-size: 1.4em;
+        }
 
     }
 

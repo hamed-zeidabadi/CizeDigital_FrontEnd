@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+import { BsX } from "react-icons/bs";
 import './ShoppingCart.scss'
 
 
@@ -21,7 +21,7 @@ const ShopingCart =(props)=>{
 
               <a className='basket_cart_items_exit_button'
               onClick={()=>props.HandleOpenBasket()}
-              ><FaTimes  /></a>
+              ><BsX /></a>
               <h3 className='basket_cart_items_title'>سبد خرید شما</h3>
         
             </div>
