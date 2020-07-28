@@ -11,6 +11,7 @@ import Shop from "./Pages/Shop";
 import Blog from "./Pages/Blog";
 import NotFound from "./Pages/NotFound";
 
+
 const App = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const App = () => {
           <Redirect to="/404" component={NotFound} />
         </Switch>
       </Router>
+      
     </>
   );
 };

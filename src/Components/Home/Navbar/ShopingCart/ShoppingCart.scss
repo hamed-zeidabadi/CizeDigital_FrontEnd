@@ -27,7 +27,11 @@
 .basket_modal{
 
     opacity: 1;
-    transition: opacity .2s linear;
+    // transition: opacity .2s linear;
+    //using animation library name Animate.css in https://animate.style/#attention_seekers
+    animation:zoomInDown;
+    // animation:fadeInLeft;
+    animation-duration: 1s;
     padding: 10px;
     width: 30%;
     height: 100vh;
