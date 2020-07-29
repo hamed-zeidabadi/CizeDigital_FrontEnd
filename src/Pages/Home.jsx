@@ -7,7 +7,7 @@ const Home = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setIsLoading(true);
-    }, 2000);
+    }, 500);
   }, [isLoading]);
   return (
     <>
