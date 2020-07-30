@@ -1,7 +1,7 @@
 import React from 'react'
 import { ModalWrapper} from 'reoverlay';
-import './LoginModal.scss'
 import 'reoverlay/lib/ModalWrapper.css';
+import './LoginModal.scss'
 import { FaUserCircle } from "react-icons/fa";
 
 

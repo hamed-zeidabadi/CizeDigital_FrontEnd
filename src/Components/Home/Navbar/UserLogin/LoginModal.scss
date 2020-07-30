@@ -58,3 +58,11 @@
         }
     }
 }
+
+
+//styling animition for modal
+//class name available in node_moule folder and path is ==> "reoverlay/lib/ModalWrapper.css"
+.reOverlay .reOverlay__modalWrapper.-ro-zoom .reOverlay__modalContainer {
+    -webkit-animation: ro-zoom 3s cubic-bezier(0.4, 0, 0, 1.5) forwards;
+    animation: ro-zoom .5s cubic-bezier(0.4, 0, 0, 1.5) forwards;
+  }
