@@ -33,7 +33,7 @@
 
             border-radius: 5px;
             border: 1px solid rgb(163, 163, 159);
-            margin: 1em;
+            margin: .7em;
             width: 300px;
             height: 3em;
             padding: 5px;
@@ -50,8 +50,11 @@
             height: 3em;
             color: white;
             background-color: rgb(29, 28, 28);
-        }
 
-      
+            &:hover{
+                color: rgb(243, 53, 53);
+            }
+
+        }
     }
 }
