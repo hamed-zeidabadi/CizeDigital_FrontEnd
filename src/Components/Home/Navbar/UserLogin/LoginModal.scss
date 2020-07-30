@@ -3,8 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 200px;
     width: 200px;
     border: 1px solid red;
 
+    & svg {
+
+        font-size: 2em;
+    }
 }
