@@ -11,7 +11,7 @@ const LoginModal =()=>{
 
         <ModalWrapper animation='zoom'>
             <div  className=' header_home_nav_left_icons_user_modal'>
-                Hello
+                ورود کاربر
             </div>
         </ModalWrapper>
     )
