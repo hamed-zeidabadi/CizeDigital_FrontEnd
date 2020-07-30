@@ -13,7 +13,13 @@ const LoginModal =()=>{
         <ModalWrapper animation='zoom'>
             <div  className=' header_home_nav_left_icons_user_modal'>
                 <FaUserCircle />
-                ورود کاربر
+                <p>ایجاد اکانت برای خرید از سایت،آگاهی سریع از تخفیف ها، اطلاع از آخرین اخبار محصولات</p>
+                <form>
+                    <input  type='text' placeholder='نام کاربری'/>
+                    <input  type='text' placeholder='پسورد'/>
+                    <button type='submit'>ورود</button>
+                    <button type='submit'>ثبت نام</button>
+                </form>
             </div>
         </ModalWrapper>
     )
