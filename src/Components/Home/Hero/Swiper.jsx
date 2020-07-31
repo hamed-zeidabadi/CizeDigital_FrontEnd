@@ -15,7 +15,6 @@ const Swiper = () => {
           className="content_sidetxt"
           text="بهترین هدفون های دنیا رو از من و امین بخواهید :)" //text=["Hello.", "World!"]
         />
-       
       </div>
     </>
   );
