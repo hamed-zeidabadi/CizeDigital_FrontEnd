@@ -5,7 +5,7 @@ const SwiperTop = () => {
   return (
     <>
       <div id="swiper_top">
-        <p>محبوب ترین دسته بندی ها</p>
+        <p className="hvr-wobble-vertical">محبوب ترین دسته بندی ها</p>
         <nav>
           <ul>
             <li>
