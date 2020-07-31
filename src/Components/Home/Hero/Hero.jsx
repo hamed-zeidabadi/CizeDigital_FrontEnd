@@ -16,14 +16,13 @@ const Hero = () => {
           </div>
           <div className="header_home_hero_left">
             <div className="header_home_hero_left_top">
-              <h3>نقد و بررسی</h3>
               <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
                 <SwiperTop />
               </ScrollAnimation>
             </div>
             <div className="header_home_hero_left_bottom">
               <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
-                <h3> اسکرول عمودی</h3>
+                <h3>نقد و بررسی</h3>
                 <SwiperBottom />
               </ScrollAnimation>
             </div>
