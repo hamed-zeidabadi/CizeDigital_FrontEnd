@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Swiper.scss";
 
 const SwiperTop = () => {
@@ -9,13 +9,12 @@ const SwiperTop = () => {
         <nav>
           <ul>
             <li>
+              <a className="hover-2" href="#">
+                هدفون ها
+              </a>
+            </li>
+            <li>
               <a href="#">هدفون ها</a>
-            </li>
-            <li>
-              <a href="#">پاوربانک ها</a>
-            </li>
-            <li>
-              <a href="#">شارژر ها </a>
             </li>
           </ul>
         </nav>
