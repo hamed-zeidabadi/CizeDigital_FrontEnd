@@ -39,6 +39,7 @@ const Card = () => {
     </div>
   );
 };
+ 
 
 const SwiperBottom = () => {
   return (
