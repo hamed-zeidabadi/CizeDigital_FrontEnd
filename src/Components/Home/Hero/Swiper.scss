@@ -128,6 +128,8 @@
   }
 }
 
+//style for card
+
 #card {
   .flip-boxes {
     justify-content: center;
@@ -159,7 +161,8 @@
     .back,
     .front {
       position: relative;
-      background-color: #1b2d61;
+      // background-color: #1b2d61;
+      background-color: #0074d9;
       color: white;
       display: flex;
       justify-content: center;
@@ -173,7 +176,7 @@
     }
 
     .back {
-      background-color: #cecece;
+      background-color: #f33c3c;
       position: absolute;
       left: 0;
       top: 0;
@@ -209,7 +212,7 @@
         right: 0;
         width: 30px;
         height: 30px;
-        border: 15px solid #cecece;
+        border: 15px solid #f33c3c;
         border-bottom-color: white;
         border-right-color: white;
       }

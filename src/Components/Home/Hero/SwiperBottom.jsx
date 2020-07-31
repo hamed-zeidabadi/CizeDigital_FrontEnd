@@ -23,7 +23,7 @@ const Card = () => {
               }}
             >
               <div className="content text-center">
-                تخفیف
+               تخفیف میخوای ؟
                 <br />
                 <span className="click-for-more"></span>
               </div>
