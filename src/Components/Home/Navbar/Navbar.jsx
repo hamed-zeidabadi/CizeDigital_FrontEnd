@@ -1,8 +1,7 @@
 import React,{useState} from "react";
 import "./Navbar.scss";
 import RightMenu from './RightMenu/RightMenu'
-import { FaShoppingCart } from "react-icons/fa";
-import { FaUserAlt } from "react-icons/fa";
+import UserLogin from './UserLogin/UserLogin'
 import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import ShopingCart from './ShopingCart/ShoppingCart'
@@ -57,7 +56,7 @@ const Navbar = () => {
         <div className='header_home_nav_left'>
 
             <div className='header_home_nav_left_rightItems' >
-              <a href='#' className='header_home_nav_left_icons_user'><FaUserAlt /></a>
+              <UserLogin />
               <ShopingCart  HandleOpenBasket={HandleOpenBasket} />
             
             </div>

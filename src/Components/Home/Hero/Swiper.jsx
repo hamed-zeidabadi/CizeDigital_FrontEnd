@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../Images/headphone.png";
+import img from "../../../Images/headphone4.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import ReactTypingEffect from "react-typing-effect";
 

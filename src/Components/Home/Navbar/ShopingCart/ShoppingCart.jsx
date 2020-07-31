@@ -15,7 +15,7 @@ const ShopingCart =(props)=>{
           onClick={()=>props.HandleOpenBasket()}
           > <FaShoppingCart /> </a> 
 
-          <div className='basket_container'>
+          <div className='basket_container animate__animated'>
 
             <div className='basket_cart_items'>
 
