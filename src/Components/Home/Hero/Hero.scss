@@ -53,6 +53,11 @@
           align-self: center;
           text-align: center;
           background-color: black;
+          position: relative;
+        }
+
+        #BoxLoading {
+          position: absolute;
         }
       }
     }
