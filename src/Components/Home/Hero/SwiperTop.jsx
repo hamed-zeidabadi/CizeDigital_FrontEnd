@@ -20,12 +20,12 @@ const SwiperTop = () => {
             </li>
             <li>
               <a className="hvr-underline-from-center" href="#">
-               پاور بانک ها
+                پاور بانک ها
               </a>
             </li>
           </ul>
         </nav>
-        <button>مشاهده بیشتر ...</button>
+        <button className="hvr-bounce-to-top">مشاهده بیشتر ...</button>
       </div>
     </>
   );
