@@ -9,12 +9,19 @@ const SwiperTop = () => {
         <nav>
           <ul>
             <li>
-              <a className="hover-2" href="#">
+              <a className="hvr-underline-from-center" href="#">
                 هدفون ها
               </a>
             </li>
             <li>
-              <a href="#">هدفون ها</a>
+              <a className="hvr-underline-from-center" href="#">
+                شارژر ها
+              </a>
+            </li>
+            <li>
+              <a className="hvr-underline-from-center" href="#">
+               پاور بانک ها
+              </a>
             </li>
           </ul>
         </nav>

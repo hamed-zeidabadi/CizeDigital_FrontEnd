@@ -70,7 +70,7 @@
 }
 
 #swiper_top {
-  background-color: white;
+  background-color: black;
   color: white;
   width: 100%;
   height: 100%;
@@ -100,31 +100,10 @@
     list-style: none;
     text-decoration: none;
     text-align: center;
-    color: #797878;
+    color: white;
+    padding: 2px;
+    &:hover {
+      color: #f33c3c;
+    }
   }
-}
-
-.hover-2 {
-  padding: 10px;
-}
-.hover-2:before,
-.hover-2:after {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-color: #492059;
-}
-.hover-2:before {
-  border-width: 2px 0 2px 0;
-  transform: scaleX(0);
-}
-.hover-2:after {
-  border-width: 0 2px 0 2px;
-  transform: scaleY(0);
-}
-.hover-2:hover:before,
-.hover-2:hover:after {
-  transform: scale(1, 1);
 }
