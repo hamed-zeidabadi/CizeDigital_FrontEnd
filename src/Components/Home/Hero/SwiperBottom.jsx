@@ -17,19 +17,21 @@ const Card = () => {
           <div className="col-md-3 col-sm-4 col-8 flip-box">
             <div
               className="front"
-              style={{
-                BackgroundImage:
-                  "https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=350",
-              }}
+              // style={{
+              //   BackgroundImage:
+              //     "https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=350",
+              // }}
             >
               <div className="content text-center">
-               تخفیف میخوای ؟
+                تخفیف میخوای ؟
                 <br />
                 <span className="click-for-more"></span>
               </div>
             </div>
             <div className="back">
-              <div className="content">با اشتراک در خبرنامه ویژه از تخفیف های ما با خبر شوید .</div>
+              <div className="content">
+                با اشتراک در خبرنامه ویژه از تخفیف های ما با خبر شوید .
+              </div>
             </div>
           </div>
         </div>
