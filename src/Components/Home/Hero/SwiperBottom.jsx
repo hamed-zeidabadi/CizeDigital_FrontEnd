@@ -3,11 +3,7 @@ import "./Swiper.scss";
 import React, { useState, useEffect } from "react";
 import "swiper/swiper.scss";
 
-import pic1 from "./../../../Images/phone/1.jpg";
-import pic2 from "./../../../Images/phone/2.jpg";
-import pic3 from "./../../../Images/phone/3.jpg";
-import pic4 from "./../../../Images/phone/4.jpg";
-import pic5 from "./../../../Images/phone/5.jpg";
+
 
 const Card = () => {
   return (
