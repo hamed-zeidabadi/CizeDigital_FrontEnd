@@ -3,8 +3,6 @@ import "./Swiper.scss";
 import React, { useState, useEffect } from "react";
 import "swiper/swiper.scss";
 
-
-
 const Card = () => {
   return (
     <div id="card">
@@ -19,14 +17,15 @@ const Card = () => {
               // }}
             >
               <div className="content text-center">
-                تخفیف میخوای ؟
-                <br />
+                <span> تخفیف میخوای ؟</span> <br />
                 <span className="click-for-more"></span>
               </div>
             </div>
             <div className="back">
               <div className="content">
-                با اشتراک در خبرنامه ویژه از تخفیف های ما با خبر شوید .
+                <span>
+                  با اشتراک در خبرنامه ویژه از تخفیف های ما با خبر شوید .
+                </span>
               </div>
             </div>
           </div>
@@ -35,7 +34,6 @@ const Card = () => {
     </div>
   );
 };
- 
 
 const SwiperBottom = () => {
   return (

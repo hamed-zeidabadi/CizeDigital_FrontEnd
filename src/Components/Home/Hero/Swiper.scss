@@ -20,52 +20,41 @@
 }
 
 #content {
-  & .content {
-    &_title {
-    }
-    &_img {
-      position: relative;
-      width: 50%;
-      height: 50%;
-      & ::before {
-        position: absolute;
-        top: 0;
-        left: -75%;
-        z-index: 2;
-        display: block;
-        content: "";
-        width: 50%;
-        height: 100%;
-        background: -webkit-linear-gradient(
-          left,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 0.3) 100%
-        );
-        background: linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 0.3) 100%
-        );
-        -webkit-transform: skewX(-25deg);
-        transform: skewX(-25deg);
-      }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .right {
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
 
-      & :hover::before {
-        -webkit-animation: shine 0.75s;
-        animation: shine 0.75s;
-      }
-      @-webkit-keyframes shine {
-        100% {
-          left: 125%;
-        }
-      }
-      @keyframes shine {
-        100% {
-          left: 125%;
-        }
-      }
+    &_img {
+      margin-top: 40px;
+      margin-right: 20px;
+      width: 70%;
+      height: 70%;
+    }
+  }
+
+  & .left {
+    width: 50%;
+    height: 100%;
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &_title {
+      font-family: "IRANSans_Bold" !important;;
     }
     &_btn {
+    }
+    &_sidetxt {
     }
   }
 }
@@ -123,7 +112,6 @@
       border-radius: 5px;
     }
   }
-  
 
   & p {
     font-size: 1.4em;
@@ -134,10 +122,10 @@
 //style for card
 
 #card {
-opacity: 0.8;
+  opacity: 0.8 !important;
+
   .flip-boxes {
     justify-content: center;
-
   }
   .flip-box {
     display: flex;
@@ -208,7 +196,6 @@ opacity: 0.8;
 
       .content {
         font-size: 2rem;
-        
       }
 
       &:after {
