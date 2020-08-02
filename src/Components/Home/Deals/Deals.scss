@@ -1,6 +1,38 @@
-.deals {
-  width: 100%;
+.deals_container{
+  width: 98vw;
   height: 50vh;
-  border: 2px solid red;
   background: url("../../../Images/parallax.jpg") center/cover no-repeat;
+
 }
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  // position: relative;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  // background-color: aqua;
+
+  & div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+}
+
+
+
