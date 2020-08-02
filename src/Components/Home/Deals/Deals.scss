@@ -1,5 +1,5 @@
 .deals_container{
-  width: 98vw;
+  width: 98.5vw;
   height: 60vh;
   background: url("../../../Images/parallax.jpg") center/cover no-repeat;
   text-align: center;
@@ -12,12 +12,15 @@
   }
 
 }
+
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   overflow: hidden;
   height: 100%;
+  width: 100%;
   list-style: none;
   padding: 0;
   /* Fix of Webkit flickering */
