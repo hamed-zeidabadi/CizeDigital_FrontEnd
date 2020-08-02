@@ -1,17 +1,42 @@
 import React from "react";
+import Swiper from 'react-id-swiper';
+import 'swiper/swiper.scss'
 import "./Deals.scss";
-import ScrollAnimation from "react-animate-on-scroll";
+import DiscountCart from './DiscountCart'
+
+
 
 const Deals = () => {
+
+  const params = {
+    slidesPerView: 2,
+    // spaceBetween: 2,
+    pagination: {
+      // el: '.swiper-pagination',
+      clickable: true,
+    }
+  }
+
   return (
-    <>
-      <ScrollAnimation animateIn="flipInY" animateOut="flipOutY">
-        <div className="deals">
-          <h1>animateOut</h1>
-        </div>
-      </ScrollAnimation>
-    </>
-  );
+
+
+    <div className='deals_container'>
+
+      <h2>فروش ویژه</h2>
+
+          <Swiper {...params} >
+
+              <div><DiscountCart/></div>
+              <div><DiscountCart/></div>
+              <div><DiscountCart/></div>
+              <div><DiscountCart/></div>
+
+          </Swiper>
+
+    </div>
+
+  
+  )
 };
 
 export default Deals;

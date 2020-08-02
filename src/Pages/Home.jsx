@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Home/Header";
-import Deals from "./../Components/Home/Deals";
+import Deals from "./../Components/Home/Deals/Deals";
 import Loading from "../Components/Home/Hero/Loading";
 const Home = () => {
   const [isLoading, setIsLoading] = React.useState(false);
