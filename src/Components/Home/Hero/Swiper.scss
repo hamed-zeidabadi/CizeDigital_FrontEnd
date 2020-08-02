@@ -37,6 +37,14 @@
       margin-right: 20px;
       width: 70%;
       height: 70%;
+      transition-delay: 2s;
+      transition: all 3s;
+      transform: translateX(-10px) rotateZ(-5deg);
+
+      &:hover {
+        transition: all 1s;
+        transform: translateX(20px) rotateZ(15deg);
+      }
     }
   }
 
@@ -50,10 +58,18 @@
     flex-direction: column;
 
     &_title {
-      font-family: "IRANSans_Bold" !important;;
+      font-family: "IRANSans_Bold" !important;
+      font-size: 1.6em;
+      color: #f33c3c;
     }
     &_btn {
+      display: flex;
+      overflow: hidden;
+
+      margin: 10px;
+      padding: 12px 12px;
     }
+
     &_sidetxt {
     }
   }

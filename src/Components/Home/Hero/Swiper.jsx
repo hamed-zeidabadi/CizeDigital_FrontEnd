@@ -16,7 +16,7 @@ const Swiper = () => {
             className="left_sidetxt"
             text="بهترین هدفون های دنیا رو از من و امین بخواهید :)" //text=["Hello.", "World!"]
           />
-          <input type="submit" className="left_btn"></input>
+          <button type="submit" className="left_btn button -dark center">test</button>
         </div>
       </div>
     </>
