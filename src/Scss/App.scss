@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 .App {
@@ -13,6 +12,11 @@
 @font-face {
   font-family: IRANSans;
   src: url(../Font/IRANSans.ttf);
+}
+
+@font-face {
+  font-family: IRANSans_Bold;
+  src: url(../Font/IRANSans_Bold.ttf);
 }
 * {
   margin: 0;

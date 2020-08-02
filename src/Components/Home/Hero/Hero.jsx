@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Hero.scss";
 import Slider from "./Slider";
 import SwiperTop from "./SwiperTop";
-import Loading from "./Loading";
+// import Loading from "./Loading";
 import SwiperBottom from "./SwiperBottom";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -41,12 +41,11 @@ const Hero = () => {
                   </ScrollAnimation>
                 </>
               ) : (
-                <BlockLoading id="BoxLoading" />
+                <BlockLoading2 id="BoxLoading" />
               )}
             </div>
           </div>
         </>
-        )
       </div>
     </>
   );
