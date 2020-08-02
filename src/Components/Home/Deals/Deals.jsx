@@ -22,6 +22,8 @@ const Deals = () => {
 
     <div className='deals_container'>
 
+      <h2>فروش ویژه</h2>
+
           <Swiper {...params} >
 
               <div><DiscountCart/></div>
