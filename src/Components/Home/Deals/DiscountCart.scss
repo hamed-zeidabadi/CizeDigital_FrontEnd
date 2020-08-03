@@ -10,6 +10,17 @@
     
     }
 
+
+    &_details{
+
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 30%;
+
+    }
+
+
     &_image{
 
         width: 50%;

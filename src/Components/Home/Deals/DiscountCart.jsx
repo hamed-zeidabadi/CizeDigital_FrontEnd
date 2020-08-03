@@ -12,10 +12,18 @@ const DiscountCart =(props)=>{
 
             <div className='discount_details'>
 
-                <p>sss</p>
-                <p>www</p>
-                <p>zzz</p>
-                <p>rrr</p>
+                <h3>{props.title}</h3>
+                
+                <p>قیمت</p>
+
+                <span>
+                    <p></p>
+                    <p></p>
+                </span>
+
+                <span>
+
+                </span>
 
             </div>
 
