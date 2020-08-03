@@ -4,6 +4,11 @@ import 'swiper/swiper.scss'
 import "./Deals.scss";
 import DiscountCart from './DiscountCart'
 
+import doorbell from '../../../Images/hot_deales/doorbell.jpg'
+import flycamera from '../../../Images/hot_deales/flycamera.jpg'
+import nova3 from '../../../Images/hot_deales/nova3.jpg'
+import speaker from '../../../Images/hot_deales/speaker.jpg'
+
 
 
 const Deals = () => {
@@ -26,10 +31,10 @@ const Deals = () => {
 
           <Swiper {...params} >
 
-              <div><DiscountCart/></div>
-              <div><DiscountCart/></div>
-              <div><DiscountCart/></div>
-              <div><DiscountCart/></div>
+              <div><DiscountCart src={doorbell}/></div>
+              <div><DiscountCart src={flycamera}/></div>
+              <div><DiscountCart src={nova3}/></div>
+              <div><DiscountCart src={speaker}/></div>
 
           </Swiper>
 

@@ -1,9 +1,19 @@
-.discount_container{
+.discount{
 
-    display:flex;
-    height:70%;
-    width: 80%;
-    background-color: rgb(120, 52, 189);
-    // margin-top: 10%;
+    &_container{
 
+        display:flex;
+        height:70%;
+        width: 80%;
+        background-color: #F0F1F4;
+        // margin-top: 10%;
+    
+    }
+
+    &_image{
+
+        width: 50%;
+        height: 90%;
+
+    }
 }
