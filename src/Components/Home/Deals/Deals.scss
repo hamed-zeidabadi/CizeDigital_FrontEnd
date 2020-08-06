@@ -1,5 +1,5 @@
 .deals_container{
-  width: 98.5vw;
+  width: 98.6vw;
   height: 60vh;
   background: url("../../../Images/parallax.jpg") center/cover no-repeat;
   text-align: center;
@@ -9,6 +9,7 @@
 
   & h2{
     margin-top:35px ;
+    
   }
 
 }
@@ -45,5 +46,28 @@
 
 }
 
+
+//edit classes swiper button for chaning color
+//classes availabe in node_mdule folder--> swiper/components/navigation/navigation.scss
+
+.swiper-button-prev,
+.swiper-button-next{
+
+  color: #C53333;
+
+}
+
+
+
+//edit classes swiper pagination bullet for chaning color
+//classes availabe in node_mdule folder--> swiper/components/pagination/pagination.scss
+
+
+.swiper-pagination-bullet{
+
+  background: rgb(192, 21, 21);
+ 
+
+}
 
 
