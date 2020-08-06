@@ -14,7 +14,6 @@ import img1 from "../../../Images/headphone4.png";
 import img2 from "../../../Images/watch.png";
 import img3 from "../../../Images/headphone1.png";
 
-
 // install Swiper components
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 SwiperCore.use([EffectFlip]);
@@ -46,7 +45,6 @@ export default () => {
       spaceBetween={100}
       slidesPerView={3}
       pagination={{ clickable: true }}
-      
     >
       {state.map((item) => (
         <SwiperSlide className="swiper_main_item">
