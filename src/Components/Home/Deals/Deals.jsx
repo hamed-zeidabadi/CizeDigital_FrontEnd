@@ -35,8 +35,8 @@ const Deals = () => {
 
     <ScrollAnimation
      className='animate__animated'
-     animateIn="animate__fadeInUp" 
-     style={{animationDuration:'1s'}}>
+     animateIn="animate__fadeIn" 
+     style={{animationDuration:'2s'}}>
 
 
     <div className='deals_container '>
@@ -61,8 +61,6 @@ const Deals = () => {
          </Swiper>
 
 
-      
-     
 
     </div>
 
