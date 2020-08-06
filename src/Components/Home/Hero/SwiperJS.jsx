@@ -12,6 +12,8 @@ import "swiper/components/pagination/pagination.scss";
 import SwiperS from "./Swiper";
 import img1 from "../../../Images/headphone4.png";
 import img2 from "../../../Images/watch.png";
+import img3 from "../../../Images/headphone1.png";
+
 
 // install Swiper components
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -21,13 +23,18 @@ export default () => {
   const [state, setstate] = React.useState([
     {
       img: img1,
-      title: "این یک محصول فوق العاده است !",
+      title: "یه محصول خوب",
       sidetxt: "بهترین هدفون های دنیا رو از ما بخواهید :)",
     },
     {
       img: img2,
-      title: "این یک محصول فوق العاده است !",
+      title: "یه محصول شیک ",
       sidetxt: "با کیفیت ترین ساعت های هوشمند دنیا !",
+    },
+    {
+      img: img3,
+      title: "یه محصول زیبا",
+      sidetxt: "یک هدفون جذاب !",
     },
   ]);
 
