@@ -36,7 +36,7 @@ const Deals = () => {
     <ScrollAnimation
      className='animate__animated'
      animateIn="animate__fadeInUp" 
-     style={{animationDuration:'s'}}>
+     style={{animationDuration:'1s'}}>
 
 
     <div className='deals_container '>
