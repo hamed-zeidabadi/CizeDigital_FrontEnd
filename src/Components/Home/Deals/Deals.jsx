@@ -9,7 +9,7 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import "animate.css/animate.min.css";
 import "./Deals.scss";
-
+ 
 import doorbell from '../../../Images/hot_deales/doorbell.jpg'
 import flycamera from '../../../Images/hot_deales/flycamera.jpg'
 import nova3 from '../../../Images/hot_deales/nova3.jpg'
