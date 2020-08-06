@@ -10,6 +10,7 @@ import "swiper/components/effect-coverflow/effect-coverflow.scss";
 import "swiper/components/effect-flip/effect-flip.scss";
 
 
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/swiper.scss";
