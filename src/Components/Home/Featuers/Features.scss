@@ -2,10 +2,11 @@
 
     height: 50vh;
     width: 98.5vw;
+    background-color: rgb(231, 232, 235);
    
-}
 
-.tabs_container{
+
+&_container{
 
     display: flex;
     align-items: center;
@@ -14,22 +15,51 @@
 
     & h2{
 
-        flex-grow: 2;
+        flex-grow: 1;
+        margin-top:2em ;
         margin-left: 5em;
+        margin-right: 1em;
         font-weight: bold;
 
     }
 
     &_tab{
-        flex-grow: 2;
+        margin-top:2em ;
+        flex-grow: 3;
     }
 
+    
     & a{
 
-        
         cursor: pointer;
-        margin: 10px;
+        margin: 1em;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        overflow: hidden;
+
+        
+
+        &:hover{
+
+            color: #f33c3c;
+        
+        }
+
+
+
     }
 
 
+}
+
+&_panel_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
 }
