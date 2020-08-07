@@ -31,7 +31,6 @@
     width: 50%;
     height: 100%;
     position: relative;
-    // border: 1px solid red;
     & p {
       -ms-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
@@ -73,7 +72,6 @@
   & .left {
     width: 50%;
     height: 100%;
-    // border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +79,7 @@
 
     &_title {
       font-family: "IRANSans_Bold" !important;
-      font-size: 2em;
+      font-size: 2.5em;
       color: #f33c3c;
       margin-top: -20px;
     }
@@ -94,7 +92,6 @@
       align-items: center;
       flex-direction: column;
       border: none;
-      font-family: inherit;
       font-size: 1.2em;
       background: none;
       cursor: pointer;
@@ -116,7 +113,6 @@
       &:hover,
       &:active {
         color: white;
-        // border: 2px solid #f33c3c;
         font-size: 1.29em;
       }
       &:hover::after {
