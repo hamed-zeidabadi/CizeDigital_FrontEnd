@@ -25,7 +25,6 @@ const SwiperS = ({ img, title, sidetxt }) => {
           <ScrollAnimation
             delay={1500}
             animateIn="bounceInUp"
-            animateOut="bounceOutLeft"
           >
             <button type="submit" className="left_btn button -dark center">
               مشاهده محصولات
