@@ -12,12 +12,15 @@ const SwiperS = ({ img, title, sidetxt }) => {
         </div>
         <div className="left">
           <p className="left_title">{title}</p>
-          <ReactTypingEffect
-            className="left_sidetxt"
-            text={sidetxt} //text=["Hello.", "World!"]
-          />
+
           <button type="submit" className="left_btn button -dark center">
             مشاهده محصولات
+            <p>
+              <ReactTypingEffect
+                className="left_sidetxt"
+                text={sidetxt} //text=["Hello.", "World!"]
+              />
+            </p>
           </button>
         </div>
       </div>
