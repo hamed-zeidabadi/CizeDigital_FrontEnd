@@ -30,11 +30,33 @@
   & .right {
     width: 50%;
     height: 100%;
+    position: relative;
     // border: 1px solid red;
-
+    & p {
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      -ms-transform-origin: right top 0;
+      -moz-transform-origin: right top 0;
+      -webkit-transform-origin: right top 0;
+      transform-origin: right top 0;
+      right: 20%;
+      top: 27%;
+      color: #ffb8c2;
+      padding-top: 2vw;
+      padding-right: 2vw;
+      font-size: 1em;
+      white-space: nowrap;
+      text-transform: uppercase;
+      cursor: vertical-text;
+      position: absolute;
+      display: block;
+      z-index: 11;
+    }
     &_img {
-      margin-top: 40px;
-      margin-right: 20px;
+      margin-top: 30px;
+      margin-right: 70px;
       width: 70%;
       height: 70%;
       transition-delay: 2s;
@@ -42,7 +64,7 @@
       transform: translateX(-10px) rotateZ(-5deg);
 
       &:hover {
-        transition: all 1s;
+        transition: all 2s;
         transform: translateX(20px) rotateZ(15deg);
       }
     }

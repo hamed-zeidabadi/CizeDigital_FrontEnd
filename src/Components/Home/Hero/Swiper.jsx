@@ -7,6 +7,7 @@ const SwiperS = ({ img, title, sidetxt }) => {
     <>
       <div id="content">
         <div className="right">
+          <p>لطفا فقط بهترین ها رو از ما بخواهید !</p>
           <img src={img} alt="product" className="right_img" />
         </div>
         <div className="left">
