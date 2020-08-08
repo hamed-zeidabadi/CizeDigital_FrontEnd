@@ -6,6 +6,7 @@ const Article = () => {
     <>
       <div className="article">
         <Card />
+        <Card /> <Card /> <Card />
       </div>
     </>
   );
