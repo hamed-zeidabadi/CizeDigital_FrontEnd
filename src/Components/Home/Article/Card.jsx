@@ -22,4 +22,12 @@ const Card = ({ img, title, subtitle }) => {
   );
 };
 
+
+
+
+
+
+
+
+
 export default Card;
