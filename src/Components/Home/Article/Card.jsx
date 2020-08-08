@@ -15,6 +15,7 @@ const Card = ({ img, title, subtitle }) => {
         <div className="record-desc">
           <h1>{title}</h1>
           <p>{subtitle}</p>
+          <button>متن کامل</button>
         </div>
       </div>
     </>
