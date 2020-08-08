@@ -5,6 +5,7 @@ import img1 from "../../../Images/Article/1.jpg";
 import img2 from "../../../Images/Article/2.jpg";
 import img3 from "../../../Images/Article/3.jpg";
 import img4 from "../../../Images/Article/4.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Article = () => {
   const [state, setstate] = React.useState([
@@ -35,16 +36,26 @@ const Article = () => {
   ]);
   return (
     <>
-      <div className="article">
-        <div className="article_title">
-          <h3>آخرین مقالات مجله</h3>
+      <ScrollAnimation
+        className="animate__animated"
+        animateIn="animate__fadeInUp"
+        style={{ animationDuration: "2s" }}
+      >
+        <div className="article">
+          <div className="article_title">
+            <h3>آخرین مقالات مجله</h3>
+          </div>
+          <div className="article_card">
+            {state.map((item) => (
+              <Card
+                img={item.img}
+                title={item.title}
+                subtitle={item.subtitle}
+              />
+            ))}
+          </div>
         </div>
-        <div className="article_card">
-          {state.map((item) => (
-            <Card img={item.img} title={item.title} subtitle={item.subtitle} />
-          ))}
-        </div>
-      </div>
+      </ScrollAnimation>
     </>
   );
 };
