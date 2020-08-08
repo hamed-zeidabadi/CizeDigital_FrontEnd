@@ -1,20 +1,20 @@
 import React from "react";
 import "./Card.scss";
-const Card = () => {
+const Card = ({ img, title, subtitle }) => {
   return (
     <>
       <div className="record">
         <div className="record-arrow">
-          <img src="http://www.portalguard.com/images/icons/right-arrow.png" />
+          <img src={img} />
         </div>
-        <div id="record1" className="record-display"></div>
+        <div
+          id="record1"
+          className="record-display"
+          style={{ backgroundImage: `url(${img})` }}
+        ></div>
         <div className="record-desc">
-          <h1>Bitter Typeface</h1>
-          <p>
-            Display and promote the typeface and google font 'Bitter' by Sol
-            Matas in a multipage informational website. Highlighting on typeface
-            usage and history in both the web and print.
-          </p>
+          <h1>{title}</h1>
+          <p>{subtitle}</p>
         </div>
       </div>
     </>
