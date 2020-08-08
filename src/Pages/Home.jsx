@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../Components/Home/Header";
 import Deals from "./../Components/Home/Deals/Deals";
-import Features from "./../Components/Home/Featuers/Features"
+import Features from "./../Components/Home/Featuers/Features";
 import Loading from "../Components/Home/Hero/Loading";
+import Article from "../Components/Home/Article/Article";
 const Home = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   React.useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
             <Header />
             <Deals />
             <Features />
+            <Article />
           </>
         ) : (
           <Loading />

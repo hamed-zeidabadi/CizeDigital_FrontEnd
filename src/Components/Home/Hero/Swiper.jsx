@@ -22,10 +22,7 @@ const SwiperS = ({ img, title, sidetxt }) => {
         </div>
         <div className="left">
           <p className="left_title">{title}</p>
-          <ScrollAnimation
-            delay={1500}
-            animateIn="bounceInUp"
-          >
+          <ScrollAnimation delay={1500} animateIn="bounceInUp">
             <button type="submit" className="left_btn button -dark center">
               مشاهده محصولات
               <p>
