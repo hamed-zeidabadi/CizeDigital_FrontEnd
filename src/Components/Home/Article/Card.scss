@@ -1,0 +1,113 @@
+@mixin shadow($level: 1) {
+  @if $level == 1 {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+  } @else if $level == 2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  } @else if $level == 3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  } @else if $level == 4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  } @else if $level == 5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  @if $level == 6 {
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
+  } @else if $level == 7 {
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23);
+  } @else if $level == 8 {
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
+  } @else if $level == 9 {
+    box-shadow: 0 -14px 28px rgba(0, 0, 0, 0.25),
+      0 -10px 10px rgba(0, 0, 0, 0.22);
+  } @else if $level == 10 {
+    box-shadow: 0 -19px 38px rgba(0, 0, 0, 0.3),
+      0 -15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.record_wrap {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.record {
+  position: relative;
+  width: 30%;
+  height: 20vw;
+  overflow: hidden;
+//   border:2px solid #ccc;
+  @include shadow(1);
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 300ms;
+  &:hover {
+    @include shadow(2);
+  }
+}
+
+.record-arrow {
+  position: absolute;
+  padding: 3%;
+  img {
+    width: 8%;
+    height: 8%;
+  }
+  background-image: url("http://www.portalguard.com/images/icons/right-arrow.png");
+  transform: translateX(75%);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.record:hover .record-arrow {
+  transform: translateX(85%);
+  opacity: 1;
+}
+
+.record-display {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url("https://cdn.dribbble.com/users/642843/screenshots/3471650/hktrystram_02.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.record:hover .record-display {
+  height: 20%;
+  @include shadow(1);
+}
+
+.record-desc {
+  margin: 20px 0 0 10px;
+  h1 {
+    margin: 5px 0;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  p {
+    font-size: 0.75em;
+    line-height: 1.4em;
+    color: #666;
+  }
+  opacity: 0;
+  transition: opacity 400ms ease-in-out 190ms;
+}
+
+#record1 {
+  transition: height 700ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+
+.record:hover .record-desc {
+  opacity: 1;
+}
+
+.tagline {
+  margin: 50px 0;
+  text-align: center;
+  color: green;
+}
