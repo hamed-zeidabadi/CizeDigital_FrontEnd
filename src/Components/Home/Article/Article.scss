@@ -1,0 +1,23 @@
+.article {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  background: url(../../../Images/Article/bg.jpg) center/cover;
+
+  &_title {
+    color: black;
+    margin-top: 5px;
+  }
+  &_card {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}

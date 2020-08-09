@@ -30,11 +30,32 @@
   & .right {
     width: 50%;
     height: 100%;
-    // border: 1px solid red;
-
+    position: relative;
+    & p {
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      -ms-transform-origin: right top 0;
+      -moz-transform-origin: right top 0;
+      -webkit-transform-origin: right top 0;
+      transform-origin: right top 0;
+      right: 17%;
+      top: 25%;
+      color: #fbeded;
+      padding-top: 2vw;
+      padding-right: 2vw;
+      font-size: 1em;
+      white-space: nowrap;
+      text-transform: uppercase;
+      cursor: vertical-text;
+      position: absolute;
+      display: block;
+      z-index: 11;
+    }
     &_img {
-      margin-top: 40px;
-      margin-right: 20px;
+      margin-top: 20px;
+      margin-right: 70px;
       width: 70%;
       height: 70%;
       transition-delay: 2s;
@@ -42,7 +63,7 @@
       transform: translateX(-10px) rotateZ(-5deg);
 
       &:hover {
-        transition: all 1s;
+        transition: all 2s;
         transform: translateX(20px) rotateZ(15deg);
       }
     }
@@ -51,7 +72,6 @@
   & .left {
     width: 50%;
     height: 100%;
-    // border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,15 +79,83 @@
 
     &_title {
       font-family: "IRANSans_Bold" !important;
-      font-size: 1.6em;
+      font-size: 2.5em;
       color: #f33c3c;
+      margin-top: -20px;
     }
     &_btn {
+      width: 300px;
+      height: 100px;
       display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: none;
+      font-size: 1.2em;
+      background: none;
+      cursor: pointer;
+      padding: 25px 30px;
+      margin: 40px 30px 15px 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      outline: none;
+      position: relative;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      color: #fff;
       overflow: hidden;
 
-      margin: 10px;
-      padding: 12px 12px;
+      &:hover,
+      &:active {
+        color: white;
+        font-size: 1.29em;
+      }
+      &:hover::after {
+        height: 260%;
+        opacity: 1;
+      }
+      &:active::after {
+        height: 400%;
+        opacity: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 100%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: #0074d988;
+        opacity: 0;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      }
+
+      &::before {
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      & p {
+        font-size: 0.5em;
+        margin-top: 5px;
+      }
     }
 
     &_sidetxt {
