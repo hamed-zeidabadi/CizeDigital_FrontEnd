@@ -4,10 +4,9 @@
     width: 98.5vw;
     background-color: rgb(231, 232, 235);
    
-
-
 &_container{
 
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,5 +60,6 @@
     align-items: center;
     justify-content: center;
     margin: 1em;
+    height: 85%;
 }
 }

@@ -7,7 +7,7 @@ const DiscountCart =(props)=>{
 
 
 
-    //Function for Displaying Correct Number to Persian Format
+    //Function for Displaying Correct Persian Number
     const numberToPersian=(number)=>{
 
       const persianNumber=  new Intl.NumberFormat("fa",{ useGrouping: false }).format(number)

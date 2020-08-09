@@ -1,9 +1,11 @@
 import React from 'react'
+import './Cart.scss'
 
+import headfav from '../../../Images/headfav.jpg'
 
 const Cart = () => {
 
-    //Function for Displaying Correct Number to Persian Format
+    //Function for Displaying Correct Persian Number
     const numberToPersian=(number)=>{
 
         const persianNumber=  new Intl.NumberFormat("fa",{ useGrouping: false }).format(number)
@@ -13,12 +15,12 @@ const Cart = () => {
 
       
     return (
-        
-        <div>
 
-            <img className='' src='' alt='' />
-            <p></p>
-            <span className=''>{numberToPersian(18000)}</span>
+        <div className='featuers_cart'>
+
+            <img className='' src={headfav} alt='headphone' />
+            <p>هدفون خفن</p>
+            <span className='featuers_cart_price'>{numberToPersian(18000)}</span>
             
         </div>
     )

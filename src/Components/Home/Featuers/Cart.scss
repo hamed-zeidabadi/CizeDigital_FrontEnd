@@ -1,0 +1,25 @@
+.featuers_cart{
+
+    width: 20vw;
+    height:35vh ;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    
+
+
+    & img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+.featuers_cart_price{
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #adaeaf;
+}
