@@ -26,7 +26,7 @@ const DiscountCart =(props)=>{
                 
                 <div className='discount_details_price'>
 
-                   <span className='discount_details_price_ins'>{numberToPersian(15000)}</span>
+                    <span className='discount_details_price_ins'>{numberToPersian(15000)}</span>
                     <span className='discount_details_price_del'>{numberToPersian(20000)}</span>
                     
                 </div>
@@ -36,10 +36,8 @@ const DiscountCart =(props)=>{
                    <span><span className='discount_details_save_money_amount'>{numberToPersian(5000)}</span>هزار تومن</span>
                 </div>
 
-                
-                  <CountDwonTimer />
-                
-
+                <CountDwonTimer />
+            
             </div>
 
             <img
