@@ -31,12 +31,12 @@ const Deals = () => {
   return (
 
     //adding on scroll animation on the component
-    //class name animation valilabel on -->  https://animate.style/
+    //class name animation avalilabel on -->  https://animate.style/
 
     <ScrollAnimation
      className='animate__animated'
      animateIn="animate__fadeIn" 
-     style={{animationDuration:'2s'}}>
+     style={{animationDuration:'1s'}}>
 
 
     <div className='deals_container '>
@@ -44,7 +44,7 @@ const Deals = () => {
         <h2>فروش ویژه</h2>
 
         <Swiper
-          spaceBetween={50}
+          // spaceBetween={10}
           slidesPerView={2}
           navigation
           pagination={{ clickable: true }}

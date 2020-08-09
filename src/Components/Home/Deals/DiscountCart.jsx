@@ -1,5 +1,6 @@
 import React from 'react'
 import './DiscountCart.scss'
+import CountDwonTimer from './CountDwonTimer'
 
 
 const DiscountCart =(props)=>{
@@ -35,9 +36,9 @@ const DiscountCart =(props)=>{
                    <span><span className='discount_details_save_money_amount'>{numberToPersian(5000)}</span>هزار تومن</span>
                 </div>
 
-                <span>
-
-                </span>
+                
+                  <CountDwonTimer />
+                
 
             </div>
 
