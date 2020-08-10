@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cart.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
+// import "animate.css/animate.min.css";
 
 
 const Cart = (props) => {
@@ -18,9 +18,9 @@ const Cart = (props) => {
     return (
 
         <ScrollAnimation
-        className='animate__animated'
-        animateIn="animate__fadeIn" 
-        style={{animationDuration:'1.5s'}}>
+          className='animate__animated'
+          animateIn="animate__bounceIn" 
+          style={{animationDuration:'1s'}}>
 
             <div className='featuers_cart'>
 
