@@ -36,7 +36,7 @@
         cursor: pointer;
         margin: 1em;
         text-decoration: none;
-        color: whitesmoke;
+        // color: whitesmoke;
         position: relative;
         justify-content: center;
         align-self: center;
@@ -66,4 +66,15 @@
     height: 85%;
     // width: 100%;
 }
+}
+
+
+
+.red{
+    color: #f33c3c !important;
+}
+
+.white{
+
+    color: azure !important;
 }
