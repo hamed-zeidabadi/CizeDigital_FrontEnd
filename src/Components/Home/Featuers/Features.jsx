@@ -10,6 +10,7 @@ const Features= () => {
         
         // use setIndex as you want
         // for example force to second tab in initial render
+
         useEffect(() => {
           setIndex(1)
         }, [])
@@ -19,7 +20,7 @@ const Features= () => {
 
         <div className='tabs'>
 
-            <Tabs state={[index, setIndex]}>
+            <Tabs state={[index,setIndex]}>
 
                 <div className='tabs_container'>
 
