@@ -1,9 +1,10 @@
 import React from 'react'
 import './Cart.scss'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
-import headfav from '../../../Images/headfav.jpg'
 
-const Cart = () => {
+const Cart = (props) => {
 
     //Function for Displaying Correct Persian Number
     const numberToPersian=(number)=>{
@@ -16,13 +17,21 @@ const Cart = () => {
       
     return (
 
-        <div className='featuers_cart'>
+        <ScrollAnimation
+        className='animate__animated'
+        animateIn="animate__fadeIn" 
+        style={{animationDuration:'1s'}}>
 
-            <img className='' src={headfav} alt='headphone' />
-            <p>هدفون خفن</p>
-            <span className='featuers_cart_price'>{numberToPersian(18000)}</span>
-            
-        </div>
+            <div className='featuers_cart'>
+
+                <img className='' src={props.Image} alt='headphone' />
+                <p>هدفون خفن</p>
+                <span className='featuers_cart_price'>{numberToPersian(18000)}</span>
+                
+            </div>
+
+        
+        </ScrollAnimation>
     )
 }
 
