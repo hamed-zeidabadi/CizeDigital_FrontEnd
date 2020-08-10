@@ -32,11 +32,11 @@ const Favorites = () => {
             navigation
             pagination={{ clickable: true }}  >
 
-                <SwiperSlide> <Cart Image={headphone}/ > </SwiperSlide>
-                <SwiperSlide> <Cart Image={speaker} /> </SwiperSlide>
-                <SwiperSlide> <Cart Image={redWatch} /> </SwiperSlide>
-                <SwiperSlide> <Cart Image={speaker2} /> </SwiperSlide>
-                <SwiperSlide> <Cart Image={btx10} /> </SwiperSlide>
+                <SwiperSlide> <Cart Image={headphone} Title="هدفون بیتس" /></SwiperSlide>
+                <SwiperSlide> <Cart Image={speaker} Title=" اسپیکر بلوتوث" /></SwiperSlide>
+                <SwiperSlide> <Cart Image={redWatch} Title="ساعت هوشمند" /></SwiperSlide>
+                <SwiperSlide> <Cart Image={speaker2} Title="اسپیکر پرتابل" /></SwiperSlide>
+                <SwiperSlide> <Cart Image={btx10} Title="اسپیکرویژه" /></SwiperSlide>
                 
             </Swiper>
                 

@@ -20,12 +20,12 @@ const Cart = (props) => {
         <ScrollAnimation
         className='animate__animated'
         animateIn="animate__fadeIn" 
-        style={{animationDuration:'1s'}}>
+        style={{animationDuration:'1.5s'}}>
 
             <div className='featuers_cart'>
 
-                <img className='' src={props.Image} alt='headphone' />
-                <p>هدفون خفن</p>
+                <img src={props.Image} alt='headphone' />
+                <p>{props.Title}</p>
                 <span className='featuers_cart_price'>{numberToPersian(18000)}</span>
                 
             </div>

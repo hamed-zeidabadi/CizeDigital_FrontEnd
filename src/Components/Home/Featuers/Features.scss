@@ -3,6 +3,8 @@
     height: 60vh;
     width: 98.5vw;
     background-color: rgb(231, 232, 235);
+    background: url("../../../Images//blurred-background.jpg")
+    center/cover no-repeat;
    
 &_container{
 
@@ -11,6 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    color: aliceblue;
 
     & h2{
 
@@ -33,7 +36,7 @@
         cursor: pointer;
         margin: 1em;
         text-decoration: none;
-        color: black;
+        color: whitesmoke;
         position: relative;
         justify-content: center;
         align-self: center;
