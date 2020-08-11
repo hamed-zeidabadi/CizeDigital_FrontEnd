@@ -1,12 +1,14 @@
 import React from 'react'
 import './DiscountCart.scss'
+import CountDwonTimer from './CountDwonTimer'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const DiscountCart =(props)=>{
 
 
 
-    //Function for Displaying Correct Number to Persian Format
+    //Function for Displaying Correct Persian Number
     const numberToPersian=(number)=>{
 
       const persianNumber=  new Intl.NumberFormat("fa",{ useGrouping: false }).format(number)
@@ -17,7 +19,11 @@ const DiscountCart =(props)=>{
 
     return(
 
+
+        
         <div className='discount_container'>
+
+            
 
             <div className='discount_details'>
 
@@ -25,7 +31,7 @@ const DiscountCart =(props)=>{
                 
                 <div className='discount_details_price'>
 
-                   <span className='discount_details_price_ins'>{numberToPersian(15000)}</span>
+                    <span className='discount_details_price_ins'>{numberToPersian(15000)}</span>
                     <span className='discount_details_price_del'>{numberToPersian(20000)}</span>
                     
                 </div>
@@ -35,10 +41,8 @@ const DiscountCart =(props)=>{
                    <span><span className='discount_details_save_money_amount'>{numberToPersian(5000)}</span>هزار تومن</span>
                 </div>
 
-                <span>
-
-                </span>
-
+                <CountDwonTimer />
+            
             </div>
 
             <img
@@ -46,7 +50,11 @@ const DiscountCart =(props)=>{
              src={props.src}  alt={props.alt}/>
 
 
+
         </div>
+
+   
+
     )
 
 
