@@ -30,43 +30,50 @@ const Deals = () => {
 
   return (
 
-    //adding on scroll animation on the component
-    //class name animation valilabel on -->  https://animate.style/
 
-    <ScrollAnimation
-     className='animate__animated'
-     animateIn="animate__fadeInUp" 
-     style={{animationDuration:'1s'}}>
+    <div className='deals_wrapper'>
 
+      <ScrollAnimation
+      className='animate__animated'
+      animateIn="animate__fadeIn" 
+      style={{animationDuration:'1s'}}>
 
-    <div className='deals_container '>
-
-        <h2>فروش ویژه</h2>
-
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={2}
-          navigation
-          pagination={{ clickable: true }}
-          // onSlideChange={() => console.log('slide change')}
-          // onSwiper={(swiper) => console.log(swiper)}
-
-           >
-              <SwiperSlide> <DiscountCart src={headphone_bt} title='هدفون بلوتوث'/> </SwiperSlide>
-              <SwiperSlide> <DiscountCart src={flycamera} title='دوربین پرنده'/> </SwiperSlide>
-              <SwiperSlide> <DiscountCart src={nova3} title='گوشی نوا 3'/> </SwiperSlide>
-              <SwiperSlide> <DiscountCart src={doorbell} title='زنگ ویدئویی '/> </SwiperSlide>
-              <SwiperSlide> <DiscountCart src={speaker} title=' اسپیکر سخنرانی'/> </SwiperSlide>
-
-         </Swiper>
+      <div className='discount_container'>
 
 
-      
-     
+      <div className='deals_container '>
+
+      <h2>فروش ویژه</h2>
+
+      <Swiper
+        // spaceBetween={10}
+        slidesPerView={2}
+        navigation
+        pagination={{ clickable: true }}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
+
+        >
+            <SwiperSlide> <DiscountCart src={headphone_bt} title='هدفون بلوتوث'/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={flycamera} title='دوربین پرنده'/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={nova3} title='گوشی نوا 3'/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={doorbell} title='زنگ ویدئویی '/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={speaker} title=' اسپیکر سخنرانی'/> </SwiperSlide>
+
+      </Swiper>
+
+    </div>
 
     </div>
 
     </ScrollAnimation>
+
+    </div>
+
+
+
+
+    
   
   )
 };

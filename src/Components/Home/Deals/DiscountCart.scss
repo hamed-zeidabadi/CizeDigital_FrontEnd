@@ -1,11 +1,15 @@
 .discount{
 
+
+
     &_container{
 
         display:flex;
-        height:70%;
-        width: 80%;
-        background-color: #F0F1F4;
+        height:80%;
+        width: 85%;
+        border-radius: 7px;
+        background: rgb(7, 119, 218);
+        box-shadow:  -5px 5px 40px #0377ad;
         // margin-top: 10%;
     
     }
@@ -36,9 +40,9 @@
 
             &_ins{
 
-                font-size: 25px;
-                font-weight: 500;
-                color: #f33c3c;
+                font-size: 28px;
+                font-weight: bold;
+                color: #adaeaf;
             }
 
             &_del{
@@ -66,12 +70,12 @@
 
             position: relative;
             height: 36px;
-            width: auto;
+            width: 11em;
             background: linear-gradient(to left, #45b649 0%, #6ce86d 50%, #45b649 100%);
             background-size: 200% 100% !important;
             border-radius: 34px 0 0 34px;
             margin-left: auto;
-            margin-right: -27px;
+            margin-right: -30px;
             text-transform: uppercase;
             
 
@@ -92,7 +96,8 @@
             }
 
             &_amount{
-               font-weight:bold;
+
+                font-weight:bold;
                 color: rgb(243, 22, 22);
                 font-size: 1.3em;
                 padding: 5px;
@@ -105,6 +110,8 @@
 
         width: 50%;
         height: 90%;
+        border-radius: 10px;
+        box-shadow:5px 5px 14px 0px rgba(50, 50, 50, 0.75);
 
     }
 }

@@ -1,0 +1,31 @@
+.countdwon_timer{
+
+    // display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    & p{
+        align-self: flex-start;
+        padding-left: 60px;
+    }
+
+  
+
+    & span{
+
+        padding: 8px;
+        border: 2px solid rgb(187, 183, 183);
+        border-radius: 25px;
+        margin: 2px;
+    }
+
+    & svg{
+
+        font-size: 1.7em;
+        margin: 5px;
+        
+    }
+
+}
