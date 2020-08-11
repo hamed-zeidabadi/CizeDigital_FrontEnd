@@ -17,9 +17,32 @@ const Footer = () => {
 
             <div className='footer_top'>
 
+                <div className='footer_top_right'>
+                    <h3>سایز دیجیتال</h3>
+                    <p>برای شما که سخت پسندید...</p>
+                    <p>ما بهترین هدفون ها را گردآوردی کرده ایم</p>
+                    <p>ایمیل :example@fellan.com</p>
+                    <p>شماره تماس : 0912000000</p>
+                    <p>شماره بین المل : 0982220000</p>
+                    
+
+                </div>
+
+                <div className='footer_top_ceneter_right'>
+
+                </div>
+
+                <div className='footer_top_center_left'>
+
+                </div>
+
+                <div className='footer_top_left'>
+
+                </div>
+
             </div>
 
-            
+
             <div className='footer_bottom'>
 
             </div>
