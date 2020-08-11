@@ -1,10 +1,10 @@
 import React from 'react'
-import "./GamerBanner.scss"
+import "./MusicLover.scss"
 
 // import dual from "../../../Images/gamer_banner/dual.png"
 import dual from "../../../Images/headphone3.png"
 
-const GamerBanner = () => {
+const MusicLover = () => {
 
     return (
 
@@ -24,4 +24,4 @@ const GamerBanner = () => {
     )
 }
 
-export default GamerBanner
+export default MusicLover

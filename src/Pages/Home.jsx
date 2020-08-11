@@ -4,7 +4,7 @@ import Deals from "./../Components/Home/Deals/Deals";
 import Features from "./../Components/Home/Featuers/Features";
 import Loading from "../Components/Home/Hero/Loading";
 import Article from "../Components/Home/Article/Article";
-import GamerBanner from "../Components/Home/GamerBanner/GamerBanner"
+import MusicLover from "../Components/Home/MusicLover/MusicLover"
 
 
 
@@ -27,7 +27,7 @@ const Home = () => {
             <Deals />
             <Features />
             <Article />
-            <GamerBanner />
+            <MusicLover />
           </>
         ) : (
           <Loading />
