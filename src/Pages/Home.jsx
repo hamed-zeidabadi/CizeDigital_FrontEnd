@@ -5,6 +5,7 @@ import Features from "./../Components/Home/Featuers/Features";
 import Loading from "../Components/Home/Hero/Loading";
 import Article from "../Components/Home/Article/Article";
 import MusicLover from "../Components/Home/MusicLover/MusicLover"
+import Footer from "../Components/Home/Footer/Footer"
 
 
 
@@ -28,6 +29,7 @@ const Home = () => {
             <Features />
             <Article />
             <MusicLover />
+            <Footer />
           </>
         ) : (
           <Loading />
