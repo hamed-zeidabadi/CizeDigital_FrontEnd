@@ -1,6 +1,7 @@
 import React from 'react'
 import './DiscountCart.scss'
 import CountDwonTimer from './CountDwonTimer'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const DiscountCart =(props)=>{
@@ -18,7 +19,11 @@ const DiscountCart =(props)=>{
 
     return(
 
+
+        
         <div className='discount_container'>
+
+            
 
             <div className='discount_details'>
 
@@ -45,7 +50,11 @@ const DiscountCart =(props)=>{
              src={props.src}  alt={props.alt}/>
 
 
+
         </div>
+
+   
+
     )
 
 
