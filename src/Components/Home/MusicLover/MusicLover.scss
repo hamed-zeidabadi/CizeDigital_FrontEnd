@@ -11,16 +11,22 @@
         display: flex;
         flex-direction: row;
         // align-items: center;
+
+        &:hover img{
+
+            transform: scale(1.1)
+        }
     
     }
 
     &_image{
 
-        height: 95%;
+        height: 92%;
         width: 20%;
         padding: 5px;
         align-self: center;
         margin-right: 1em;
+
     }
 
    &_text{
@@ -33,7 +39,7 @@
         display: flex;
         align-items: center;
 
-        .btn{
+        .btn_gamer_banner{
 
             color: #fff;
             cursor: pointer;
