@@ -20,7 +20,7 @@ const Footer = () => {
             <div className='footer_top'>
 
                 <div className='footer_top_right'>
-                    <h3>سایز دیجیتال</h3>
+                    <h2>سایز دیجیتال</h2>
                     <p>برای شما که سخت پسندید...</p>
                     <p>ما بهترین هدفون ها را گردآوردی کرده ایم</p>
                     <p>ایمیل :example@fellan.com</p>
@@ -83,9 +83,10 @@ const Footer = () => {
                         <ul>
                             <li> <FaRegCopyright /> </li>
                             <li>تمامی حقوق برای   
-                            <a href='https://github.com/hamed-zeidabadi' target='blanck'> امین </a>
-                            و <a href='https://github.com/amin-da' target='blanck'> حامد </a>
+                            <a href='https://github.com/amin-da' target='blanck'> امین </a>
+                            و <a href='https://github.com/hamed-zeidabadi' target='blanck'> حامد </a>
                             محفوظ است</li>
+                            
                         </ul>
                      </div>
 

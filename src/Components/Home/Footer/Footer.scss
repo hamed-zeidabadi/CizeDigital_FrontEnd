@@ -45,36 +45,9 @@
         }
 
         &_right{
+
             width: 20%;
 
-            &_social_media {
-                display: flex;
-                flex-direction: column;
-              }
-            
-              &_icons {
-                display: flex;
-                justify-content: center;
-                align-self: center;
-              }
-            
-              & h5 {
-                align-self: center;
-                margin-bottom: 0.8em;
-                font-size: 1em;
-              }
-            
-              & ul {
-                display: flex;
-              }
-            
-              & li {
-                list-style: none;
-                margin: 0 15px 0 15px;
-                & svg {
-                  font-size: 1.3em;
-                }
-              }
         }
     }
 }
@@ -85,8 +58,10 @@
 
     display: flex;
     justify-content: space-between;
-    height: 23%;
+    height: 24%;
     align-items: center;
+
+
 
     &_right{
 
@@ -129,7 +104,8 @@
     }
 
 
-    .footer_bottom_left {
+    
+    &_left {
         
         height: auto;
         color: #fff;
@@ -168,7 +144,8 @@
             list-style: none;
             margin: 0 3px 0 2px;
             & svg {
-              font-size: 11px;
+                margin-top: .3em;
+              font-size: 15px;
             }
           }
       
