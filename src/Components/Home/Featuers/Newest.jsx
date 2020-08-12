@@ -11,7 +11,7 @@ import './Favorites.scss'
 import headphone from '../../../Images/features/headphone.jpg'
 import btx10 from '../../../Images/features/btx10.jpg'
 import redWatch from '../../../Images/features/redWatch.jpg'
-import iphone from '../../../Images/best_seller/iphone.jpg'
+import speaker from '../../../Images/features/speaker.jpg'
 import speaker2 from '../../../Images/features/speaker2.jpg'
 
 
@@ -32,7 +32,7 @@ const Newest = () => {
             pagination={{ clickable: true }}  >
 
                 <SwiperSlide> <Cart Image={headphone} Title="هدفون بیتس" /></SwiperSlide>
-                <SwiperSlide> <Cart Image={iphone} Title="آیفون مکس" /></SwiperSlide>
+                <SwiperSlide> <Cart Image={speaker} Title=" اسپیکر بلوتوث" /></SwiperSlide>
                 <SwiperSlide> <Cart Image={redWatch} Title="ساعت هوشمند" /></SwiperSlide>
                 <SwiperSlide> <Cart Image={speaker2} Title="اسپیکر پرتابل" /></SwiperSlide>
                 <SwiperSlide> <Cart Image={btx10} Title="اسپیکرویژه" /></SwiperSlide>
