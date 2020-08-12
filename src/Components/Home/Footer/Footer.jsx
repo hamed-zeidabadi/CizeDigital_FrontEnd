@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.scss"
-import { FaGithubAlt, FaInstagram, FaTwitter ,FaYoutube,FaRegCopyright } from "react-icons/fa";
+import { FaGithubAlt, FaInstagram, FaTwitter ,FaTelegramPlane,FaRegCopyright } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -59,13 +59,13 @@ const Footer = () => {
                                 <FaGithubAlt />
                                 </li>
                                 <li>
-                                <FaInstagram />
+                                <FaTwitter />
                                 </li>
                                 <li>
-                                <FaTwitter />
+                                <FaInstagram />
                                 </li> 
                                 <li>
-                                <FaYoutube />
+                                <FaTelegramPlane />
                                 </li>
                             </ul>
                         </nav>
