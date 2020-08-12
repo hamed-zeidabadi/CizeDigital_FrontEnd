@@ -1,0 +1,51 @@
+.footer{
+
+    &_container{
+
+        height: 50vh;
+        width: 98.7vw;
+        background: #24C6DC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        // position: relative;
+        // width: 100%;
+        // overflow: hidden;
+        // line-height: 0;
+
+        // & svg{
+
+        //     top: -2px;
+        //     left: 0;
+        //     position: absolute;
+        //     display: block;
+        //     width: calc(108% + 1.3px);
+        //     height: 100px;
+        //     transform: rotateY(180deg);
+
+        // }
+
+        // .shape-fill {
+        //     fill: rgb(226, 216, 216);
+        // }
+        
+
+    }
+
+    &_top{
+
+        height: 80%;
+        width: 100%;
+        display: flex;
+        padding: 1em;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(196, 193, 193);
+
+        & p{
+            margin-top:10px;
+        }
+
+        &_right{
+            width: 20%;
+        }
+    }
+}
