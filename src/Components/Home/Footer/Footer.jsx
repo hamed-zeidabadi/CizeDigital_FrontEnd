@@ -24,21 +24,51 @@ const Footer = () => {
                     <p>برای شما که سخت پسندید...</p>
                     <p>ما بهترین هدفون ها را گردآوردی کرده ایم</p>
                     <p>ایمیل :example@fellan.com</p>
-                    <p>شماره تماس : 091200000000</p>
-                    <p>شماره بین الملل : 09822200000</p>
+                    <p>شماره تماس : 09200000000</p>
+                    <p>شماره ثابت : 09822200000</p>
 
                 </div>
 
 
-                <div className='footer_top_ceneter_right'>
+                <div className='footer_top_center_right'>
+
+                    <h2>محصولات</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">هدفون و اسپیکر</a>
+                                <a href="">کیس و قاب</a>
+                                <a href="">پاور و کابل</a>
+                                <a href="">گیمینگ</a>
+                                <a href="">مد</a>
+                                <a href="">ویژه</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                 </div>
 
                 <div className='footer_top_center_left'>
 
+                 <h2>خدمات</h2>
+                 <nav>
+                        <ul>
+                            <li>
+                                <a href="">مشاوره</a>
+                                <a href="">فروشگاه فیزیکی</a>
+                                <a href="">ثبت محصول</a>
+                                <a href="">گارانتی</a>
+                                <a href="">قرعه کشی</a>
+                                <a href="">خبرنامه</a>
+                            </li>
+                        </ul>
+                    </nav>
+
                 </div>
 
                 <div className='footer_top_left'>
+
+                    <h2>خبرنامه</h2>
 
                 </div>
 
