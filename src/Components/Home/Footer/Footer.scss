@@ -33,7 +33,7 @@
 
     &_top{
 
-        height: 80%;
+        height: 75%;
         width: 100%;
         display: flex;
         padding: 1em;
@@ -85,7 +85,7 @@
 
     display: flex;
     justify-content: space-between;
-    height: 18%;
+    height: 23%;
     align-items: center;
 
     &_right{
@@ -118,7 +118,12 @@
             list-style: none;
             margin: 0 15px 0 15px;
             & svg {
-              font-size: 1.3em;
+                cursor: pointer;
+              font-size: 1.5em;
+
+              &:hover{
+                color: rgb(214, 199, 199);
+            }
             }
           }
     }
@@ -150,10 +155,13 @@
         }
       
         &_copyright {
+            
           display: flex;
       
           & ul {
+            position: relative;
             display: flex;
+
           }
       
           & li {
@@ -168,17 +176,44 @@
             text-decoration: none;
             color: #fff;
             padding: 3px;
+
+            &:hover{
+                color: rgb(224, 21, 21);
+            }
+
           }
+
+         
         }
       
         &_base_links {
-          li {
+
             position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: .3em;
+                width: 1px;
+                height: 1.07143rem;
+                transform: translateY(-50%);
+                border-right: 2px solid #7f817a;
+              }
+
+          li {
+
+            position: relative;
+
           }
       
           a {
             color: #fff;
             text-decoration: none;
+
+            &:hover{
+                color: rgb(224, 21, 21);
+            }
           }
       
           &_after::after {

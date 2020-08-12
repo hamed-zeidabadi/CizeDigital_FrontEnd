@@ -49,42 +49,42 @@ const Footer = () => {
 
                 <div className='footer_bottom_right'>
 
-                <div className='footer_bottom_right_social_media'>
+                    <div className='footer_bottom_right_social_media'>
 
-                    <h5>ما را دنبال کنید</h5>
+                        <h5>ما را دنبال کنید</h5>
 
-                    <nav className="footer_bottom_right_social_media_icons'">
-                        <ul>
-                            <li>
-                            <FaGithubAlt />
-                            </li>
-                            <li>
-                            <FaInstagram />
-                            </li>
-                            <li>
-                            <FaTwitter />
-                            </li> 
-                            <li>
-                            <FaYoutube />
-                            </li>
-                        </ul>
-                    </nav>
+                        <nav className="footer_bottom_right_social_media_icons'">
+                            <ul>
+                                <li>
+                                <FaGithubAlt />
+                                </li>
+                                <li>
+                                <FaInstagram />
+                                </li>
+                                <li>
+                                <FaTwitter />
+                                </li> 
+                                <li>
+                                <FaYoutube />
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
 
                 </div>
 
-                </div>
 
+            <div className='footer_bottom_left'>
 
-                <div className='footer_bottom_left'>
-
-                 <div className="footer_bottom_left_container">
+              <div className="footer_bottom_left_container">
 
                      <div className="footer_bottom_left_copyright">
                         <ul>
                             <li> <FaRegCopyright /> </li>
                             <li>تمامی حقوق برای   
-                            <a href='https://github.com/hamed-zeidabadi' target='blanck'> حامد</a>
-                            و <a href='https://github.com/amin-da' target='blanck'> امین </a>
+                            <a href='https://github.com/hamed-zeidabadi' target='blanck'> امین </a>
+                            و <a href='https://github.com/amin-da' target='blanck'> حامد </a>
                             محفوظ است</li>
                         </ul>
                      </div>
@@ -96,9 +96,9 @@ const Footer = () => {
                         </ul>
                      </div>
 
-                </div>
+               </div>
 
-                </div>
+            </div>
 
             </div>
             
