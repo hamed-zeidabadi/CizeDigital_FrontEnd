@@ -46,6 +46,153 @@
 
         &_right{
             width: 20%;
+
+            &_social_media {
+                display: flex;
+                flex-direction: column;
+              }
+            
+              &_icons {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+              }
+            
+              & h5 {
+                align-self: center;
+                margin-bottom: 0.8em;
+                font-size: 1em;
+              }
+            
+              & ul {
+                display: flex;
+              }
+            
+              & li {
+                list-style: none;
+                margin: 0 15px 0 15px;
+                & svg {
+                  font-size: 1.3em;
+                }
+              }
         }
     }
+}
+
+
+
+.footer_bottom{
+
+    display: flex;
+    justify-content: space-between;
+    height: 18%;
+    align-items: center;
+
+    &_right{
+
+        padding: 7px;
+
+        &_social_media {
+            display: flex;
+            flex-direction: column;
+          }
+        
+          &_icons {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+          }
+        
+          & h5 {
+              
+            align-self: center;
+            margin-bottom: 0.8em;
+            font-size: 1em;
+          }
+        
+          & ul {
+            display: flex;
+          }
+        
+          & li {
+            list-style: none;
+            margin: 0 15px 0 15px;
+            & svg {
+              font-size: 1.3em;
+            }
+          }
+    }
+
+
+    .footer_bottom_left {
+        
+        height: auto;
+        color: #fff;
+      
+        &_container {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0.5em;
+          padding: 5px;
+          // width: ;
+      
+          & ul {
+            display: flex;
+          }
+      
+          & li {
+            list-style: none;
+            margin: 0 15px 0 15px;
+            & svg {
+              font-size: 1em;
+            }
+          }
+        }
+      
+        &_copyright {
+          display: flex;
+      
+          & ul {
+            display: flex;
+          }
+      
+          & li {
+            list-style: none;
+            margin: 0 3px 0 2px;
+            & svg {
+              font-size: 11px;
+            }
+          }
+      
+          & a {
+            text-decoration: none;
+            color: #fff;
+            padding: 3px;
+          }
+        }
+      
+        &_base_links {
+          li {
+            position: relative;
+          }
+      
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+      
+          &_after::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            width: 1px;
+            height: 1.07143rem;
+            transform: translateY(-50%);
+            border-right: 2px solid #7f817a;
+          }
+        }
+      }
+
+
 }

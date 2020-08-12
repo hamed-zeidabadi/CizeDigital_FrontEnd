@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Footer.scss"
+import { FaGithubAlt, FaInstagram, FaTwitter ,FaYoutube,FaRegCopyright } from "react-icons/fa";
+
 
 const Footer = () => {
     return (
 
-        <div className='footer_container'>
+        <footer className='footer_container'>
             
             {/* <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 
@@ -22,11 +24,11 @@ const Footer = () => {
                     <p>برای شما که سخت پسندید...</p>
                     <p>ما بهترین هدفون ها را گردآوردی کرده ایم</p>
                     <p>ایمیل :example@fellan.com</p>
-                    <p>شماره تماس : 0912000000</p>
-                    <p>شماره بین المل : 0982220000</p>
-                    
+                    <p>شماره تماس : 091200000000</p>
+                    <p>شماره بین الملل : 09822200000</p>
 
                 </div>
+
 
                 <div className='footer_top_ceneter_right'>
 
@@ -45,10 +47,63 @@ const Footer = () => {
 
             <div className='footer_bottom'>
 
+                <div className='footer_bottom_right'>
+
+                <div className='footer_bottom_right_social_media'>
+
+                    <h5>ما را دنبال کنید</h5>
+
+                    <nav className="footer_bottom_right_social_media_icons'">
+                        <ul>
+                            <li>
+                            <FaGithubAlt />
+                            </li>
+                            <li>
+                            <FaInstagram />
+                            </li>
+                            <li>
+                            <FaTwitter />
+                            </li> 
+                            <li>
+                            <FaYoutube />
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                </div>
+
+
+                <div className='footer_bottom_left'>
+
+                 <div className="footer_bottom_left_container">
+
+                     <div className="footer_bottom_left_copyright">
+                        <ul>
+                            <li> <FaRegCopyright /> </li>
+                            <li>تمامی حقوق برای   
+                            <a href='https://github.com/hamed-zeidabadi' target='blanck'> حامد</a>
+                            و <a href='https://github.com/amin-da' target='blanck'> امین </a>
+                            محفوظ است</li>
+                        </ul>
+                     </div>
+
+                    <div className="footer_bottom_left_base_links">
+                        <ul>
+                            <li > <a href='#'>شرایط استفاده </a></li>
+                            <li className='footer_bottom_left_base_links_after'> <a href='#'>حقوق کاربران</a></li>
+                        </ul>
+                     </div>
+
+                </div>
+
+                </div>
+
             </div>
             
 
-        </div>
+        </footer>
     )
 }
 
