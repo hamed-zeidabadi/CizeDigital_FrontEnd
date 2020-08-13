@@ -69,6 +69,13 @@ const Footer = () => {
                 <div className='footer_top_left'>
 
                     <h2>خبرنامه</h2>
+                    <p>برای اطلاع از آخرین اخبار و تخفیف ها عضو خبرنامه ما شوید</p>
+                    <div className='footer_top_left_newsletter_container'>
+
+                      <input type="text" placeholder='لطفا ایمیل خود را وارد نمایید...'/>
+                      <button className='newsletter_btn'>ثبت نام</button>
+                       
+                    </div>
 
                 </div>
 
