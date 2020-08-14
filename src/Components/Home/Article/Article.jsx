@@ -6,6 +6,8 @@ import img2 from "../../../Images/Article/2.jpg";
 import img3 from "../../../Images/Article/3.jpg";
 import img4 from "../../../Images/Article/4.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
+import "./MediaQueries.scss";
+
 
 const Article = () => {
   const [state, setstate] = React.useState([

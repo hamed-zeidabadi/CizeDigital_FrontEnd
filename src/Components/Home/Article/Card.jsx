@@ -1,5 +1,7 @@
 import React from "react";
 import "./Card.scss";
+import "./MediaQueries.scss";
+
 const Card = ({ img, title, subtitle }) => {
   return (
     <>
@@ -21,10 +23,5 @@ const Card = ({ img, title, subtitle }) => {
     </>
   );
 };
-
-
-
-
-
 
 export default Card;
