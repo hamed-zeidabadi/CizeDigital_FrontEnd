@@ -62,9 +62,8 @@
         &_right {
           height: 91vh;
           width: 100%;
-          // background: url("../../../Images//blurred-background.jpg")
-          //   center/cover no-repeat;
-          background-color: yellow;
+          background: url("../../../Images//blurred-background.jpg")
+            center/cover no-repeat;
         }
 
         &_left {
@@ -194,196 +193,6 @@
       }
     }
   }
-
-  //style for swiper top
-  #swiper_top {
-    margin: 30px auto;
-    display: flex;
-    // background-color: black;
-    color: white;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    & nav {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    & ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    & li {
-      list-style: none;
-    }
-
-    & nav ul li a {
-      list-style: none;
-      text-decoration: none;
-      text-align: center;
-      color: white;
-      padding: 2px;
-      &:hover {
-        color: #f33c3c;
-      }
-    }
-
-    & button {
-      margin-top: 20px;
-
-      background-color: black;
-      border: 1px solid #f33c3c;
-
-      border-radius: 5px;
-      &:hover {
-        border: 1px solid #0074d9;
-        border-radius: 5px;
-      }
-    }
-
-    & p {
-      font-size: 1.4em;
-      color: white;
-    }
-  }
-
-  //style for card
-
-  #card {
-    opacity: 0.8 !important;
-
-    .flip-boxes {
-      justify-content: center;
-    }
-    .flip-box {
-      display: flex;
-      align-content: stretch;
-      min-height: 200px;
-      flex-wrap: wrap;
-      position: relative;
-      border: 10px solid transparent;
-      padding: 0;
-      border-top: 0;
-      -webkit-perspective: 1000;
-      perspective: 1000;
-
-      &:hover {
-        .back {
-          transform: rotateY(0deg);
-          z-index: 10;
-        }
-
-        .front {
-          transform: rotateY(180deg);
-          z-index: -1;
-        }
-      }
-
-      .back,
-      .front {
-        position: relative;
-        // background-color: #1b2d61;
-        background-color: #0074d9;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex: 0 0 100%;
-        -webkit-transition: all 1s cubic-bezier(0.5, 1, 0.5, 1);
-        transition: all 1s cubic-bezier(0.5, 1.3, 0.5, 1.3);
-        transform-style: preserve-3d;
-        background-size: cover;
-        background-position: center;
-      }
-
-      .back {
-        background-color: #f33c3c;
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: -1;
-        transform: rotateY(-180deg);
-
-        &:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 30px;
-          height: 30px;
-          border: 15px solid transparent;
-          border-bottom-color: white;
-          border-left-color: white;
-        }
-      }
-
-      .front {
-        z-index: 10;
-
-        .content {
-          font-size: 2rem;
-        }
-
-        &:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 30px;
-          height: 30px;
-          border: 15px solid #f33c3c;
-          border-bottom-color: white;
-          border-right-color: white;
-        }
-      }
-
-      .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        -webkit-transform: translateZ(50px);
-        transform: translateZ(50px);
-        text-shadow: 0px 0px 2px black;
-      }
-    }
-  }
-
-  #swiper_main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & .swiper_main_item {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-  }
-
-  //fix style swiper
-  .swiper-wrapper {
-    width: 100% !important ;
-    height: 100% !important;
-  }
-  .swiper-pagination-bullet {
-    background: #f33c3c !important;
-    width: 5px !important;
-    height: 5px !important;
-    border-radius: 0% !important;
-  }
 }
 
 //========================================================
@@ -394,6 +203,10 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  // responsive Hero.jsx
+  .swiper-wrapper {
+    width: 100% !important;
+  }
   .header {
     &_home {
       &_hero {
@@ -401,62 +214,90 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        /*
-      
-      style for right page layout
-
-
-    */
+        width: 100%;
 
         &_right {
           height: 91vh;
-          width: 50%;
-          // background: url("../../../Images//blurred-background.jpg")
-          //   center/cover no-repeat;
-          background-color: green;
+          width: 100%;
+          background: url("../../../Images//blurred-background.jpg")
+            center/cover no-repeat;
         }
-
-        /*
-
-      style for left page layout
-
-    */
 
         &_left {
-          height: 91vh;
-          width: 50%;
-          background: url(../../../Images/bg4.jpg) center/cover no-repeat;
-
-          // top
-
-          &_top {
-            width: 100%;
-            height: 50%;
-            overflow: hidden;
-            justify-content: center;
-            align-self: center;
-            text-align: center;
-            // background-color: black;
-          }
-
-          //bottom
-
-          &_bottom {
-            width: 100%;
-            height: 50%;
-            overflow: hidden;
-            justify-content: center;
-            align-self: center;
-            text-align: center;
-            // background-color: black;
-            position: relative;
-          }
-
+          display: none;
           #BoxLoading {
-            position: absolute;
           }
         }
+      }
+    }
+  }
+
+  // responsive swiper.jsx
+
+  .content {
+    & .right {
+      width: 40% !important;
+      height: 100%;
+      position: relative;
+      display: none;
+
+      &_img {
+        margin-top: 8px !important;
+        margin-right: 25px !important;
+        width: 70%;
+        height: 70%;
+        transition-delay: 2s;
+        transition: all 3s;
+        transform: translateX(-10px) rotateZ(-5deg);
+
+        &:hover {
+          transition: all 2s;
+          transform: translateX(20px) rotateZ(15deg);
+        }
+      }
+    }
+
+    & .left {
+      width: 60% !important;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &_title {
+        font-family: "IRANSans_Bold" !important;
+        font-size: 1.8em !important;
+        color: #f33c3c;
+        margin-top: -20px;
+        margin-left: 10px;
+      }
+      &_btn {
+        width: 200px !important;
+        height: 50px !important;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+        font-size: 1.2em;
+        background: none;
+        cursor: pointer;
+        padding: 25px 30px;
+        margin: 40px 30px 15px 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        overflow: hidden;
       }
     }
   }
