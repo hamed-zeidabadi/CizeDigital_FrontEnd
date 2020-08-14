@@ -1,4 +1,5 @@
 import "./Swiper.scss";
+import "./MediaQueries.scss";
 
 import React, { useState, useEffect } from "react";
 import "swiper/swiper.scss";

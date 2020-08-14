@@ -1,4 +1,3 @@
-
 .header {
   &_home {
     &_hero {
@@ -17,9 +16,8 @@
       &_right {
         height: 91vh;
         width: 70%;
-        // background: url("../../../Images//blurred-background.jpg") center/cover
-        //   no-repeat;
-        background-color: black;
+        background: url("../../../Images//blurred-background.jpg") center/cover
+          no-repeat;
       }
 
       /*

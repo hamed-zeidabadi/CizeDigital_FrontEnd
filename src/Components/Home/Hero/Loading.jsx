@@ -1,5 +1,7 @@
 import React from "react";
 import { SemipolarLoading } from "react-loadingg";
+import "./MediaQueries.scss";
+
 import "./Hero.scss";
 const Loading = () => {
   return (
