@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.scss";
+import "./MediaQueries.scss";
 import Slider from "./Slider";
 import SwiperTop from "./SwiperTop";
 // import Loading from "./Loading";

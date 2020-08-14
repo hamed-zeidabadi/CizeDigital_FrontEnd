@@ -1,16 +1,4 @@
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-  
-}
-
-//========================================================
-
-/* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
@@ -26,6 +14,31 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  // responsive Hero.jsx
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_right {
+          height: 91vh;
+          width: 100%;
+          background: url("../../../Images//blurred-background.jpg")
+            center/cover no-repeat;
+        }
+
+        &_left {
+          display: none;
+          #BoxLoading {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
 }
 
 //========================================================
@@ -36,6 +49,98 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*
+      
+      style for right page layout
+
+
+    */
+
+        &_right {
+          height: 91vh;
+          width: 50%;
+          // background: url("../../../Images//blurred-background.jpg")
+          //   center/cover no-repeat;
+          background-color: yellow;
+        }
+
+        /*
+
+      style for left page layout
+
+    */
+
+        &_left {
+          height: 91vh;
+          width: 50%;
+          background: url(../../../Images/bg4.jpg) center/cover no-repeat;
+
+          // top
+
+          &_top {
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            // background-color: black;
+          }
+
+          //bottom
+
+          &_bottom {
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            // background-color: black;
+            position: relative;
+          }
+
+          #BoxLoading {
+            position: absolute;
+          }
+        }
+      }
+    }
+  } // responsive Hero.jsx
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &_right {
+          height: 91vh;
+          width: 100%;
+          // background: url("../../../Images//blurred-background.jpg")
+          //   center/cover no-repeat;
+          background-color: yellow;
+        }
+
+        &_left {
+          display: none;
+          #BoxLoading {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
 }
 
 //========================================================
@@ -46,4 +151,70 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*
+      
+      style for right page layout
+
+
+    */
+
+        &_right {
+          height: 91vh;
+          width: 50%;
+          // background: url("../../../Images//blurred-background.jpg")
+          //   center/cover no-repeat;
+          background-color: green;
+        }
+
+        /*
+
+      style for left page layout
+
+    */
+
+        &_left {
+          height: 91vh;
+          width: 50%;
+          background: url(../../../Images/bg4.jpg) center/cover no-repeat;
+
+          // top
+
+          &_top {
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            // background-color: black;
+          }
+
+          //bottom
+
+          &_bottom {
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            // background-color: black;
+            position: relative;
+          }
+
+          #BoxLoading {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
 }
