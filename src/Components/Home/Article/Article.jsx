@@ -36,12 +36,12 @@ const Article = () => {
   ]);
   return (
     <>
-      <ScrollAnimation
-        className="animate__animated"
-        animateIn="animate__fadeInUp"
-        style={{ animationDuration: "2s" }}
-      >
-        <div className="article">
+      <div className="article">
+        <ScrollAnimation
+          className="animate__animated"
+          animateIn="animate__fadeInRight"
+          style={{ animationDuration: "1.5s" }}
+        >
           <div className="article_title">
             <h3>آخرین مقالات مجله</h3>
           </div>
@@ -54,8 +54,8 @@ const Article = () => {
               />
             ))}
           </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
     </>
   );
 };

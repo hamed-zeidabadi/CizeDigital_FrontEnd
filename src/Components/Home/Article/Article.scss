@@ -5,7 +5,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../../../Images/Article/bg.jpg) center/cover;
+  // background: url(../../../Images/blurred-background.jpg) center/cover;
+  background: #24c6dc; 
+  background: -webkit-linear-gradient(
+    to left,
+    #514a9d,
+    #24c6dc
+  ); 
+  background: linear-gradient(
+    to left,
+    #514a9d,
+    #24c6dc
+  ); 
+  & div.animate__animated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &_title {
     color: black;
