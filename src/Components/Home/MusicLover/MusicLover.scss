@@ -2,7 +2,7 @@
 
     &_container{
 
-        width: 98.6vw;
+        width: 98.7vw;
         height: 32vh;
         background: rgb(245,58,223);
         background: -moz-linear-gradient(270deg, rgba(245,58,223,1) 0%, rgba(78,199,224,1) 100%);
@@ -11,16 +11,22 @@
         display: flex;
         flex-direction: row;
         // align-items: center;
+
+        &:hover img{
+
+            transform: scale(1.08)
+        }
     
     }
 
     &_image{
 
-        height: 95%;
+        height: 92%;
         width: 20%;
         padding: 5px;
         align-self: center;
         margin-right: 1em;
+
     }
 
    &_text{
@@ -33,7 +39,7 @@
         display: flex;
         align-items: center;
 
-        .btn{
+        .btn_gamer_banner{
 
             color: #fff;
             cursor: pointer;

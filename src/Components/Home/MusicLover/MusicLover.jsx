@@ -14,7 +14,7 @@ const MusicLover = () => {
 
               <p className="gamer_banner_text_title">عاشقان موسیقی</p>
               <p className=" gamer_banner_text_discount">تا 30 درصد برای بروزرسانی تجهیزات تخفیف بگیرید</p>
-              <a className='btn effect'><span>فروشگاه</span></a>
+              <a className='btn_gamer_banner'><span>فروشگاه</span></a>
 
             </div>
            
