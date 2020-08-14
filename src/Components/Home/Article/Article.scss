@@ -5,19 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background: url(../../../Images/blurred-background.jpg) center/cover;
-  background-color: black;
-  // background: #24c6dc; 
-  // background: -webkit-linear-gradient(
-  //   to left,
-  //   #514a9d,
-  //   #24c6dc
-  // ); 
-  // background: linear-gradient(
-  //   to left,
-  //   #514a9d,
-  //   #24c6dc
-  // ); 
+  background: url(../../../Images/blurred-background.jpg) center/cover;
+  background: #24c6dc;
+  background: -webkit-linear-gradient(to left, #514a9d, #24c6dc);
+  background: linear-gradient(to left, #514a9d, #24c6dc);
   & div.animate__animated {
     display: flex;
     flex-direction: column;
