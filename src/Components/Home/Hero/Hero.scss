@@ -1,3 +1,4 @@
+@import "./MediaQueries.scss";
 .header {
   &_home {
     &_hero {
@@ -29,7 +30,7 @@
       &_left {
         height: 91vh;
         width: 30%;
-        background: url(../../../Images/bg4.jpg) center/cover no-repeat ;
+        background: url(../../../Images/bg4.jpg) center/cover no-repeat;
 
         // top
 
