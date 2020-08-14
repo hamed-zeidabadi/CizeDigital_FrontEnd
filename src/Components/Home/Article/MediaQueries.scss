@@ -92,6 +92,66 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  // responsive Article.jsx
+  .article {
+    background-color: blue;
+  }
+  // responsive Card.jsx
+
+  .record-desc {
+    overflow: hidden;
+    margin: 20px 0 0 10px;
+    max-width: 100%;
+    max-height: 100%;
+    h1 {
+      margin: 5px 0;
+      font-size: 0.85em !important;
+      font-weight: 700;
+    }
+    p {
+      font-size: 0.6em !important;
+      line-height: 1.4em;
+      color: #666;
+    }
+    opacity: 0;
+    transition: opacity 400ms ease-in-out 190ms;
+  }
+
+  #record1 {
+    transition: height 700ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+  }
+
+  .record:hover .record-desc {
+    opacity: 1;
+  }
+
+  .tagline {
+    margin: 20px 0 !important;
+    text-align: center;
+    color: green;
+  }
+
+  .record-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & h1 {
+      margin-top: 5px;
+      color: gray;
+      font-size: 1em;
+      &:hover {
+        color: black;
+      }
+    }
+
+    & button {
+      margin-top: 20px !important;
+      width: 40% !important;
+      font-size: 0.8em !important;
+      background-color: #f33c3c9f;
+    }
+  }
 }
 
 //========================================================
