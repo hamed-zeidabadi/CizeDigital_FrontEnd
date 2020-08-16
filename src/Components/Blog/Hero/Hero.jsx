@@ -22,11 +22,18 @@ const Hero = () => {
 
         <div className="hero_blog_nav">
           <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+            <li>
+              <a href="#">همه</a>
+            </li>
+            <li>
+              <a href="#">تکنولوژی</a>
+            </li>
+            <li>
+              <a href="#">سبک زندگی</a>
+            </li>
+            <li>
+              <a href="#">طراحی</a>
+            </li>
           </ul>
         </div>
       </div>
