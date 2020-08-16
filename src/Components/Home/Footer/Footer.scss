@@ -80,7 +80,46 @@
         }
 
         &_left{
-            width: 10%;
+
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+
+            & h2{
+              align-self: center;
+            }
+
+            &_newsletter_container{
+
+              width: 100%;
+              display: flex;
+              align-items: center;
+
+              & button{
+
+                background-color: transparent;
+                width: 25%;
+                border-radius: 25px;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover{
+                  color: rgb(247, 240, 240);
+                  background-color: rgb(233, 60, 60);
+                  transition: all 0.5s;
+                }
+
+              }
+
+              & input{
+                
+                width: 70%;
+                border: 1px solid whitesmoke;
+                border-radius: .7em;
+                height: 3em;
+              }
+              
+            }
         }
 
     }

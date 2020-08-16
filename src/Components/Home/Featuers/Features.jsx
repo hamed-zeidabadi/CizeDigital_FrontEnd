@@ -21,20 +21,11 @@ const Features= () => {
         }, [])
 
 
-        const [active,setActive]=useState(true)
-
-        const activeTabHandler=(e)=>{
-
-            e.preventDefault()
-            setActive(!active)
-            alert('hiii');
-            
-        }
     
 
     return(
 
-        <div className='tabs'>
+        <div className='tabs' >
 
             <Tabs state={[index,setIndex]}>
 
@@ -45,24 +36,30 @@ const Features= () => {
                     <div className='tabs_container_tab'>
 
                         <Tab > 
+
                          <a
-                         className= {(active ?'hvr-underline-from-center white'
-                         :'hvr-underline-from-center red')}
-                         onClick={activeTabHandler}
-                         >محبوب ها</a></Tab>
+                         className= 'hvr-underline-from-center white'
+                         //اضافه کردن خاصیت زیر برای زمانی است که کاربر روی تب
+                         //کلیک کرده و تب به صورت اکتیو و خط زیر دار نمایش داده شود
+                         href='#fav_tab'
+                         >محبوب ها</a>
+
+                         </Tab>
                          
                          <Tab> 
+
                          <a
-                            className= {(active ?'hvr-underline-from-center white'
-                            :'hvr-underline-from-center red')}
-                         onClick={activeTabHandler}>پرفروش ها</a>
+                            className= 'hvr-underline-from-center white'
+                            href='#sell_tab'>پرفروش ها</a>
+
                          </Tab>
 
                         <Tab> 
+
                          <a
-                           className= {(active ?'hvr-underline-from-center white'
-                           :'hvr-underline-from-center red')}
-                         onClick={activeTabHandler}>جدیدها</a>
+                           className= 'hvr-underline-from-center white'
+                           href='#new_tab'>جدیدها</a>
+
                          </Tab>
 
                     </div>
