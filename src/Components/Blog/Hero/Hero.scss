@@ -32,7 +32,7 @@
     }
   }
   &_nav {
-      margin:  20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     height: 30%;
     width: 40%;
     border: 1px solid yellow;
@@ -50,9 +50,12 @@
           list-style: none;
           text-decoration: none;
           color: white;
+          &:hover,
+          &:active {
+            color: black;
+          }
         }
       }
     }
   }
 }
-

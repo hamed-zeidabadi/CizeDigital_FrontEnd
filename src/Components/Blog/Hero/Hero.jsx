@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.scss";
 import ReactTypingEffect from "react-typing-effect";
-import './Hover.scss'
+import "./hover.scss";
 
 const Hero = () => {
   const text = [
@@ -24,16 +24,24 @@ const Hero = () => {
         <div className="hero_blog_nav">
           <ul>
             <li>
-              <a className='hvr_center' href="#">همه</a>
+              <a className="hvr_center" href="#">
+                همه
+              </a>
             </li>
             <li>
-              <a href="#">تکنولوژی</a>
+              <a className="hvr_center" href="#">
+                تکنولوژی
+              </a>
             </li>
             <li>
-              <a href="#">سبک زندگی</a>
+              <a className="hvr_center" href="#">
+                سبک زندگی
+              </a>
             </li>
             <li>
-              <a href="#">طراحی</a>
+              <a className="hvr_center" href="#">
+                طراحی
+              </a>
             </li>
           </ul>
         </div>
