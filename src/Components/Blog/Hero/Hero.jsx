@@ -7,7 +7,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 const Hero = () => {
   const [isActive, setisActive] = useState({
-    link1: false,
+    link1: true,
     link2: false,
     link3: false,
     link4: false,
@@ -70,7 +70,6 @@ const Hero = () => {
                 }
                 href="#"
                 onClick={() => setisActive({ link3: !isActive.link3 })}
-              
               >
                 سبک زندگی
               </a>
@@ -84,7 +83,6 @@ const Hero = () => {
                 }
                 href="#"
                 onClick={() => setisActive({ link4: !isActive.link4 })}
-              
               >
                 طراحی
               </a>
