@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
     & ul {
       display: flex;
       justify-content: center;
@@ -46,13 +47,41 @@
       & li {
         margin: 0 10px;
         list-style: none;
-        & a {
+        & .hvr_line_active {
           list-style: none;
           text-decoration: none;
-          color: white;
+          color: black;
+          position: relative;
+          color: #f33c3c;
+
+          &::before {
+            bottom: -3px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #f33c3c;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 100%;
+            left: 0;
+          }
+
           &:hover,
           &:active {
-            color: black;
+            color: #f33c3c;
+          }
+        }
+        & .hvr_line_disable {
+          list-style: none;
+          text-decoration: none;
+          color: black;
+          position: relative;
+          color: blalck;
+
+          &:hover,
+          &:active {
+            color: #f33c3c;
           }
         }
       }

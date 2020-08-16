@@ -24,22 +24,22 @@ const Hero = () => {
         <div className="hero_blog_nav">
           <ul>
             <li>
-              <a className="  hvr-wobble-vertical" href="#">
+              <a className=" hvr_line hvr-wobble-vertical" href="#">
                 همه
               </a>
             </li>
             <li>
-              <a className="  hvr-wobble-vertical" href="#">
+              <a className=" hvr_line_disable hvr-wobble-vertical" href="#">
                 تکنولوژی
               </a>
             </li>
             <li>
-              <a className="  hvr-wobble-vertical" href="#">
+              <a className=" hvr_line hvr-wobble-vertical" href="#">
                 سبک زندگی
               </a>
             </li>
             <li>
-              <a className="  hvr-wobble-vertical" href="#">
+              <a className=" hvr_line hvr-wobble-vertical" href="#">
                 طراحی
               </a>
             </li>
