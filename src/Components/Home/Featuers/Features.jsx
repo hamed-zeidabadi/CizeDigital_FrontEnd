@@ -41,7 +41,7 @@ const Features= () => {
                          className= 'hvr-underline-from-center white'
                          //اضافه کردن خاصیت زیر برای زمانی است که کاربر روی تب
                          //کلیک کرده و تب به صورت اکتیو و خط زیر دار نمایش داده شود
-                         href='#tab'
+                         href='#fav_tab'
                          >محبوب ها</a>
 
                          </Tab>
@@ -50,7 +50,7 @@ const Features= () => {
 
                          <a
                             className= 'hvr-underline-from-center white'
-                            href='#tab'>پرفروش ها</a>
+                            href='#sell_tab'>پرفروش ها</a>
 
                          </Tab>
 
@@ -58,7 +58,7 @@ const Features= () => {
 
                          <a
                            className= 'hvr-underline-from-center white'
-                           href='#tab'>جدیدها</a>
+                           href='#new_tab'>جدیدها</a>
 
                          </Tab>
 
