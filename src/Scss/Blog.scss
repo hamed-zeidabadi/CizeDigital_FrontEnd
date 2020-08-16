@@ -12,8 +12,13 @@
   }
   &_hero {
     width: 100vw;
-    height:60vh;
-    background-color: blue;
+    height: 60vh;
+    background-image: url(../Images/Blog/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: cover;
   }
   &_article {
     width: 100vw;
