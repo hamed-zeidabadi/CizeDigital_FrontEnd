@@ -1,6 +1,6 @@
 import "./Swiper.scss";
-
-import React, { useState, useEffect } from "react";
+import "./MediaQueries.scss";
+import React from "react";
 import "swiper/swiper.scss";
 
 const Card = () => {
@@ -9,13 +9,7 @@ const Card = () => {
       <div className="container">
         <div className="row flip-boxes">
           <div className="col-md-3 col-sm-4 col-8 flip-box">
-            <div
-              className="front"
-              // style={{
-              //   BackgroundImage:
-              //     "https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=350",
-              // }}
-            >
+            <div className="front">
               <div className="content text-center">
                 <span> تخفیف میخوای ؟</span> <br />
                 <span className="click-for-more"></span>

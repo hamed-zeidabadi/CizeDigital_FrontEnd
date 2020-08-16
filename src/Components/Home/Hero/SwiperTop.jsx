@@ -1,6 +1,6 @@
 import React from "react";
 import "./Swiper.scss";
-
+import "./MediaQueries.scss";
 const SwiperTop = () => {
   return (
     <>

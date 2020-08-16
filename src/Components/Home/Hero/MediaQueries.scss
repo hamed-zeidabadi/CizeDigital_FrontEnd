@@ -1,0 +1,304 @@
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+//========================================================
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  // responsive Hero.jsx
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_right {
+          height: 91vh;
+          width: 100%;
+          background: url("../../../Images//blurred-background.jpg")
+            center/cover no-repeat;
+        }
+
+        &_left {
+          display: none;
+          #BoxLoading {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+//========================================================
+
+/* 
+ ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  // responsive Hero.jsx
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &_right {
+          height: 91vh;
+          width: 100%;
+          background: url("../../../Images//blurred-background.jpg")
+            center/cover no-repeat;
+        }
+
+        &_left {
+          display: none;
+          #BoxLoading {
+          }
+        }
+      }
+    }
+  }
+
+  // responsive swiper.jsx
+
+  .content {
+    & .right {
+      width: 40% !important;
+      height: 100%;
+      position: relative;
+
+      &_img {
+        margin-top: 8px !important;
+        margin-right: 25px !important;
+        width: 70%;
+        height: 70%;
+        transition-delay: 2s;
+        transition: all 3s;
+        transform: translateX(-10px) rotateZ(-5deg);
+
+        &:hover {
+          transition: all 2s;
+          transform: translateX(20px) rotateZ(15deg);
+        }
+      }
+    }
+
+    & .left {
+      width: 60% !important;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &_title {
+        font-family: "IRANSans_Bold" !important;
+        font-size: 1.8em !important;
+        color: #f33c3c;
+        margin-top: -20px;
+        margin-left: 10px;
+      }
+      &_btn {
+        width: 200px !important;
+        height: 50px !important;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+        font-size: 1.2em;
+        background: none;
+        cursor: pointer;
+        padding: 25px 30px;
+        margin: 40px 30px 15px 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        overflow: hidden;
+
+        &:hover,
+        &:active {
+          color: white;
+          font-size: 1.29em;
+        }
+        &:hover::after {
+          height: 260%;
+          opacity: 1;
+        }
+        &:active::after {
+          height: 400%;
+          opacity: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          width: 100%;
+          height: 0;
+          top: 50%;
+          left: 50%;
+          background: #0074d988;
+          opacity: 0;
+          -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+
+        &::before {
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          position: relative;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        & p {
+          font-size: 0.5em;
+          margin-top: 5px;
+        }
+      }
+
+      &_sidetxt {
+      }
+    }
+  }
+}
+
+//========================================================
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  // responsive Hero.jsx
+  .swiper-wrapper {
+    width: 100% !important;
+  }
+  .header {
+    &_home {
+      &_hero {
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &_right {
+          height: 91vh;
+          width: 100%;
+          background: url("../../../Images//blurred-background.jpg")
+            center/cover no-repeat;
+        }
+
+        &_left {
+          display: none;
+          #BoxLoading {
+          }
+        }
+      }
+    }
+  }
+
+  // responsive swiper.jsx
+
+  .content {
+    & .right {
+      width: 40% !important;
+      height: 100%;
+      position: relative;
+      display: none;
+
+      &_img {
+        margin-top: 8px !important;
+        margin-right: 25px !important;
+        width: 70%;
+        height: 70%;
+        transition-delay: 2s;
+        transition: all 3s;
+        transform: translateX(-10px) rotateZ(-5deg);
+
+        &:hover {
+          transition: all 2s;
+          transform: translateX(20px) rotateZ(15deg);
+        }
+      }
+    }
+
+    & .left {
+      width: 60% !important;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &_title {
+        font-family: "IRANSans_Bold" !important;
+        font-size: 1.8em !important;
+        color: #f33c3c;
+        margin-top: -20px;
+        margin-left: 10px;
+      }
+      &_btn {
+        width: 200px !important;
+        height: 50px !important;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+        font-size: 1.2em;
+        background: none;
+        cursor: pointer;
+        padding: 25px 30px;
+        margin: 40px 30px 15px 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        overflow: hidden;
+      }
+    }
+  }
+}
