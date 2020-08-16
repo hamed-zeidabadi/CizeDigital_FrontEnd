@@ -1,12 +1,13 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
+import "./MediaQueries.scss";
 import "./Swiper.scss";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SwiperS = ({ img, title, sidetxt }) => {
   return (
     <>
-      <div id="content">
+      <div className="content">
         <div className="right">
           <p>
             <ScrollAnimation

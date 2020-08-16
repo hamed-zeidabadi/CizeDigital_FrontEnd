@@ -29,9 +29,7 @@
       &_left {
         height: 91vh;
         width: 30%;
-        background: url(../../../Images/bg4.jpg) center/cover no-repeat ;
-
-        // top
+        background: url(../../../Images/bg4.jpg) center/cover no-repeat;
 
         &_top {
           width: 100%;
@@ -40,10 +38,7 @@
           justify-content: center;
           align-self: center;
           text-align: center;
-          // background-color: black;
         }
-
-        //bottom
 
         &_bottom {
           width: 100%;
@@ -52,7 +47,6 @@
           justify-content: center;
           align-self: center;
           text-align: center;
-          // background-color: black;
           position: relative;
         }
 

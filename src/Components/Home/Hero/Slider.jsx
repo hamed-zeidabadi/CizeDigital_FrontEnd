@@ -1,7 +1,8 @@
 import React from "react";
 import "./Slider.scss";
-import Swiper from "./Swiper";
 import SwiperJS from "./SwiperJS.jsx";
+import "./MediaQueries.scss";
+
 const Slider = () => {
   return (
     <>
