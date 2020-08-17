@@ -1,10 +1,39 @@
 .header_home_res_nav{
 
-    height: 8vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    background-color:black;
+    background: linear-gradient(to left, #514A9D, #24C6DC); 
+
+
+    &_right{
+
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+
+
+
+    &_right_siteIcon{
+
+        display: flex;
+
+        & img{
+
+            align-self: center;
+           
+            height: 6vh;
+            width: 6vw;
+            padding: 2px;
+            margin: 0 20px;
+        }
+
+    }
 }
+

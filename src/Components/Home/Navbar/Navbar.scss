@@ -16,7 +16,8 @@
       align-items: center;
       // background-image: url(../../../Images/navbar_right_background.png);
       // background: linear-gradient(90deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
-      background-color: #0074d9;
+      background:linear-gradient(to left,#0074d9,#3593e6);
+      // background: linear-gradient(to left, rgb(100, 94, 165), rgb(37, 165, 182));
       
 
       & a {
@@ -35,12 +36,14 @@
     &_left{
 
       display: flex;
-      width: 30%;
+      width: 40%;
       height: 110%;
       justify-content: space-between;
       align-items: center;
       // background: linear-gradient(270deg, rgba(228,238,199,1) 0%, rgba(0,212,255,1) 44%);
-      background-color: #0074D9;
+      // background:#0074d9;
+      background:linear-gradient(to right,#0074d9,#3593e6);
+      // background: linear-gradient(to right, rgb(100, 94, 165), rgb(37, 165, 182));
        
     
 
@@ -49,6 +52,7 @@
 
           font-size: 1.3em;
           align-items: center;
+          
         }
 
         
@@ -65,7 +69,7 @@
 
        display: flex;
        justify-content: flex-end;
-       width: 70%;
+       width: 78%;
        
        & a{
 
