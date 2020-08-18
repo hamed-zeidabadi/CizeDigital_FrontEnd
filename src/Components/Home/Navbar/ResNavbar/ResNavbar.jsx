@@ -2,26 +2,28 @@ import React,{useState} from 'react'
 import './ResNavbar.scss'
 import { BsSearch } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
-import ShopingCart from "../ShopingCart/ShoppingCart"
+import ShopingCartRes from "../ShopingCart/ShoppingCartRes"
 import UserLogin from "../UserLogin/UserLogin"
 import logoSite from "../../../../Images/mega_menu/home/output.png"
+// import { Squash as Hamburger } from 'hamburger-react'
 
 const ResNavbar = () => {
 
+  const [isOpen, setOpen] = useState(false)
 
   //Managing BasketShop Modal
 
-  const [openBasket,setOpenBasket]=useState(false);
+  const [openBaskets,setOpenBaskets]=useState(false);
 
-  const HandleOpenBasket=()=>{
+  const HandleOpenBaskets=()=>{
 
-    setOpenBasket(!openBasket)
+    setOpenBaskets(!openBaskets)
 
-    const BasketContainer=document.querySelector('.basket_container')
-    if (openBasket) {
-      BasketContainer.classList.remove("basket_modal");
+    const BasketContainers=document.querySelector('.basket_containers')
+    if (openBaskets) {
+      BasketContainers.classList.remove("basket_modals");
     } else {
-      BasketContainer.classList.add("basket_modal");
+      BasketContainers.classList.add("basket_modals");
     }
 
   }
@@ -60,7 +62,7 @@ const ResNavbar = () => {
           <div className='header_home_res_nav_left'>
 
            <UserLogin />
-           <ShopingCart  HandleOpenBasket={HandleOpenBasket} />
+           <ShopingCartRes  HandleOpenBaskets={HandleOpenBaskets} />
           </div>
   
         </nav>

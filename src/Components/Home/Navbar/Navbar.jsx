@@ -1,12 +1,13 @@
 import React,{useState} from "react";
-import "./Navbar.scss";
 import RightMenu from './RightMenu/RightMenu'
 import UserLogin from './UserLogin/UserLogin'
 import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import ShopingCart from './ShopingCart/ShoppingCart'
 import ResNavbar from './ResNavbar/ResNavbar'
+import "./Navbar.scss";
 import "./MediaQueries.scss"
+
 
 // import { Link } from "react-router-dom";
 
@@ -48,9 +49,10 @@ const Navbar = () => {
   return (
     <>
       {/* component for Resopnisv Size ! */}
-      <ResNavbar />
+      
 
       <nav className="header_home_nav">
+      
 
         <div className='header_home_nav_right'>
 
@@ -86,6 +88,7 @@ const Navbar = () => {
         </div>
         
       </nav>
+      <ResNavbar />
 
     </>
   );
