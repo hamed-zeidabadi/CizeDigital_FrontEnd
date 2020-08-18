@@ -17,6 +17,8 @@
         background: linear-gradient(to left, #514A9D, #24C6DC); 
 
         &_menu{
+            display: flex;
+        align-items: center;
 
             & a{
                 padding: 12px;

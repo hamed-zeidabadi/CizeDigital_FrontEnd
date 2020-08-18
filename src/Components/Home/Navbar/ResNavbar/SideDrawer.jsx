@@ -1,13 +1,32 @@
 import React from 'react'
 import "./SideDrawer.scss"
 import { FaBars } from "react-icons/fa";
+import { BsX } from "react-icons/bs";
 
-const SideDrawer = () => {
+const SideDrawer = (props) => {
+
     return (
+
         <div>
-            <a>
-            <FaBars />
+
+            <a className="header_home_res_nav_right_menu_icon"
+            onClick={()=>props.HandleOpenDrawer()}>
+              <FaBars />
             </a>
+
+            <div className='drawer_container  animate__animated'>
+
+                <div className=''>
+
+                <a className=''
+                onClick={()=>props.HandleOpenDrawer()}
+                ><BsX /></a>
+                
+
+                </div>
+
+             </div>
+
         </div>
     )
 }

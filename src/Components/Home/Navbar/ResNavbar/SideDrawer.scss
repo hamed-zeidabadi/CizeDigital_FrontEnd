@@ -1,0 +1,46 @@
+.header_home_res_nav_right_menu_icon{
+
+    display: block;
+    position: relative;
+
+}
+
+.drawer_container{
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 25;
+    left: 0;
+    top: 0px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+//class is add & remove when user click in a Menu icon...
+
+.drawer_modals{
+
+    opacity: 1;
+    //using animation library name is -> Animate.css in https://animate.style/#attention_seekers
+    animation:fadeInDown;
+    // animation:fadeInRight;
+    animation-duration: 1s;
+    padding: 10px;
+    width: 45%;
+    height: 90.8vh;
+    background-color: #fff;
+    right: 0;
+    top: 7.4vh;
+    color: black;
+    position: absolute;
+    pointer-events: auto;
+
+
+}

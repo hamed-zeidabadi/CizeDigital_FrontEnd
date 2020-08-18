@@ -11,7 +11,22 @@ const ResNavbar = () => {
 
 
 
-  const [isOpen, setIsOpen] = useState(false)
+  //Managing Drawer Modal
+
+  const [OpenDrawer, setOpenDrawer] = useState(false)
+
+  const HandleOpenDrawer=()=>{
+
+    setOpenDrawer(!OpenDrawer)
+
+    const DrawerContainer=document.querySelector('.drawer_container')
+    if (OpenDrawer) {
+      DrawerContainer.classList.remove("drawer_modals");
+    } else {
+      DrawerContainer.classList.add("drawer_modals");
+    }
+
+  }
 
   //Managing BasketShop Modal
 
@@ -41,7 +56,7 @@ const ResNavbar = () => {
 
               <div className='header_home_res_nav_right_menu'>
 
-                 <SideDrawer />
+                 <SideDrawer  HandleOpenDrawer={HandleOpenDrawer}/>
 
                   <a href='#' >
                       <BsSearch />
