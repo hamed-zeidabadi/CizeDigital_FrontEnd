@@ -9,7 +9,7 @@ const ShopingCartRes =(props)=>{
 
     return(
 
-        <div>
+        <>
 
           <a href='#' className='header_home_nav_left_icons_cart'
           onClick={()=>props.HandleOpenBaskets()}
@@ -30,7 +30,7 @@ const ShopingCartRes =(props)=>{
             <a href='#' className='basket_start_res_shoping'>شروع خرید</a>
           </div>
 
-        </div>
+        </>
 
     )
 

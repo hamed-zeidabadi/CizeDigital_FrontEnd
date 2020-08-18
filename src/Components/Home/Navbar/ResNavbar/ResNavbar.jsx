@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './ResNavbar.scss'
 import { BsSearch } from "react-icons/bs";
-import { FaBars } from "react-icons/fa";
+import SideDrawer from "./SideDrawer"
 import ShopingCartRes from "../ShopingCart/ShoppingCartRes"
 import UserLogin from "../UserLogin/UserLogin"
 import logoSite from "../../../../Images/mega_menu/home/output.png"
@@ -9,7 +9,9 @@ import logoSite from "../../../../Images/mega_menu/home/output.png"
 
 const ResNavbar = () => {
 
-  const [isOpen, setOpen] = useState(false)
+
+
+  const [isOpen, setIsOpen] = useState(false)
 
   //Managing BasketShop Modal
 
@@ -39,9 +41,7 @@ const ResNavbar = () => {
 
               <div className='header_home_res_nav_right_menu'>
 
-                <a href='#' >
-                      <FaBars />
-                  </a>
+                 <SideDrawer />
 
                   <a href='#' >
                       <BsSearch />

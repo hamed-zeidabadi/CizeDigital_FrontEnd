@@ -48,8 +48,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* component for Resopnisv Size ! */}
-      
+     
 
       <nav className="header_home_nav">
       
@@ -88,8 +87,10 @@ const Navbar = () => {
         </div>
         
       </nav>
-      <ResNavbar />
+      
+     {/* component for Resopnisv Size ! */}
 
+     <ResNavbar />
     </>
   );
 };
