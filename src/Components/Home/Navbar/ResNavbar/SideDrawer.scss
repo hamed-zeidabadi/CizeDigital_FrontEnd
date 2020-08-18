@@ -3,11 +3,18 @@
     display: block;
     position: relative;
 
-    & svg{
-        
+    & svg {
+
+        font-size: 1.4em !important;
         animation:flipInX !important;
         // animation:fadeInRight;
-       animation-duration: 1.3s !important;
+        animation-duration: 1.3s !important;
+        color: whitesmoke;
+
+        &:hover{
+
+            color: rgb(245, 59, 59);
+        }
     }
  
 }
@@ -27,7 +34,10 @@
     position: absolute;
     opacity: 0;
     pointer-events: none;
-
+  
+    & a{
+        color: black;
+    }
 
 }
 
@@ -36,7 +46,8 @@
 .drawer_modals{
 
     opacity: 1;
-    //using animation library name is -> Animate.css in https://animate.style/#attention_seekers
+    //using animation library name is ->
+    // Animate.css in https://animate.style/#attention_seekers
     animation:fadeInDown;
     // animation:fadeInRight;
     animation-duration: 1s;
