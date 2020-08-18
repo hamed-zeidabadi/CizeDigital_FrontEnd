@@ -56,7 +56,9 @@ const ResNavbar = () => {
 
               <div className='header_home_res_nav_right_menu'>
 
-                 <SideDrawer  HandleOpenDrawer={HandleOpenDrawer}/>
+                 <SideDrawer
+                   HandleOpenDrawer={HandleOpenDrawer}
+                   OpenDrawer={OpenDrawer}/>
 
                   <a href='#' >
                       <BsSearch />

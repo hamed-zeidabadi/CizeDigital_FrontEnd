@@ -5,13 +5,16 @@ import { BsX } from "react-icons/bs";
 
 const SideDrawer = (props) => {
 
+    const OpenDrawer=props.OpenDrawer
+
     return (
 
         <div>
 
             <a className="header_home_res_nav_right_menu_icon"
             onClick={()=>props.HandleOpenDrawer()}>
-              <FaBars />
+              { OpenDrawer ? <BsX /> 
+              : <FaBars  /> }
             </a>
 
             <div className='drawer_container  animate__animated'>
