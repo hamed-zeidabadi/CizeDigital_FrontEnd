@@ -22,8 +22,8 @@
 .drawer_container{
 
     position: absolute;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
@@ -35,6 +35,18 @@
   
     & a{
         color: black;
+    }
+
+    &_items{
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &_s{
+            align-self: flex-start;
+        }
     }
 
 }
@@ -49,10 +61,12 @@
     animation:fadeInDown;
     // animation:fadeInRight;
     animation-duration: 1s;
+    display: flex !important;
+    align-items: center !important;
     padding: 10px;
     width: 45%;
     height: 90.8vh;
-    background-color: #fff;
+    background-color: #474a4d;
     right: 0;
     top: 7.4vh;
     color: black;
