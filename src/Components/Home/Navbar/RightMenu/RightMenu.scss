@@ -9,6 +9,7 @@
 
 }
 
+
 //********************************************
 //استایل های مگا منو قسمت خانه در صفحه اصلی
 
@@ -20,17 +21,18 @@
     }
 
    
+   
     &_menu{
 
         display: flex;
         height: 70vh;
-        width: 75vw;
+        width: 60vw;
         position: absolute;
         background-color: rgb(212, 208, 208);
         justify-content: space-between;
         align-items: center;
         color: black;
-        top: 2.8em;
+        top: 3.2em;
         opacity: 0;
         padding: 20px;
         // transition:linear .4s opacity;
@@ -47,7 +49,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 10px;
-            width: 70%;
+            width: 65%;
             height: 90%;
             padding: 0;
             
@@ -99,7 +101,7 @@
     justify-content: flex-start;
     // align-items: center;
     // color: black;
-    top: 2.8em;
+    top: 3.2em;
     flex-wrap: wrap;
     padding: .5em;
     transform: translateY(15px);
@@ -185,7 +187,7 @@
         justify-content: space-around;
         // align-items: center;
         // color: black;
-        top: 2.8em;
+        top: 3.2em;
         flex-wrap: wrap;
         padding: .5em;
         transform: translateY(15px);
