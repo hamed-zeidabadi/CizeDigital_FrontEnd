@@ -4,17 +4,14 @@ import { ReactComponent as CogIcon } from './icons/cog.svg';
 import { ReactComponent as ChevronIcon } from './icons/chevron.svg';
 import { ReactComponent as ArrowIcon } from './icons/arrow.svg';
 import { ReactComponent as BoltIcon } from './icons/bolt.svg';
-
 import { CSSTransition } from 'react-transition-group';
-
-
 
 
 
 const SideDrawerItems = () => {
     return (
         
-            <Navbar>
+            <SideDrawerNavbar>
                 
               {/* <NavItem icon={<PlusIcon />} />
               <NavItem icon={<BellIcon />} />
@@ -24,38 +21,38 @@ const SideDrawerItems = () => {
                 <DropdownMenu></DropdownMenu>
                 </NavItem> */}
 
-                <DropdownMenu/>
+                <SideDrawerDropdownMenu/>
               
-            </Navbar>
+            </SideDrawerNavbar>
         
       );
 }
 
 
-function Navbar(props) {
+function SideDrawerNavbar(props) {
     return (
-      <nav className="navbar">
-        <ul className="navbar-nav">{props.children}</ul>
+      <nav >
+        <ul >{props.children}</ul>
       </nav>
     );
   }
   
-  function NavItem(props) {
-    const [open, setOpen] = useState(false);
+  // function NavItem(props) {
+  //   const [open, setOpen] = useState(false);
   
-    return (
-      <li className="nav-item">
-        <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
-          {props.icon}
-        </a>
+  //   return (
+  //     <li className="side_drawer_items_nav_item">
+  //       <a href="#" className="side_drawer_items_icon_button" onClick={() => setOpen(!open)}>
+  //         {props.icon}
+  //       </a>
   
-        {open && props.children}
-      </li>
-    );
-  }
+  //       {open && props.children}
+  //     </li>
+  //   );
+  // }
   
-  function DropdownMenu() {
-    const [activeMenu, setActiveMenu] = useState('main');
+  function SideDrawerDropdownMenu() {
+    const [activeMenu, setActiveMenu] = useState('side_drawer_items_main');
     const [menuHeight, setMenuHeight] = useState(null);
     const dropdownRef = useRef(null);
   
@@ -70,35 +67,35 @@ function Navbar(props) {
   
     function DropdownItem(props) {
       return (
-        <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-          <span className="icon-button">{props.leftIcon}</span>
+        <a href="#" className="side_drawer_items_menu_item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+          <span className="side_drawer_items_icon_button">{props.leftIcon}</span>
           {props.children}
-          <span className="icon-right">{props.rightIcon}</span>
+          <span className="side_drawer_items_icon_right">{props.rightIcon}</span>
         </a>
       );
     }
   
     return (
-      <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
+      <div className="side_drawer_items_dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
   
         <CSSTransition
-          in={activeMenu === 'main'}
+          in={activeMenu === 'side_drawer_items_main'}
           timeout={500}
-          classNames="menu-primary"
+          classNames="side_drawer_items_menu_primary"
           unmountOnExit
           onEnter={calcHeight}>
-          <div className="menu">
+          <div className="side_drawer_items_menu">
             <DropdownItem>My Profile</DropdownItem>
             <DropdownItem
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
-              goToMenu="settings">
+              goToMenu="side_drawer_items_settings">
               Settings
             </DropdownItem>
             <DropdownItem
               leftIcon="🦧"
               rightIcon={<ChevronIcon />}
-              goToMenu="animals">
+              goToMenu="side_drawer_items_animals">
               Animals
             </DropdownItem>
   
@@ -106,13 +103,13 @@ function Navbar(props) {
         </CSSTransition>
   
         <CSSTransition
-          in={activeMenu === 'settings'}
+          in={activeMenu === 'side_drawer_items_settings'}
           timeout={500}
-          classNames="menu-secondary"
+          classNames="side_drawer_items_menu_secondary"
           unmountOnExit
           onEnter={calcHeight}>
-          <div className="menu">
-            <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+          <div className="side_drawer_items_menu">
+            <DropdownItem goToMenu="side_drawer_items_main" leftIcon={<ArrowIcon />}>
               <h2>Menu</h2>
             </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>HTML</DropdownItem>
@@ -123,13 +120,13 @@ function Navbar(props) {
         </CSSTransition>
   
         <CSSTransition
-          in={activeMenu === 'animals'}
+          in={activeMenu === 'side_drawer_items_animals'}
           timeout={500}
-          classNames="menu-secondary"
+          classNames="side_drawer_items_menu_secondary"
           unmountOnExit
           onEnter={calcHeight}>
-          <div className="menu">
-            <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+          <div className="side_drawer_items_menu">
+            <DropdownItem goToMenu="side_drawer_items_main" leftIcon={<ArrowIcon />}>
               <h2>Menu</h2>
             </DropdownItem>
             <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
