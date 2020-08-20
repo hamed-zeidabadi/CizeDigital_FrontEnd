@@ -33,10 +33,17 @@ const Favorites = () => {
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
-                // when window width is >= 768px
+
+                // when window width is >= 950px
+                950: {
+
+                 
+                  slidesPerView:3,
+                },
+                
                 768: {
                   // width: 768,
-                  slidesPerView: 2,
+                  slidesPerView:2,
                 },
                 // when window width is >= 320px
                 320: {
