@@ -4,6 +4,7 @@ import { Tabs, Tab, Panel } from '@bumaga/tabs'
 import Favorites from './Favorites' 
 import BestSeller from './BestSeller'
 import Newest from './Newest'
+import "./MediaQueries.scss"
 
 
 
