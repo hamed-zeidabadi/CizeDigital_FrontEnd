@@ -1,0 +1,154 @@
+ @media (min-width: 768px)and (max-width: 1260px){
+    body {
+      background-color: green;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+
+      color: transparent !important;
+     
+    }
+
+    .discount_details_save_money{
+
+      height: auto;
+      line-height: 50px;
+      width: 10em;
+      margin: 0 auto;
+      border-radius: 34px 34px 34px 34px;
+
+    &::before{
+
+     display: none;
+  }
+
+
+    }
+  
+   
+  }
+
+  //========================================================
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    body {
+      background-color: yellow;
+
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+
+      color: transparent !important;
+     
+    }
+
+    .discount_container{
+      width: 90%;
+    }
+
+      .discount_details_save_money{
+
+      height: auto;
+      line-height: 50px;
+      width: 10em;
+      margin: 0 ;
+      border-radius: 34px 34px 34px 34px;
+
+    &::before{
+
+     display: none;
+  }
+
+  
+    }
+
+   
+  }
+  
+  //========================================================
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+
+      background-color: rgb(245, 9, 9);
+    }
+      .swiper-button-prev,
+      .swiper-button-next{
+
+        color: transparent !important;
+       
+      }
+
+      .discount_container{
+        width: 90%;
+        height:75%;
+      }
+
+      .discount_details_save_money{
+
+        height: auto;
+        width: 9em;
+        margin-left: auto;
+        margin-right: -18px;
+
+        &_amount{
+
+          font-weight:bold;
+          color: rgb(243, 22, 22);
+          font-size: 1em;
+          padding: 5px;
+      }
+
+      }
+    
+
+    .countdwon_timer{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+  
+      & p{
+
+          align-self: flex-start;
+           padding:0px;
+      }
+  
+    &_time_container{
+
+      width: 80%;
+    }
+
+  
+      & span{
+  
+          padding: 8px;
+          border: 2px solid rgb(187, 183, 183);
+          border-radius: 25px;
+          margin: 2px;
+      }
+  
+      & svg{
+  
+          display: none;
+          
+          
+      }
+  
+  }
+  
+  }
