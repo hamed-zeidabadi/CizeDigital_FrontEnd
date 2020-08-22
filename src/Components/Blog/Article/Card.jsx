@@ -1,33 +1,55 @@
 import React from "react";
 import "./Card.scss";
+import { FaBookmark, FaHeart, FaRegComment } from "react-icons/fa";
 
 const Card = () => {
   return (
     <>
       <div className="card_blog">
-        <div class="content">
-          <div class="body-01">Travel report (Big teaser)</div>
-    <div class="card">
-      <div class="media media--2-3">
-        <div class="primary-title">
-          <div class="optional-header">
-            <div class="thumbnail thumbnail--40x40"><img src="https://randomuser.me/api/portraits/women/47.jpg" alt="" width="40" height="40" /></div>
-            <div class="primary-title">
-              <div class="title">Emma Freeman</div>
-              <div class="subhead">Travel Journalist</div>
+        <div class="example-1 card">
+          <div class="wrapper">
+            <div class="date">
+              <span class="day">12</span>
+              <span class="month">اسفند</span>
+              <span class="year">13</span>
+            </div>
+            <div class="data">
+              <div class="content">
+                <span class="author">حامد زیدآبادی</span>
+                <h1 class="title">
+                  <a href="#">عنوان مقاله یک دو سه</a>
+                </h1>
+                <p class="text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  ...
+                </p>
+                <label for="show-menu" class="menu-button">
+                  <span></span>
+                </label>
+              </div>
+              <input type="checkbox" id="show-menu" />
+              <ul class="menu-content">
+                <li>
+                  <a href="#">
+                    <FaBookmark />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-heart-o">
+                    <FaHeart />
+                    <span>47</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-comment-o">
+                    <FaRegComment />
+                    <span>8</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="primary-text">The Many Lives Along the Yangtze River</div>
-          <div class="secondary-text">Travel</div>
-        </div>
-        <img src="https://media.pixeltuner.de/wp-content/uploads/2018/06/asia-1793425_640.jpg" alt="" width="960" height="640" /> </div>
-      <div class="actions">
-        <div class="action-buttons">
-          <button class="button" type="button">Read report</button>
-        </div>
-        <div class="action-icons float-right"> <i class="material-icons action-icon" role="button" title="Share">share</i> <i class="material-icons action-icon" role="button" title="More options">more_vert</i> </div>
-      </div>
-    </div>
         </div>
       </div>
     </>
