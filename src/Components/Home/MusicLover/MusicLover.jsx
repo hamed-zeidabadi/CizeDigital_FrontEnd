@@ -1,5 +1,7 @@
 import React from 'react'
 import "./MusicLover.scss"
+import "./MediaQueries.scss"
+
 
 // import dual from "../../../Images/gamer_banner/dual.png"
 import dual from "../../../Images/headphone3.png"
