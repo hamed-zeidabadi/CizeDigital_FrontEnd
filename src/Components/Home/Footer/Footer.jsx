@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.scss"
+import "./MediaQueries.scss"
 import { FaGithubAlt, FaInstagram, FaTwitter ,FaTelegramPlane,FaRegCopyright } from "react-icons/fa";
 
 
@@ -25,7 +26,7 @@ const Footer = () => {
                     <p>ما بهترین هدفون ها را گردآوردی کرده ایم</p>
                     <p>ایمیل :example@fellan.com</p>
                     <p>شماره تماس : 09200000000</p>
-                    <p>شماره ثابت : 09822200000</p>
+                    <p className='footer_top_right_const_call'>شماره ثابت : 09822200000</p>
 
                 </div>
 

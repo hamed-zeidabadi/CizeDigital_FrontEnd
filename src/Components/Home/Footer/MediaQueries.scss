@@ -1,0 +1,105 @@
+ @media (min-width: 820px) and (max-width: 970px){
+    // body {
+    //   background-color: green;
+    // }
+
+   .footer_top{
+
+    &_right{
+
+      padding: 5px;
+
+      &_const_call{
+        // display: none;
+      }
+    }
+
+    &_left{
+
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+
+      &_newsletter_container{
+
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1em;
+      }
+    }
+   
+   }
+ 
+   
+  }
+
+  //========================================================
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 500px) and (max-width: 819px) {
+    // body {
+    //   background-color: yellow;
+    // }
+
+    .footer_container{
+      height: auto;
+    }
+    .footer_top{
+
+      // flex-direction: column;
+
+      &_right{
+  
+        display: none;
+  
+        &_const_call{
+          // display: none;
+        }
+      }
+  
+      &_left{
+  
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+  
+        &_newsletter_container{
+  
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+          margin-top: 1em;
+        }
+      }
+     
+     }
+
+  
+}
+  
+  //========================================================
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 402px) {
+
+    // body {
+    //   background-color: gray;
+    // }
+   
+
+ 
+  
+     
+    
+
+  
+  }
