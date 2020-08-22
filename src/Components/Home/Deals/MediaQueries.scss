@@ -100,9 +100,16 @@
       .discount_details_save_money{
 
         height: auto;
-        width: 9em;
-        margin-left: auto;
-        margin-right: -18px;
+        line-height: 20px;
+        width: 8em;
+        margin: 0 ;
+        border-radius: 34px 34px 34px 34px;
+  
+      &::before{
+  
+       display: none;
+    }
+  
 
         &_amount{
 
