@@ -2,6 +2,7 @@ import React from 'react'
 import './CountDwonTimer.scss'
 import Timer from 'react-compound-timer'
 import { BsClockHistory } from "react-icons/bs";
+import "./MediaQueries.scss";
 
 function CountDwonTimer() {
 
@@ -17,7 +18,7 @@ function CountDwonTimer() {
             initialTime={79000000}
             direction="backward">
 
-                <div >
+                <div  className='countdwon_timer_time_container'>
                     
                      
                     <span><Timer.Seconds /></span>

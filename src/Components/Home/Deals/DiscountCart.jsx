@@ -2,6 +2,7 @@ import React from 'react'
 import './DiscountCart.scss'
 import CountDwonTimer from './CountDwonTimer'
 import ScrollAnimation from 'react-animate-on-scroll';
+import "./MediaQueries.scss";
 
 
 const DiscountCart =(props)=>{

@@ -1,0 +1,119 @@
+ @media (min-width: 786px) and (max-width: 1000px){
+    // body {
+    //   background-color: green;
+    // }
+
+    .gamer_banner_text{
+
+      &_container{
+
+        margin: 1em;
+        width: 70%;
+      }
+
+      &_title{
+
+        font-size: 2.5em;
+        margin: 5px;
+      }
+      
+    }
+
+    .gamer_banner_image{
+
+      margin-right: 0em;
+      margin-left: 10px;
+    }
+
+   
+ 
+   
+  }
+
+  //========================================================
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 403px) and (max-width: 785px) {
+    // body {
+    //   background-color: yellow;
+    // }
+
+  
+    .gamer_banner_text{
+
+      &_container{
+
+        margin: 1em;
+        width: 70%;
+        flex-wrap: wrap;
+        
+      }
+
+      &_title{
+
+        font-size: 2.5em;
+        margin: 5px;
+      }
+ 
+  }
+
+  .btn_gamer_banner{
+
+    margin-right: 10em;
+  }
+
+  .gamer_banner_image{
+
+    margin-right: 0em;
+   
+  }
+}
+  
+  //========================================================
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 402px) {
+
+    // body {
+    //   background-color: gray;
+    // }
+   
+
+    .gamer_banner_text{
+
+      &_container{
+
+        margin: .5em;
+        width: 80%;
+        flex-wrap: wrap;
+        
+      }
+
+      &_title{
+
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 5px;
+      }
+
+      &_discount{
+
+        margin:5px ;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+ 
+  }
+     
+    
+
+  
+  }

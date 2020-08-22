@@ -1,0 +1,50 @@
+ @media (min-width: 768px){
+    // body {
+    //   background-color: green;
+    // }
+
+    .header_home_nav{
+      display: flex;
+      
+  }
+
+    .header_home_res_nav{
+        
+        display: none;
+        
+    }
+   
+  }
+
+  //========================================================
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    // body {
+    //   background-color: yellow;
+    // }
+
+    .header_home_nav{
+        display: none;
+    }
+  }
+  
+  //========================================================
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    // body {
+    //   background-color: gray;
+    // }
+    .header_home_nav{
+        display: none;
+    }
+  }

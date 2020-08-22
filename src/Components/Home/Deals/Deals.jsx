@@ -9,6 +9,7 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import "animate.css/animate.min.css";
 import "./Deals.scss";
+import "./MediaQueries.scss";
  
 import doorbell from '../../../Images/hot_deales/doorbell.jpg'
 import flycamera from '../../../Images/hot_deales/flycamera.jpg'
@@ -51,18 +52,18 @@ const Deals = () => {
         navigation
         pagination={{ clickable: true }}
 
-        // breakpoints={{
-        //   // when window width is >= 640px
-        //   // 640: {
-        //   //   width: 640,
-        //   //   slidesPerView: 1,
-        //   // },
-        //   // when window width is >= 768px
-        //   320: {
+        breakpoints={{
+          // when window width is >= 768px
+          768: {
+            // width: 768,
+            slidesPerView: 2,
+          },
+          // when window width is >= 320px
+          320: {
            
-        //     slidesPerView: 1,
-        //   },
-        // }}
+            slidesPerView: 1,
+          },
+        }}
         
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}

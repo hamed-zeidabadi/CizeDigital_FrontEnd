@@ -1,0 +1,135 @@
+ @media (min-width: 768px) and (max-width: 950px){
+    // body {
+    //   background-color: green;
+    // }
+
+
+    .featuers_cart{
+
+      width: 70%;
+      height:39vh ;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      padding: 10px;
+
+  
+  }
+ 
+   
+  }
+
+  //========================================================
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 581px) and (max-width: 767px) {
+    // body {
+    //   background-color: yellow;
+    // }
+
+    .tabs_container{
+
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 10%;
+      
+      & h2{
+        flex-grow: 1 !important;
+        margin: .5em;
+        margin-top: 1.2em;
+        
+      }
+      
+      &_tab{
+        flex-grow: 2 !important;
+        margin-top: 1em;
+      }
+
+     
+    }
+
+    .featuers_cart{
+
+      width: 50%;
+      height:39vh ;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      padding: 10px;
+
+  
+  }
+  
+  .featuers_cart_price{
+  
+      font-size: 28px;
+      font-weight: bold;
+      color: #adaeaf;
+  }
+
+ 
+  }
+  
+  //========================================================
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 580px) {
+
+    // body {
+    //   background-color: gray;
+    // }
+    .tabs_container{
+
+      flex-wrap: wrap;
+      justify-content:center;
+      align-items: center;
+      flex-direction: row;
+      height: 10%;
+      
+      & h2{
+        flex-grow: 0!important;
+        margin-left: 5px;
+        margin-top: 0;
+        
+      }
+      
+      &_tab{
+        flex-grow: 0 !important;
+        margin-top: -6px;
+      }
+
+     
+    }
+
+     
+    
+
+    .featuers_cart{
+
+      width: 60% !important;
+      height:39vh ;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      padding: 10px;
+
+  
+  }
+  
+  .featuers_cart_price{
+  
+      font-size: 28px;
+      font-weight: bold;
+      color: #adaeaf;
+  }
+  
+  }

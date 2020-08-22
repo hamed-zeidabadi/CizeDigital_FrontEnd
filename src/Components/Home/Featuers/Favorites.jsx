@@ -31,7 +31,26 @@ const Favorites = () => {
             <Swiper
             slidesPerView={3}
             navigation
-            pagination={{ clickable: true }}  >
+            pagination={{ clickable: true }}
+            breakpoints={{
+
+                // when window width is >= 950px
+                950: {
+
+                 
+                  slidesPerView:3,
+                },
+                
+                768: {
+                  // width: 768,
+                  slidesPerView:2,
+                },
+                // when window width is >= 320px
+                320: {
+                 
+                  slidesPerView: 1,
+                },
+              }}  >
 
                 <SwiperSlide> <Cart Image={headphone} Title="هدفون بیتس" /></SwiperSlide>
                 <SwiperSlide> <Cart Image={iphone} Title="آیفون مکس" /></SwiperSlide>
