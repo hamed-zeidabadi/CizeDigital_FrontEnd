@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
 import "./Hero.scss";
-import "./hover.scss";
+// import "./hover.scss";
 
 import ReactTypingEffect from "react-typing-effect";
 
