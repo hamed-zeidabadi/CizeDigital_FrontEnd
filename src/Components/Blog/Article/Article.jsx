@@ -6,7 +6,6 @@ const Article = () => {
   return (
     <>
       <div className="article_blog">
-        article
         <Card />
       </div>
     </>
