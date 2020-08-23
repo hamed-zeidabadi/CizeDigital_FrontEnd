@@ -40,7 +40,7 @@ const CardBody = (props) => {
 const Card = (props) => {
   return (
     <article className="card">
-      <CardHeader image={"https://source.unsplash.com/user/erondu/600x400"} />
+      <CardHeader image={pic} />
       <CardBody
         title={"بهترین هدفون دنیا چیه ؟"}
         text={
