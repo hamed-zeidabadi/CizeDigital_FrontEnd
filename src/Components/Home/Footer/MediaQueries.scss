@@ -173,5 +173,45 @@
      }
 
 
+
+
   
   }
+
+
+ //========================================================
+//Meadi Queri just for Footer Bottom
+
+  @media (min-width: 320px) and (max-width: 588px){
+    
+
+    .footer_bottom{
+
+      flex-direction: column;
+
+      &_left_container{
+
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &_left_base_links{
+
+        &::after {
+          
+          display: none;
+         
+        }
+
+        &_after::after {
+         
+        display: none;
+       
+        }
+      }
+
+     }
+
+
+  }
+
