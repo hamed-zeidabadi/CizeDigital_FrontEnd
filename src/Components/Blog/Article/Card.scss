@@ -38,24 +38,25 @@ $blue: #341cac;
 
 $blue: #341cac;
 
-body, html {
-  font-family: 'Montserrat', sans-serif;
+body,
+html {
+  font-family: "Montserrat", sans-serif;
   background-color: $blue;
 }
 
 .card {
-  width:280px;
+  width: 280px;
   display: block;
   margin: 60px auto;
   box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
-  transition: .25s;
-  
+  transition: 0.25s;
+
   &:hover {
     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
     cursor: pointer;
-    
+
     .button-primary {
-      transform: translate(10px, 0);
+      transform: translate(-10px, 0);
     }
   }
 }
@@ -64,9 +65,9 @@ body, html {
   height: 150px;
   width: 100%;
   padding: 15px;
-  width:100%;
-  background-size:cover;
-  color:#fff;
+  width: 100%;
+  background-size: cover;
+  color: #fff;
 }
 
 .card-header--title {
@@ -76,8 +77,8 @@ body, html {
 
 .card-body {
   padding: 15px;
-  background-color:#fff;
-  width:100%;
+  background-color: #fff;
+  width: 100%;
 }
 
 .date {
@@ -96,104 +97,99 @@ body, html {
   border: none;
   box-shadow: none;
   font-family: inherit;
-  background-color:transparent;
+  background-color: transparent;
   color: $blue;
   font-size: 15px;
-  transition:.25s;
-  
-  i{
-    padding-right:4px;
-  }
-}
+  transition: 0.25s;
 
+  svg {
+margin-left: 5px;
+}
+}
 
 .designer-link {
-  color:#fff;
-  text-align:center;
+  color: #fff;
+  text-align: center;
   fon-size: 12px;
   text-decoration: none;
-  display:block;
+  display: block;
 }
 
-
-
-
 .app-header {
-  display:block;
+  display: block;
   padding: 30px;
 }
 
 .app-title {
-  display:inline-block;
+  display: inline-block;
   width: 100%;
   margin: 80px 0 0 0;
-  float:left;
-  position:relative;
-  color:#fff;
-  
-  @media(min-width:768px) {
+  float: left;
+  position: relative;
+  color: #fff;
+
+  @media (min-width: 768px) {
     width: 20%;
     margin: 280px 0 0 0;
   }
-  
+
   h1 {
     font-size: 52px;
     margin: 0;
   }
-  
+
   p {
     font-weight: 200;
-    opacity: .5;
+    opacity: 0.5;
   }
-  
 }
 
 .app-title-content {
-  position:relative;
-  top:50%;
+  position: relative;
+  top: 50%;
   left: 50%;
-  width:100%;
-  text-align:center;
-  transform:translate(-50%, -50%);
-  
-  @media(min-width:768px) {
-    width:auto;
-    position:absolute;
-    text-align:left;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: 768px) {
+    width: auto;
+    position: absolute;
+    text-align: left;
   }
 }
 
 .app-card-list {
-  display:inline-block;
-  width:100%;
-  float:right;
-  margin:0;
+  display: inline-block;
+  width: 100%;
+  float: right;
+  margin: 0;
   min-height: 75vh;
-  white-space:normal;
+  white-space: normal;
   overflow-x: scroll;
-  margin-top:-70px;
-  
-  &::-webkit-scrollbar { 
-    display: none; 
+  margin-top: -70px;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
-  
-  @media(min-width:768px) {
-      width:80%;
-      white-space:nowrap;
-      margin-top: 0;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    white-space: nowrap;
+    margin-top: 0;
   }
-  
+
   .card {
     margin: 60px 30px;
     display: inline-block;
-    
+
     .card-body {
-        white-space: normal;
+      white-space: normal;
     }
   }
 }
 
 .designer-link {
-  display:inline-block;
-  padding-top:40px;
+  display: inline-block;
+  padding-top: 40px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.scss";
-import { FaBookmark, FaHeart, FaRegComment } from "react-icons/fa";
+import { FaChevronCircleLeft } from "react-icons/fa";
 import pic from "../../../Images/Blog/1.jpg";
 
 const CardHeader = (props) => {
@@ -18,7 +18,8 @@ const CardHeader = (props) => {
 const Button = (props) => {
   return (
     <button className="button button-primary">
-      <i className="fa fa-chevron-right"></i> متن کامل مقاله
+     <FaChevronCircleLeft />
+      متن کامل مقاله
     </button>
   );
 };
