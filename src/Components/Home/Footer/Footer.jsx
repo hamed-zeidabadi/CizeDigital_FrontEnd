@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.scss"
+import "./MediaQueries.scss"
 import { FaGithubAlt, FaInstagram, FaTwitter ,FaTelegramPlane,FaRegCopyright } from "react-icons/fa";
 
 
@@ -25,7 +26,7 @@ const Footer = () => {
                     <p>ما بهترین هدفون ها را گردآوردی کرده ایم</p>
                     <p>ایمیل :example@fellan.com</p>
                     <p>شماره تماس : 09200000000</p>
-                    <p>شماره ثابت : 09822200000</p>
+                    <p className='footer_top_right_const_call'>شماره ثابت : 09822200000</p>
 
                 </div>
 
@@ -36,9 +37,9 @@ const Footer = () => {
                     <nav>
                         <ul>
                             <li>
-                                <a href="">هدفون و اسپیکر</a>
-                                <a href="">کیس و قاب</a>
-                                <a href="">پاور و کابل</a>
+                                <a href="">هدفون </a>
+                                <a href=""> قاب</a>
+                                <a href="">اسپیکر</a>
                                 <a href="">گیمینگ</a>
                                 <a href="">مد</a>
                                 <a href="">ویژه</a>
@@ -58,7 +59,7 @@ const Footer = () => {
                                 <a href="">فروشگاه فیزیکی</a>
                                 <a href="">ثبت محصول</a>
                                 <a href="">گارانتی</a>
-                                <a href="">قرعه کشی</a>
+                                <a href="">ارتباط با ما</a>
                                 <a href="">خبرنامه</a>
                             </li>
                         </ul>

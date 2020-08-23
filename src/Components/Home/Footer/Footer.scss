@@ -98,10 +98,11 @@
               & button{
 
                 background-color: transparent;
-                width: 25%;
-                border-radius: 25px;
+                width: 60px;
+                border-radius: 15px;
                 cursor: pointer;
                 transition: all 0.3s;
+                padding: 0 7px;
 
                 &:hover{
                   color: rgb(247, 240, 240);
@@ -260,6 +261,7 @@
           a {
             color: #000;
             text-decoration: none;
+            // padding: 10px;
 
             &:hover{
                 color: whitesmoke;
