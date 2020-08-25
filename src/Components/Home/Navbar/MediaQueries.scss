@@ -31,6 +31,25 @@
     .header_home_nav{
         display: none;
     }
+
+    //class is add & remove when user click in a shoppingcart icon...
+.basket_modals{
+
+  width: 45%;
+  
+}
+
+.basket_cart_res_items{
+
+  
+  &_title{
+      
+      width: 70%;
+      margin-right: 1em;
+     
+  }
+}
+
   }
   
   //========================================================
@@ -47,4 +66,23 @@
     .header_home_nav{
         display: none;
     }
+
+    .basket_modals{
+
+      width: 50%;
+      
+    }
+
+    .basket_cart_res_items{
+
+  
+      &_title{
+          
+          width: 70%;
+          margin-right: 1em;
+         
+      }
+  }
+
+
   }

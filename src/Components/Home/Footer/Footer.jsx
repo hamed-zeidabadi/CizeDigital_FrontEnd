@@ -20,6 +20,7 @@ const Footer = () => {
 
             <div className='footer_top'>
 
+
                 <div className='footer_top_right'>
                     <h2>سایز دیجیتال</h2>
                     <p>برای شما که سخت پسندید...</p>
