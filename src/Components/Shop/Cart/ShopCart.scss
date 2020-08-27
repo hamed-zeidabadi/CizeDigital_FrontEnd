@@ -1,0 +1,198 @@
+.cart_container{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 15vw;
+    height: 36vh;
+    border: 1px solid black;
+    margin-top: 1em;
+    background-color: rgb(165, 168, 168);
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+
+    &  img{
+  
+        width: 100%;
+        height: 68%;
+        border-radius: 10px;
+      }
+
+
+      &:hover .icons{
+
+        
+        right: 12px;
+        pointer-events: auto;
+        
+        
+      }
+
+      &:hover .el_one{
+        opacity: 1;
+        animation: fadeInRight;
+        animation-duration: .3s;
+      }
+
+      &:hover .el_two{
+        opacity: 1;
+        animation: fadeInRight;
+        animation-duration: .5s;
+      }
+
+      &:hover .el_theree{
+        opacity: 1;
+        animation: fadeInRight;
+        animation-duration: .7s;
+      
+      }
+
+      &:hover .el_four{
+        opacity: 1;
+        animation: fadeInRight;
+        animation-duration: .9s;
+      
+      }
+
+
+
+  }
+
+
+  .icons{
+
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    color: black;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    pointer-events: none;
+    
+    
+
+    & a{
+
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        opacity: 0;
+        background-color: whitesmoke;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        
+
+        &:hover{
+            background-color: rgb(240, 63, 63);
+        }
+
+        //نوشته ای که با هاور شدن قرار است در کنار آیکن ها ظاهر شود
+
+        & span{
+
+            opacity: 0;
+            position: absolute;
+            top: 5px;
+            right: 54px;
+            color: whitesmoke !important;
+            background-color: rgb(70, 69, 69);
+            border-radius: 5px;
+            line-height: 25px;
+            text-align: center;
+            width: 100px;
+            height: auto;
+            padding: 1px;
+
+            &::before{
+
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 0;
+              top: 7px;
+              right: -14px;
+              border-style: solid;
+              border-width: 6px 0 6px 14px;
+              border-color: transparent transparent transparent #67686d;
+          }
+
+    
+         
+        }
+
+        &:hover span{
+
+            opacity: .8;
+           
+        }
+    }
+
+    .span_heart{
+
+    
+      top: 0px;
+      right: 50px;
+      width: 300%;
+     
+
+      &::before{
+
+        width: 0;
+        height: 0;
+        top: 14px;
+        right: -10px;
+        border-width: 8px 0 8px 10px;
+      
+    }
+
+
+    }
+
+
+
+    //
+    .el_one{
+        animation: fadeOutRight;
+        animation-duration: .1s;
+    }
+
+    .el_two{
+        animation: fadeOutRight;
+        animation-duration: .3s;
+    }
+
+    .el_theree{
+        animation: fadeOutRight;
+        animation-duration: .5s;
+        
+    }
+
+
+    .el_four{
+        animation: fadeOutRight;
+        animation-duration: .7s;
+    }
+    
+  }
+  
+  
+  // ***** test class for base page shop****
+
+  .shop{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #bebfc4;
+    min-height: 100vh;
+    
+  }
