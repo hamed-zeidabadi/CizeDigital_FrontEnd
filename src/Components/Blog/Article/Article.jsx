@@ -1,6 +1,8 @@
 import React from "react";
 import "./Article.scss";
 import Card from "./Card";
+// import ScrollAnimation from "react-animate-on-scroll";
+
 
 const Article = () => {
   const data = [
