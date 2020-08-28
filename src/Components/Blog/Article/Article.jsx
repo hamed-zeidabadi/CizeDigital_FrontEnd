@@ -3,7 +3,6 @@ import "./Article.scss";
 import Card from "./Card";
 // import ScrollAnimation from "react-animate-on-scroll";
 
-
 const Article = () => {
   const data = [
     {
@@ -18,8 +17,7 @@ const Article = () => {
     {
       id: 2,
       title: "اینتل چطور در سال‌های پیش رو با قانون مور همگام‌ باقی می‌ماند؟",
-      desc:
-        "ترانزیستورها در یک چیپ کامپیوتری خواهیم بود",
+      desc: "ترانزیستورها در یک چیپ کامپیوتری خواهیم بود",
       category: "تکنولوژی",
       img: require("../../../Images/Blog/2.jpg"),
       date: "26 آبان 1399",
@@ -27,8 +25,7 @@ const Article = () => {
     {
       id: 3,
       title: "شبکه بیت‌کوین حالا به اندازه ۷ نیروگاه هسته‌ای برق مصرف می‌کند",
-      desc:
-        "کوین حالا به اندازه هفت نیروگاه هسته‌ای برق مصرف می‌کند.",
+      desc: "کوین حالا به اندازه هفت نیروگاه هسته‌ای برق مصرف می‌کند.",
       category: "اخبار",
       img: require("../../../Images/Blog/3.jpg"),
       date: "27 آبان 1399",
@@ -48,7 +45,7 @@ const Article = () => {
     <>
       <div className="article_blog">
         {data
-          ? [...data ,...data, ...data].map((items) => (
+          ? [...data, ...data, ...data].map((items) => (
               <Card
                 key={items.id}
                 title={items.title}
