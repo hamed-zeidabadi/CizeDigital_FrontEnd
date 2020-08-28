@@ -46,7 +46,7 @@ const Article = () => {
     <>
       <div className="article_blog">
         {data
-          ? data.map((items) => (
+          ? [...data ,...data, ...data].map((items) => (
               <Card
                 key={items.id}
                 title={items.title}
