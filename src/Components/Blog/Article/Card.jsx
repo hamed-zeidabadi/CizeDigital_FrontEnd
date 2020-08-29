@@ -44,7 +44,8 @@ const Card = ({ title, desc, category, img, date }) => {
     <article className="card">
       <ScrollAnimation
         className="animate__animated"
-        animateIn="animate__fadeInRight"
+        animateIn="animate__jackInTheBox"
+        animateOut="animate__fadeOutDown"
         style={{ animationDuration: "1.5s" }}
       >
         <CardHeader image={img} category={category} />

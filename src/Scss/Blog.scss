@@ -24,6 +24,17 @@
   &_article {
     width: 100%;
     height: auto;
+     background: #24c6dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #514a9d,
+      #24c6dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #514a9d,
+      #24c6dc
+    );
   }
   &_footer {
     width: 100%;
