@@ -39,9 +39,9 @@ const CardBody = ({ date, title, desc }) => {
   );
 };
 
-const Card = ({ title, desc, category, img, date }) => {
+const Card = ({ title, desc, category, img, date, id }) => {
   return (
-    <article className="card">
+    <article className="card_blog">
       <ScrollAnimation
         className="animate__animated"
         animateIn="animate__jackInTheBox"

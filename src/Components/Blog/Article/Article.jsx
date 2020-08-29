@@ -48,6 +48,7 @@ const Article = () => {
           ? [...data, ...data, ...data].map((items) => (
               <Card
                 key={items.id}
+                id={items.id}
                 title={items.title}
                 desc={items.desc}
                 category={items.category}
