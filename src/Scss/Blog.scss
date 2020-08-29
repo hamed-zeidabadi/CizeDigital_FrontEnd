@@ -10,7 +10,7 @@
     width: 100%;
     height: 7.3vh;
   }
-  
+
   &_hero {
     width: 100%;
     height: 30vh;
@@ -24,17 +24,13 @@
   &_article {
     width: 100%;
     height: auto;
-     background: #24c6dc; /* fallback for old browsers */
+    background: #24c6dc; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to left,
       #514a9d,
       #24c6dc
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to left,
-      #514a9d,
-      #24c6dc
-    );
+    background: linear-gradient(to left, #514a9d, #24c6dc);
   }
   &_footer {
     margin-top: 50px;
