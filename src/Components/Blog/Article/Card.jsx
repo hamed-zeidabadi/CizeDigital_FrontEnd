@@ -19,7 +19,7 @@ const CardHeader = (props) => {
 const Button = (props) => {
   return (
     <button className="button button-primary">
-      <FaChevronCircleLeft />
+      <FaChevronCircleLeft className=" button-primary_btn" />
       متن کامل مقاله
     </button>
   );

@@ -36,9 +36,19 @@ html {
   &:hover {
     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
     cursor: pointer;
-
+    .card-header--title {
+      font-size: 1.2em;
+      transition: font-size 0.3s;
+    }
+    .date {
+      color: #f33c3c;
+    }
     .button-primary {
       transform: translate(-10px, 0);
+      color: #f33c3c;
+      &_btn {
+        color: #f33c3c;
+      }
     }
   }
 }
@@ -66,7 +76,7 @@ html {
 .date {
   font-size: 11px;
   font-weight: 600;
-  color: grey;
+  color: $blue;
 }
 
 .body-content {
@@ -84,8 +94,8 @@ html {
   font-size: 15px;
   transition: 0.25s;
 
-  svg {
-    margin-left: 5px;
+  .button-primary &_btn {
+    margin-left: 10px;
   }
 }
 
