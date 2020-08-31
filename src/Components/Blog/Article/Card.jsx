@@ -1,58 +1,57 @@
 import React from "react";
 import "./Card.scss";
-import { FaBookmark, FaHeart, FaRegComment } from "react-icons/fa";
+import { FaChevronCircleLeft } from "react-icons/fa";
+// import pic from "../../../Images/Blog/1.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
-const Card = () => {
+const CardHeader = (props) => {
+  const { image, category } = props;
+  var style = {
+    backgroundImage: "url(" + image + ")",
+  };
   return (
-    <>
-      <div className="card_blog">
-        <div class="example-1 card">
-          <div class="wrapper">
-            <div class="date">
-              <span class="day">12</span>
-              <span class="month">اسفند</span>
-              <span class="year">13</span>
-            </div>
-            <div class="data">
-              <div class="content">
-                <span class="author">حامد زیدآبادی</span>
-                <h1 class="title">
-                  <a href="#">عنوان مقاله یک دو سه</a>
-                </h1>
-                <p class="text">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  ...
-                </p>
-                <label for="show-menu" class="menu-button">
-                  <span></span>
-                </label>
-              </div>
-              <input type="checkbox" id="show-menu" />
-              <ul class="menu-content">
-                <li>
-                  <a href="#">
-                    <FaBookmark />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="fa fa-heart-o">
-                    <FaHeart />
-                    <span>47</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="fa fa-comment-o">
-                    <FaRegComment />
-                    <span>8</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <header style={style} id={image} className="card-header">
+      <h4 className="card-header--title">{category}</h4>
+    </header>
+  );
+};
+
+const Button = (props) => {
+  return (
+    <button className="button button-primary">
+      <FaChevronCircleLeft className=" button-primary_btn" />
+      متن کامل مقاله
+    </button>
+  );
+};
+
+const CardBody = ({ date, title, desc }) => {
+  return (
+    <div className="card-body">
+      <p className="date">{date}</p>
+
+      <h2>{title}</h2>
+
+      <p className="body-content">{desc}</p>
+
+      <Button />
+    </div>
+  );
+};
+
+const Card = ({ title, desc, category, img, date, id }) => {
+  return (
+    <article className="card_blog">
+      <ScrollAnimation
+        className="animate__animated"
+        animateIn="animate__jackInTheBox"
+        animateOut="animate__fadeOutDown"
+        style={{ animationDuration: "1.5s" }}
+      >
+        <CardHeader image={img} category={category} />
+        <CardBody title={title} desc={desc} category={category} date={date} />
+      </ScrollAnimation>
+    </article>
   );
 };
 

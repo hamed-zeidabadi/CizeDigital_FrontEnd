@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../Components/Blog/Navbar/Navbar";
-import Footer from "./../Components/Blog/Footer/Footer";
+import Navbar from "../Components/Home/Navbar/Navbar";
+import Footer from "./../Components/Home/Footer/Footer";
 import Hero from "./../Components/Blog/Hero/Hero";
 import Article from "./../Components/Blog/Article/Article";
 const Blog = () => {
