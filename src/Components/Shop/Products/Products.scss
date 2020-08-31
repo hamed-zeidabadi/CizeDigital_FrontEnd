@@ -1,12 +1,14 @@
 .product{
 
+    
+    
 &_container{
 
-    height: 90vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     margin-top: 3em;
-    padding: 5px;
+    padding: 2px;
 
 }
 
@@ -15,14 +17,70 @@
 
     border: 1px solid black;
     width: 70%;
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &_filter{
+
+        height: 8vh;
+        width: 98%;
+        margin: 5px;
+        border: 1px solid coral;
+        text-align: center;
+    }
+
+    &_cards{
+
+        height: 100%;
+        width: 98%;
+        border: 1px solid crimson;
+        margin: 5px;
+    }
     
 }
 
 &_divisions{
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid red;
     width: 30%;
+    height: 105%;
     margin-right: 5px;
+
+    &_faction{
+
+        width: 98%;
+        height: 50%;
+        border: 1px solid blueviolet;
+        margin: 5px;
+        text-align: center;
+
+    }
+
+    &_price{
+
+        width: 98%;
+        height: 15%;
+        border: 1px solid rgb(43, 226, 58);
+        margin: 5px;
+        text-align: center;
+
+    }
+
+    &_brands{
+
+        width: 98%;
+        height: 40%;
+        border: 1px solid rgb(10, 129, 226);
+        margin: 5px;
+        text-align: center;
+
+    }
 }
 
 }
