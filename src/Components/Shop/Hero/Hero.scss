@@ -6,32 +6,44 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    
+
     &_title {
+
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      flex-direction: column;
+      flex-direction: row;
+
+      width: 100%;
+
+      & img{
+
+        margin-right: 65px;
+        height: 25vh;
+        opacity: .7;
+      }
   
       
       & h1 {
         color: white;
         font-family: "IRANSans_Bold" !important;
+        font-size: 40px;
         position: relative;
         &::before {
           content: "  ــــــــــــــ  ";
           position: absolute;
           top: 25px;
-          left: -38px;
-          margin-bottom: 5px;
+          left: -40px;
+          margin-bottom: 6px;
           color: #f33c3c;
           opacity: 0.8;
         }
       }
   
       &_item {
-        margin-top: 12px;
-        font-size: 0.8em;
+        margin-top: 15px;
+        font-size: 1em;
+        width: 80%;
         color: white;
         font-family: "IRANSans" !important;
       }

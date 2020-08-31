@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
 import "./Hero.scss";
+import heroImage from '../../../Images/headphone2.png'
 import ReactTypingEffect from "react-typing-effect";
 
 
@@ -18,9 +19,9 @@ const Hero = () => {
 
 
   const text = [
+      
     "بهترین محصولات",
-    "به روز ترین فناوری ها",
-    "با ما همیشه به روز باشید !",
+    "به روز ترین ها",
   ];
 
 
@@ -30,11 +31,17 @@ const Hero = () => {
       <div className="hero_shop">
 
         <div className="hero_shop_title">
-          <h1>فروشگاه</h1>
-          <ReactTypingEffect
-            className="hero_shop_title_item"
-            text={text} 
-          />
+
+           <div>
+                <h1>فروشگاه</h1>
+                <ReactTypingEffect
+                    className="hero_shop_title_item"
+                    text={text} 
+                />
+           </div>
+
+           <img  src={heroImage}/>
+        
         </div>
 
         <div className="hero_shop_nav">
@@ -65,7 +72,7 @@ const Hero = () => {
                 href="#"
                 onClick={() => setisActive({ link2: !isActive.link2 })}
               >
-                تکنولوژی
+                هدفون
               </a>
             </li>
 
@@ -79,7 +86,7 @@ const Hero = () => {
                 href="#"
                 onClick={() => setisActive({ link3: !isActive.link3 })}
               >
-                سبک زندگی
+                اسپیکر
               </a>
             </li>
 
@@ -93,7 +100,7 @@ const Hero = () => {
                 href="#"
                 onClick={() => setisActive({ link4: !isActive.link4 })}
               >
-                طراحی
+                گیمینگ
               </a>
             </li>
 
