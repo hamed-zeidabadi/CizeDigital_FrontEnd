@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Home/Navbar/Navbar";
 import Footer from "./../Components/Home/Footer/Footer";
+import Hero from './../Components/Shop/Hero/Hero'
 
 const Shop = () => {
   return (
@@ -11,10 +12,11 @@ const Shop = () => {
           <Navbar />
         </div>
         
-        {/* <div className="shop_hero">
+        <div className="shop_hero">
           <Hero />
         </div>
-        <div className="shop_products">
+        
+        {/* <div className="shop_products">
           <Article />
         </div> */}
 

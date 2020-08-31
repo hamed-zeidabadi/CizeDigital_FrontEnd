@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import './ShopCart.scss'
+import './ShopCard.scss'
 import mobile from './img1.jpg'
 import { FaRegListAlt} from "react-icons/fa";
 import { FaRegHeart} from "react-icons/fa";
