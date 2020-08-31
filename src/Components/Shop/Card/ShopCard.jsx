@@ -10,7 +10,7 @@ import "animate.css/animate.min.css";
 
 
 
-const Cart = () => {
+const Cart = (props) => {
 
 
     // useEffect(() => {
@@ -33,9 +33,9 @@ const Cart = () => {
 
             <div className='cart_container'>
 
-                <img src={mobile} alt='aks'/>
-                <p>اسم محصول</p>
-                <p>200 هزار تومان</p>
+                <img src={mobile} alt='product-image'/>
+                <p>{props.title}</p>
+                <p>{props.price}</p>
 
 
                     <div className='icons '>

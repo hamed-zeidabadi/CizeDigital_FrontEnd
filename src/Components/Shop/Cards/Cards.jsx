@@ -8,18 +8,18 @@ const Cards = () => {
 
         <div className='cards_container'>
 
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card title='گوشی' price='200 هزار تومن' />
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
+            <Card title='گوشی' price='200 هزار تومن'/>
             
         </div>
     )
