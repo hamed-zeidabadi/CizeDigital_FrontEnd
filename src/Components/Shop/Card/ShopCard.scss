@@ -6,10 +6,10 @@
     flex-direction: column;
     flex-wrap: nowrap;
     width: 15vw;
-    height: 36vh;
-    border: 1px solid black;
-    margin-top: 1em;
-    background-color: rgb(165, 168, 168);
+    height: 30vh;
+    // border: 1px solid black;
+    margin: 10px;
+    background-color: white;
     border-radius: 10px;
     color: black;
     font-weight: 600;
@@ -18,7 +18,7 @@
     &  img{
   
         width: 100%;
-        height: 68%;
+        height: 70%;
         border-radius: 10px;
       }
 
@@ -187,12 +187,12 @@
   
   // ***** test class for base page shop****
 
-  .shop{
+  // .shop{
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #bebfc4;
-    min-height: 100vh;
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   background-color: #bebfc4;
+  //   min-height: 100vh;
     
-  }
+  // }

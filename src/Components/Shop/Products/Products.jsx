@@ -1,5 +1,6 @@
 import React from 'react'
 import './Products.scss'
+import Cards from '../Cards/Cards'
 
 const Products = () => {
     return (
@@ -9,7 +10,9 @@ const Products = () => {
             <div className="product_items">
 
                 <div className="product_items_filter">فیلتر</div>
-                <div className="product_items_cards"></div>
+                <div className="product_items_cards">
+                    <Cards />
+                </div>
 
             </div>
 

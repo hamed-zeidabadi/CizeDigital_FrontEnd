@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './ShopCard.scss'
 import mobile from './img1.jpg'
 import { FaRegListAlt} from "react-icons/fa";
@@ -13,13 +13,13 @@ import "animate.css/animate.min.css";
 const Cart = () => {
 
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const element=document.querySelector('.el_one')
-        // element.classList.remove('.el_*');
-        // element.style['animation']='fadeOut'
+    //     const element=document.querySelector('.el_one')
+    //     // element.classList.remove('.el_*');
+    //     // element.style['animation']='fadeOut'
         
-      });
+    //   });
 
 
     return (
