@@ -1,0 +1,28 @@
+.product{
+
+&_container{
+
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    margin-top: 3em;
+    padding: 5px;
+
+}
+
+
+&_items{
+
+    border: 1px solid black;
+    width: 70%;
+    
+}
+
+&_divisions{
+
+    border: 1px solid red;
+    width: 30%;
+    margin-right: 5px;
+}
+
+}
