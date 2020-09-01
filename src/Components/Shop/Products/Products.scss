@@ -54,10 +54,34 @@
     &_faction{
 
         width: 98%;
-        height: 50%;
-        border: 1px solid blueviolet;
-        margin: 5px;
+        height: 40%;
+        background-color: whitesmoke;
+        border-radius: 5px;
         text-align: center;
+
+        & ul{
+
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+
+            & li{
+               
+                margin: 5px;
+            }
+
+            & a{
+                text-decoration: none;
+                color: black;
+
+                &:hover{
+                    color: rgb(241, 40, 40);
+                }
+            }
+        }
 
     }
 

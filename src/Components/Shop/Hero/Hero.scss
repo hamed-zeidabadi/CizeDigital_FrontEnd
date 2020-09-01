@@ -29,15 +29,15 @@
         font-family: "IRANSans_Bold" !important;
         font-size: 40px;
         position: relative;
-        &::before {
-          content: "  ــــــــــــــ  ";
-          position: absolute;
-          top: 25px;
-          left: -40px;
-          margin-bottom: 6px;
-          color: #f33c3c;
-          opacity: 0.8;
-        }
+        // &::before {
+        //   content: "  ــــــــــــــ  ";
+        //   position: absolute;
+        //   top: 25px;
+        //   left: -40px;
+        //   margin-bottom: 6px;
+        //   color: #f33c3c;
+        //   opacity: 0.8;
+        // }
       }
   
       &_item {
