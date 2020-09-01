@@ -1,6 +1,5 @@
 import React from 'react'
 import './ShopCard.scss'
-import mobile from './img1.jpg'
 import { FaRegListAlt} from "react-icons/fa";
 import { FaRegHeart} from "react-icons/fa";
 import { BsBag } from "react-icons/bs";
@@ -33,7 +32,7 @@ const Cart = (props) => {
 
             <div className='cart_container'>
 
-                <img src={mobile} alt='product-image'/>
+                <img src={props.image} alt='product-image'/>
                 <p>{props.title}</p>
                 <p>{props.price}</p>
 
