@@ -8,7 +8,7 @@ const Cards = () => {
 
         <div className='cards_container'>
 
-            <Card title='گوشی' price='200 هزار تومن' />
+            <Card title='گوشی' price='200 هزار تومن'/>
             <Card title='گوشی' price='200 هزار تومن'/>
             <Card title='گوشی' price='200 هزار تومن'/>
             <Card title='گوشی' price='200 هزار تومن'/>
