@@ -46,23 +46,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 30%;
     height: 105%;
-    margin-right: 5px;
+    margin-left:3px;
+
+    & h3{
+      
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid rgb(128, 127, 127);
+    }
 
     &_faction{
 
         width: 98%;
-        height: 40%;
-        background-color: whitesmoke;
+        height: 45%;
+        // background-color: whitesmoke;
         border-radius: 5px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
 
         & ul{
 
             display: flex;
             flex-direction: column;
+            flex-wrap: nowrap;
             list-style: none;
             align-items: center;
             justify-content: space-between;
@@ -89,8 +100,6 @@
 
         width: 98%;
         height: 15%;
-        border: 1px solid rgb(43, 226, 58);
-        margin: 5px;
         text-align: center;
 
     }
@@ -98,11 +107,32 @@
     &_brands{
 
         width: 98%;
-        height: 40%;
-        border: 1px solid rgb(10, 129, 226);
-        margin: 5px;
+        height: 25%;
         text-align: center;
 
+        & ul{
+
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+
+            & li{
+               
+                margin: 5px;
+            }
+
+            & a{
+                text-decoration: none;
+                color: black;
+
+                &:hover{
+                    color: rgb(241, 40, 40);
+                }
+            }
+        }
     }
 }
 
