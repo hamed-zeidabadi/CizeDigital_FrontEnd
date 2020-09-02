@@ -75,7 +75,7 @@
 
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-around;
             flex-wrap: nowrap;
             flex-direction: column;
             background-color:#3460FC;
@@ -85,6 +85,11 @@
             &:hover{
                 cursor: pointer;
                 background-color: rgb(41, 86, 247);
+            }
+
+            &:hover p{
+
+                color: rgb(233, 80, 80);
             }
             
             & img{
@@ -144,6 +149,11 @@
                 cursor: pointer;
                 background-color: rgb(41, 86, 247);
             }
+
+            &:hover p{
+
+                color: rgb(233, 80, 80);
+            }
             
             & img{
                 height: 35%;
@@ -155,6 +165,8 @@
                 height: 10%;
                 color: whitesmoke;
                 font-size: 14px;
+
+                
             }
 
         }
