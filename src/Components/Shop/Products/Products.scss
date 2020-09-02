@@ -91,10 +91,18 @@
 
                 color: rgb(233, 80, 80);
             }
+
+            &:hover img{
+
+                transform: scale(1.08);
+            }
+           
             
             & img{
                 height: 50%;
                 width: auto;
+
+               
             }
 
             & p{
@@ -153,6 +161,12 @@
             &:hover p{
 
                 color: rgb(233, 80, 80);
+            }
+
+            &:hover img{
+
+                transform: scale(1.08);
+                animation: heartBeat;
             }
             
             & img{
