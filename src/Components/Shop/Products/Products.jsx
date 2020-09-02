@@ -2,6 +2,7 @@ import React from 'react'
 import './Products.scss'
 import Cards from '../Cards/Cards'
 import Faction from '../Faction/Faction'
+import Brands from '../Brands/Brands'
 
 
 const Products = () => {
@@ -13,28 +14,18 @@ const Products = () => {
 
                  <h3>بر اساس مدل</h3>
 
-                  {/* in bottom component (Faction) css style availabe in 
-                     prodcus.scss file !  */}
+            {/* in bottoms component (Faction & brands) css style availabe in 
+             prodcus.scss file !  */}
 
-                        <Faction />
+                     <Faction />
+
+                     <h3 className='product_divisions_brands_title'>بر اساس برند</h3>
+                     <Brands />
 
                 <div className='product_divisions_price'>
                   <h3>براساس قیمت</h3>
                 </div>
 
-                <div className='product_divisions_brands'>
-
-                    <h3>برندها</h3>
-                    <ul>
-                        <li> <a href=''>Boss</a> </li>
-                        <li> <a href=''>Senhiser</a> </li>
-                        <li> <a href=''>Beats</a> </li>
-                        <li> <a href=''>Audio Technica</a> </li>
-                        <li> <a href=''>Klipesch</a> </li>
-                       
-                    </ul>
-
-                </div>
 
             </div>
             
