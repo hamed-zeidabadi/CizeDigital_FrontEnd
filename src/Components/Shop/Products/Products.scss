@@ -53,46 +53,51 @@
 
     & h3{
       
-        margin: 10px;
-        padding: 10px;
+        margin-bottom: 10px;
+        // padding: 10px;
         border-bottom: 1px solid rgb(128, 127, 127);
     }
+
+
+    // ---------style for faction Component--------
 
     &_faction{
 
         width: 98%;
         height: 45%;
-        background-color: whitesmoke;
-        border: 1px solid rgb(190, 188, 188);
         border-radius: 5px;
         text-align: center;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-wrap: wrap;
 
-        & ul{
+
+        &_item{
 
             display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            list-style: none;
             align-items: center;
-            justify-content: space-between;
-            height: 100%;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            background-color:#3460FC;
+            height: 34%;
+            width: 33%;
 
-            & li{
-               
-                margin: 5px;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(41, 86, 247);
+            }
+            
+            & img{
+                height: 50%;
+                width: auto;
             }
 
-            & a{
-                text-decoration: none;
-                color: black;
+            & p{
 
-                &:hover{
-                    color: rgb(241, 40, 40);
-                }
+                height: 15%;
             }
+
         }
 
     }
@@ -101,7 +106,7 @@
 
         width: 98%;
         height: 20%;
-        margin-top: 8px;
+        margin-top: 20px;
         text-align: center;
         background-color: whitesmoke;
         border: 1px solid rgb(190, 188, 188);

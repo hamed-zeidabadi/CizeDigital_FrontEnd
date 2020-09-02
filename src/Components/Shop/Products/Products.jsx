@@ -1,6 +1,8 @@
 import React from 'react'
 import './Products.scss'
 import Cards from '../Cards/Cards'
+import Faction from '../Faction/Faction'
+
 
 const Products = () => {
     return (
@@ -9,21 +11,12 @@ const Products = () => {
 
             <div className='product_divisions'>
 
-                <div className='product_divisions_faction'>
+                 <h3>بر اساس مدل</h3>
 
-                        <h3>دسته ها</h3>
-                    <ul>
-                        <li> <a href=''>هدفون ها</a> </li>
-                        <li> <a href=''>اسپیکر</a> </li>
-                        <li> <a href=''>کیس</a> </li>
-                        <li> <a href=''>محافظ صفحه</a> </li>
-                        <li> <a href=''>گیمینگ</a> </li>
-                        <li> <a href=''>پاور</a> </li>
-                        <li> <a href=''>کابل ها</a> </li>
-                        <li> <a href=''>لوازم جانبی</a> </li>
-                    </ul>
+                  {/* in bottom component (Faction) css style availabe in 
+                     prodcus.scss file !  */}
 
-                </div>
+                        <Faction />
 
                 <div className='product_divisions_price'>
                   <h3>براساس قیمت</h3>
