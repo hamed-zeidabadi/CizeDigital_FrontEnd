@@ -13,7 +13,7 @@ const Products = () => {
 
             <div className='product_divisions'>
 
-                 <h3>بر اساس مدل</h3>
+                 <h3>بر اساس نوع</h3>
 
             {/* in bottoms component (Faction & brands) css style availabe in 
              prodcus.scss file !  */}
