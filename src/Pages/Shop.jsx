@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Home/Navbar/Navbar";
 import Footer from "./../Components/Home/Footer/Footer";
-import Hero from './../Components/Shop/Hero/Hero'
+import Heros from './../Components/Shop/Hero/Heros'
 import Products from './../Components/Shop/Products/Products'
 
 const Shop = () => {
@@ -14,7 +14,7 @@ const Shop = () => {
         </div>
         
         <div className="shop_hero">
-          <Hero />
+          <Heros />
         </div>
 
         <div className="shop_products">
