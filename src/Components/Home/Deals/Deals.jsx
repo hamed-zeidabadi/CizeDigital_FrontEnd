@@ -15,12 +15,24 @@ import headphone_bt from '../../../Images/hot_deales/headphone_bt.jpg'
 const Deals = () => {
 
   const params = {
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+,
     slidesPerView: 2,
+
+    
     // spaceBetween: 2,
+
     pagination: {
+      type: 'bullets',
       el: '.swiper-pagination',
       clickable: true,
-    }
+    },
+
+  
   }
 
   return (
