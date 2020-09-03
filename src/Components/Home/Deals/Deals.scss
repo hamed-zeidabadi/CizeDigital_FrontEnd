@@ -46,18 +46,28 @@
 
 }
 
-// .swiper-button-next{
 
-//   color: black;
-//   background-color: black;
-  
-//   position: absolute;
-//   top: 0;
-//   // left: 0;
-//   right: 0;
-//   z-index: 10;
-//   opacity: 1;
-//   visibility: show;
-// }
+//edit classes swiper button for chaning color
+//classes availabe in node_mdule folder--> swiper/components/navigation/navigation.scss
+
+.swiper-button-prev,
+.swiper-button-next{
+
+  color: #C53333;
+
+}
+
+
+
+//edit classes swiper pagination bullet for chaning color
+//classes availabe in node_mdule folder--> swiper/components/pagination/pagination.scss
+
+
+.swiper-pagination-bullet{
+
+  background: rgb(192, 21, 21);
+ 
+
+}
 
 
