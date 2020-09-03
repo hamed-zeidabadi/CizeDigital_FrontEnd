@@ -1,8 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Navigation,Pagination } from 'swiper';
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
 import "./Deals.scss";
 import DiscountCart from './DiscountCart'
 
@@ -17,7 +18,7 @@ import headphone_bt from '../../../Images/hot_deales/headphone_bt.jpg'
 
 
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation,Pagination]);
 
 
 
@@ -36,6 +37,7 @@ const Deals = () => {
           spaceBetween={50}
           slidesPerView={2}
           navigation
+          pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
 
