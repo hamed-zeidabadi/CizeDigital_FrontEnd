@@ -7,18 +7,15 @@ import earth from "../Images/404/earth.svg";
 import rocket from "../Images/404/rocket.svg";
 import err404 from "../Images/404/404.svg";
 
-
 const NotFound = () => {
   return (
     <>
       <div className="p_404 bg-purple">
         <div class="stars">
           <div class="central-body">
-            <img
-              class="image-404"
-              src={err404}
-              width="300px"
-            />
+            <img class="image-404" src={err404} width="300px" />
+            <p class="central-body_p">به نظر میاد توی فضا گم شدی !</p>
+
             <Link
               to="/"
               class="btn-go-home"

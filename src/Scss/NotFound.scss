@@ -171,6 +171,19 @@
   /*    width: 100%;*/
   padding: 17% 5% 10% 5%;
   text-align: center;
+  &_p {
+    margin: 0 auto;
+    background-color: #ffcb39;
+    width: 250px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding: 5px;
+  }
 }
 
 .objects img {
