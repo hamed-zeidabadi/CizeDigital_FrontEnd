@@ -3,8 +3,6 @@
   width: 100%;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
-
 @-moz-keyframes rocket-movement {
   100% {
     -moz-transform: translate(1200px, -600px);
@@ -143,7 +141,7 @@
   position: relative;
   z-index: 200;
   margin: 15px auto;
-  width: 100px;
+  width: 300px;
   padding: 10px 15px;
   border: 1px solid #ffcb39;
   border-radius: 100px;
@@ -152,8 +150,8 @@
   color: white;
   text-align: center;
   text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 2em;
+  font-family: "IRANSans" !important;
 
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -194,20 +192,14 @@
   top: 20%;
   left: 15%;
   z-index: 90;
-  /*    animation: spin-earth 100s infinite linear both;*/
 }
 
 .object_moon {
   position: absolute;
   top: 12%;
   left: 25%;
-  /*
-    transform: rotate(0deg);
-    transition: transform ease-in 99999999999s;
-*/
-}
-
-.earth-moon {
+  transform: rotate(0deg);
+  transition: transform ease-in 99999999999s;
 }
 
 .object_astronaut {
