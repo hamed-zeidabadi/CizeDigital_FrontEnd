@@ -14,12 +14,12 @@ const DiscountCart =(props)=>{
 
                 <h3>{props.title}</h3>
                 
-                <p>قیمت</p>
+                <span>قیمت</span>
 
-                <span>
-                    <p></p>
-                    <p></p>
-                </span>
+                <div className='discount_details_save_money'>
+                   <span>تخفیف</span>
+                   <span><span className='discount_details_save_money_amount'>5000</span>هزار تومن</span>
+                </div>
 
                 <span>
 
