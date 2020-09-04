@@ -22,6 +22,7 @@ SwiperCore.use([Navigation,Pagination]);
 
 
 const Favorites = () => {
+  
     return (
 
        
@@ -40,9 +41,8 @@ const Favorites = () => {
                  
                   slidesPerView:3,
                 },
-                
+                // width: 768,
                 768: {
-                  // width: 768,
                   slidesPerView:2,
                 },
                 // when window width is >= 320px

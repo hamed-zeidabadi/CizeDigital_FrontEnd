@@ -1,6 +1,5 @@
-import React,{useEffect} from 'react'
-import './ShopCart.scss'
-import mobile from './img1.jpg'
+import React from 'react'
+import './ShopCard.scss'
 import { FaRegListAlt} from "react-icons/fa";
 import { FaRegHeart} from "react-icons/fa";
 import { BsBag } from "react-icons/bs";
@@ -10,16 +9,16 @@ import "animate.css/animate.min.css";
 
 
 
-const Cart = () => {
+const Cart = (props) => {
 
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const element=document.querySelector('.el_one')
-        // element.classList.remove('.el_*');
-        // element.style['animation']='fadeOut'
+    //     const element=document.querySelector('.el_one')
+    //     // element.classList.remove('.el_*');
+    //     // element.style['animation']='fadeOut'
         
-      });
+    //   });
 
 
     return (
@@ -33,9 +32,9 @@ const Cart = () => {
 
             <div className='cart_container'>
 
-                <img src={mobile} alt='aks'/>
-                <p>اسم محصول</p>
-                <p>200 هزار تومان</p>
+                <img src={props.image} alt='product-image'/>
+                <p>{props.title}</p>
+                <p>{props.price}</p>
 
 
                     <div className='icons '>

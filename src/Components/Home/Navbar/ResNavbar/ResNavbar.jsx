@@ -4,7 +4,7 @@ import { BsSearch } from "react-icons/bs";
 import SideDrawer from "./SideDrawer"
 import ShopingCartRes from "../ShopingCart/ShoppingCartRes"
 import UserLogin from "../UserLogin/UserLogin"
-import logoSite from "../../../../Images/mega_menu/home/output.png"
+import logoSite from "../../../../Images/mega_menu/home/logo3.png"
 // import { Squash as Hamburger } from 'hamburger-react'
 
 const ResNavbar = () => {

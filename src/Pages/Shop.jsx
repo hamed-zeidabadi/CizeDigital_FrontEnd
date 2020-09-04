@@ -1,15 +1,32 @@
 import React from "react";
-import Header from "./../Components/Shop/Header";
-import ShopgCart from "./../Components/Shop/Cart/ShopCart"
+import Navbar from "../Components/Home/Navbar/Navbar";
+import Footer from "./../Components/Home/Footer/Footer";
+import Heros from './../Components/Shop/Hero/Heros'
+import Products from './../Components/Shop/Products/Products'
+
 const Shop = () => {
   return (
     <>
-      <div className="shop">
-        <Header />
-        فروشگاه
-        <ShopgCart />
-      </div>
-    </>
+    <div className="shop">
+
+        <div className="shop_nav">
+          <Navbar />
+        </div>
+        
+        <div className="shop_hero">
+          <Heros />
+        </div>
+
+        <div className="shop_products">
+          <Products />
+        </div>
+
+        <div className="shop_footer">
+          <Footer />
+        </div>
+
+    </div>
+  </>
   );
 };
 
