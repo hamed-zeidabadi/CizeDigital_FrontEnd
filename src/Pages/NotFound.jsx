@@ -1,55 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../Images/404/logo.svg";
 const NotFound = () => {
   return (
     <>
       <div className="p_404 bg-purple">
         <div class="stars">
-          <div class="custom-navbar">
-            <div class="brand-logo">
-              <img
-                src="http://salehriaz.com/404Page/img/logo.svg"
-                width="80px"
-              />
-            </div>
-            <div class="navbar-links">
-              <ul>
-                <li>
-                  <a
-                    href="http://salehriaz.com/404Page/404.html"
-                    target="_blank"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://salehriaz.com/404Page/404.html"
-                    target="_blank"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://salehriaz.com/404Page/404.html"
-                    target="_blank"
-                  >
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://salehriaz.com/404Page/404.html"
-                    class="btn-request"
-                    target="_blank"
-                  >
-                    Request A Demo
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
           <div class="central-body">
             <img
               class="image-404"

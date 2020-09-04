@@ -1,7 +1,6 @@
 .p_404 {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  
 }
 
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
@@ -114,76 +113,16 @@
   transform: rotate(-3600deg) !important;
 }
 
-html,
-body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Dosis", sans-serif;
-  font-weight: 300;
-  -webkit-user-select: none; /* Safari 3.1+ */
-  -moz-user-select: none; /* Firefox 2+ */
-  -ms-user-select: none; /* IE 10+ */
-  user-select: none; /* Standard syntax */
-}
-
 .bg-purple {
-  background: url(http://salehriaz.com/404Page/img/bg_purple.png);
+  background: url("../Images/404/bg_404.jpg") center/cover;
   background-repeat: repeat-x;
   background-size: cover;
   background-position: left top;
-  height: 100%;
   overflow: hidden;
 }
 
 .custom-navbar {
   padding-top: 15px;
-}
-
-.brand-logo {
-  margin-left: 25px;
-  margin-top: 5px;
-  display: inline-block;
-}
-
-.navbar-links {
-  display: inline-block;
-  float: right;
-  margin-right: 15px;
-  text-transform: uppercase;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  /*    overflow: hidden;*/
-  display: flex;
-  align-items: center;
-}
-
-li {
-  float: left;
-  padding: 0px 15px;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 12px;
-
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-li a:hover {
-  color: #ffcb39;
 }
 
 .btn-request {
@@ -291,7 +230,7 @@ li a:hover {
 }
 
 .stars {
-  background: url(http://salehriaz.com/404Page/img/overlay_stars.svg);
+  background: url("../Images/404/overlay_stars.svg");
   background-repeat: repeat;
   background-size: contain;
   background-position: left top;
