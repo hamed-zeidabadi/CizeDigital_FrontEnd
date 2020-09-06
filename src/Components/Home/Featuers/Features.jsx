@@ -12,15 +12,24 @@ const Features= () => {
 
             <Tabs >
 
-                <div className='tab_container'>
-                <Tab><button>Tab 1</button></Tab>
-                <Tab><button>Tab 2</button></Tab>
-                <Tab><button>Tab 3</button></Tab>
+                <div className='tabs_container'>
+
+                    <h2>کالاهای منتخب</h2>
+
+                    <div className='tabs_container_tab'>
+                        <Tab><a>Tab 1</a></Tab>
+                        <Tab><a>Tab 2</a></Tab>
+                        <Tab><a>Tab 3</a></Tab>
+                    </div>
+                    
+
                 </div>
+
 
                 <Panel><p>Panel 1</p></Panel>
                 <Panel><p>Panel 2</p></Panel>
-                <Panel><p>panel 3</p></Panel>
+                <Panel><p>Panel 3</p></Panel>
+                
 
             </Tabs>
 

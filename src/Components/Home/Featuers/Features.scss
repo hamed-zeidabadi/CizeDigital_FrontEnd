@@ -1,14 +1,35 @@
 .tabs{
 
     height: 50vh;
-    width: 99vw;
+    width: 98.5vw;
    
 }
 
-.tab_container{
+.tabs_container{
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+
+    & h2{
+
+        flex-grow: 2;
+        margin-left: 5em;
+        font-weight: bold;
+
+    }
+
+    &_tab{
+        flex-grow: 2;
+    }
+
+    & a{
+
+        
+        cursor: pointer;
+        margin: 10px;
+    }
+
 
 }
