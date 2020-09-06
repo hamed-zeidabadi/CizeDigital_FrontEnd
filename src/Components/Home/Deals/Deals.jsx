@@ -2,10 +2,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation,Pagination} from 'swiper';
 import DiscountCart from './DiscountCart'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
+import "animate.css/animate.min.css";
 import "./Deals.scss";
 
 import doorbell from '../../../Images/hot_deales/doorbell.jpg'
@@ -28,13 +30,20 @@ const Deals = () => {
 
   return (
 
+    //adding on scroll animation on the component
+    //class name animation valilabel on -->  https://animate.style/
 
-    <div className='deals_container'>
+    <ScrollAnimation
+     className='animate__animated'
+     animateIn="animate__fadeInUp" 
+     style={{animationDuration:'s'}}>
 
-      <h2>فروش ویژه</h2>
 
-         
-          <Swiper
+    <div className='deals_container '>
+
+        <h2>فروش ویژه</h2>
+
+        <Swiper
           spaceBetween={50}
           slidesPerView={2}
           navigation
@@ -52,8 +61,12 @@ const Deals = () => {
          </Swiper>
 
 
+      
+     
+
     </div>
 
+    </ScrollAnimation>
   
   )
 };
