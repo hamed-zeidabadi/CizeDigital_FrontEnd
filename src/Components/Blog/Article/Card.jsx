@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.scss";
 import { FaChevronCircleLeft } from "react-icons/fa";
 // import pic from "../../../Images/Blog/1.jpg";
+import "../MediaQueries.scss";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const CardHeader = (props) => {
