@@ -4,7 +4,7 @@ const initialState = {
     data:ProductsData,
   };
 
- const ProductReducer =(state=data,action)=>{
+ const ProductReducer =(state=initialState,action)=>{
 
     switch (action.type) {
        

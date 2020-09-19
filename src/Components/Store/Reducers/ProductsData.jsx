@@ -5,7 +5,7 @@ export default [
     {
         id: 1,
         title: " تی شرت مدل AB",
-        image: red,
+        // image: red,
         price: "100",
         
     },
@@ -13,7 +13,7 @@ export default [
     {
         id: 1,
         title: " تی شرت مدل AB",
-        image: red,
+        // image: red,
         price: "100",
         
     },
@@ -21,7 +21,7 @@ export default [
     {
         id: 1,
         title: " تی شرت مدل AB",
-        image: red,
+        // image: red,
         price: "100",
         
     },
@@ -29,7 +29,7 @@ export default [
     {
         id: 1,
         title: " تی شرت مدل AB",
-        image: red,
+        // image: red,
         price: "100",
         
     },
@@ -37,7 +37,7 @@ export default [
     {
         id: 1,
         title: " تی شرت مدل AB",
-        image: red,
+        // image: red,
         price: "100",
         
     },
@@ -46,7 +46,7 @@ export default [
     {
         id: 1,
         title: " تی شرت مدل AB",
-        image: red,
+        // image: red,
         price: "100",
         
     },
