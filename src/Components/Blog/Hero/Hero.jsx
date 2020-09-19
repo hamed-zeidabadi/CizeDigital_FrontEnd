@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.scss";
 // import "./hover.scss";
+import "../MediaQueries.scss";
 
 import ReactTypingEffect from "react-typing-effect";
 
