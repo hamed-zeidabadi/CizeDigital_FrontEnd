@@ -19,7 +19,7 @@ const BestSeller = () => {
   const products = useSelector(
      state => state.ProductReducer.ProductsBestSellersData
      );
-  console.log(products);
+  // console.log(products);
   
 
     return (

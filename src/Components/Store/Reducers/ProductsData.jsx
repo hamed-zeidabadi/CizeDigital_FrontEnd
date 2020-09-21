@@ -94,6 +94,49 @@ export const ProductsDealsData = [
 ]
 
 
+export const ProductsFavoritsData=[
+
+    {
+        id: 11,
+        title: "هدفون بیتس",
+        image:images.headphone,
+        price: "100",
+        
+    },
+
+    {
+        id: 12,
+        title: " آیفون مکس",
+        image:images.iphone,
+        price: "100",
+        
+    },
+
+    {
+        id: 13,
+        title: "ساعت هوشمند",
+        image:images.redWatch,
+        price: "100",
+        
+    },
+
+    {
+        id: 14,
+        title: " اسپیکر پرتابل",
+        image:images.speaker2,
+        price: "100",
+        
+    },
+
+    {
+        id: 15,
+        title: " اسپیکرویژه",
+        image:images.btx10,
+        price: "100",
+        
+    },
+]
+
 
 
 // export const ProductsFeautersData = [

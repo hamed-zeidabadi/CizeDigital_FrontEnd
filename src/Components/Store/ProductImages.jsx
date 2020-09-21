@@ -10,6 +10,9 @@ import flycamera2 from '../../Images/best_seller/flycamera.jpg'
 import speaker2 from '../../Images/features/speaker.jpg'
 import speaker3 from '../../Images/features/speaker2.jpg'
 
+import headphone from '../../Images/features/headphone.jpg'
+import btx10 from '../../Images/features/btx10.jpg'
+import redWatch from '../../Images/features/redWatch.jpg'
 
 
 export default {
@@ -24,6 +27,9 @@ export default {
     flycamera2,
     speaker2,
     speaker3,
+    headphone,
+    btx10,
+    redWatch
 
 }
 
