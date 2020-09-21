@@ -137,6 +137,49 @@ export const ProductsFavoritsData=[
     },
 ]
 
+export const ProductsNewestData=[
+
+    {
+        id: 16,
+        title: "ساعت هوشمند",
+        image:images.redWatch,
+        price: "100",
+        
+    },
+
+    {
+        id: 17,
+        title: " آیفون مکس",
+        image:images.iphone,
+        price: "100",
+        
+    },
+
+    {
+        id: 18,
+        title: " اسپیکرویژه",
+        image:images.speaker3,
+        price: "100",
+        
+    },
+
+    {
+        id: 19,
+        title: " اسپیکر پرتابل",
+        image:images.speaker2,
+        price: "100",
+        
+    },
+
+    {
+        id: 20,
+        title: " اسپیکرویژه",
+        image:images.btx10,
+        price: "100",
+        
+    },
+]
+
 
 
 // export const ProductsFeautersData = [

@@ -1,9 +1,10 @@
-import {ProductsDealsData,ProductsBestSellersData,ProductsFavoritsData} from './ProductsData'
+import {ProductsDealsData,ProductsBestSellersData,ProductsFavoritsData,ProductsNewestData} from './ProductsData'
 
 const initialState = {
     ProductsDealsData,
     ProductsBestSellersData,
     ProductsFavoritsData,
+    ProductsNewestData
   };
 
  const ProductReducer =(state=initialState,action)=>{
