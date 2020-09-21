@@ -1,54 +1,66 @@
+import images from '../ProductImages'
 
 
-export default [
 
-    {
+export const ProductsDealsData = [
+
+   {
         id: 1,
-        title: " تی شرت مدل AB",
-        // image: red,
+        title: " هدفون بلوتوث",
+        image:images.headphone_bt,
         price: "100",
         
     },
 
     {
-        id: 1,
-        title: " تی شرت مدل AB",
-        // image: red,
+        id: 2,
+        title: "دوربین پرنده",
+        image:images.flycamera,
         price: "100",
         
     },
 
     {
-        id: 1,
-        title: " تی شرت مدل AB",
-        // image: red,
+        id: 3,
+        title: " گوشی نوا",
+        image:images.nova3,
         price: "100",
         
     },
 
     {
-        id: 1,
-        title: " تی شرت مدل AB",
-        // image: red,
+        id: 4,
+        title: " زنگ ویدئویی",
+        image:images.doorbell,
         price: "100",
         
     },
 
     {
-        id: 1,
-        title: " تی شرت مدل AB",
-        // image: red,
+        id: 5,
+        title: " اسپیکر سخنرانی",
+        image:images.speaker,
         price: "100",
         
     },
 
-
-    {
-        id: 1,
-        title: " تی شرت مدل AB",
-        // image: red,
-        price: "100",
-        
-    },
 
 ]
+
+export const ProductsFeautersData = [
+
+    {
+         id: 1,
+         title: " هدفون بلوتوث",
+         image:images.headphone_bt,
+         price: "100",
+         
+     },
+ 
+  
+ 
+ ]
+
+
+
+

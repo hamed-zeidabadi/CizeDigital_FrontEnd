@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import "./MediaQueries.scss";
 
 
-const DiscountCart =(props)=>{
+const DiscountCart =({ title, src })=>{
 
 
 
@@ -28,7 +28,7 @@ const DiscountCart =(props)=>{
 
             <div className='discount_details'>
 
-                <h3>{props.title}</h3>
+                <h3>{title}</h3>
                 
                 <div className='discount_details_price'>
 
@@ -48,7 +48,7 @@ const DiscountCart =(props)=>{
 
             <img
             className='discount_image'
-             src={props.src}  alt={props.alt}/>
+             src={src}  alt={'aks'}/>
 
 
 

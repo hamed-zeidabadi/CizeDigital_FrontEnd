@@ -1,8 +1,9 @@
 import {createStore} from 'redux'
-import Reducers from './Reducers/Reducers'
+import reducers from './Reducers/index'
 
 
-const store=createStore(Reducers)
+const store=createStore(reducers)
+// console.log('az file store ast',store.getState())
 
 export default store
 
