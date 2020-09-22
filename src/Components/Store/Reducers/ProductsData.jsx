@@ -181,6 +181,109 @@ export const ProductsNewestData=[
 ]
 
 
+export const ProductsShopData=[
+
+    {
+        id: 21,
+        title: "هدفون",
+        image:images.head1,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 22,
+        title: "هدفون",
+        image:images.head2,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 23,
+        title: " هدفون",
+        image:images.head3,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 24,
+        title: "هدفون",
+        image:images.head4,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 25,
+        title: "هدفون",
+        image:images.head5,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 26,
+        title: " اسپیکرویژه",
+        image:images.head6,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 27,
+        title: "هدفون",
+        image:images.head7,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 28,
+        title: "هدفون",
+        image:images.head8,
+        price: "200 هزار تومن",
+        
+    },
+
+
+    {
+        id: 29,
+        title: "هدفون",
+        image:images.head9,
+        price: "200 هزار تومن",
+        
+    },
+
+
+    {
+        id: 30,
+        title: "هدفون",
+        image:images.head10,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 31,
+        title: "هدفون",
+        image:images.head11,
+        price: "200 هزار تومن",
+        
+    },
+
+    {
+        id: 32,
+        title: "هدفون",
+        image:images.head12,
+        price: "200 هزار تومن",
+        
+    },
+]
+
+
+
 
 // export const ProductsFeautersData = [
 

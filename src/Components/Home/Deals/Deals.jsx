@@ -18,7 +18,7 @@ SwiperCore.use([Navigation,Pagination]);
 
 
 
-const Deals = (props) => {
+const Deals = () => {
 
   // const [data, setdata] = useState([]);
   const products = useSelector( state => state.ProductReducer.ProductsDealsData);
