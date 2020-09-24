@@ -29,8 +29,8 @@
     opacity: 1;
     // transition: opacity .2s linear;
     //using animation library name is -> Animate.css in https://animate.style/#attention_seekers
-    animation:zoomInDown;
-    // animation:fadeInLeft;
+    // animation:zoomInDown;
+    animation:fadeInLeft;
     animation-duration: 1s;
     padding: 10px;
     width: 30%;
@@ -45,48 +45,86 @@
 
 }
 
-.basket_cart_header{
+.basket_cart{
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    z-index: 25;
-    width: 100%;
+    &_header{
 
-    &_exit_button{
-
-        width: 10%;
-        color: black !important;
-        margin: 0 !important;
-        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         z-index: 25;
+        width: 100%;
+    
+        &_exit_button{
+    
+            width: 10%;
+            color: black !important;
+            margin: 0 !important;
+            padding: 5px;
+            z-index: 25;
+    
+            & svg{
+                font-size: 1.4em;
+            }
+    
+        }
+    
+        &_title{
+            
+            color: rgb(243, 62, 62) ;
+            width: 50%;
+            margin-right: 3em;
+            text-align: center;
+            padding: 5px;
+            border-bottom: 1px solid rgb(163, 158, 158);
+        }
+    
+    }
 
-        & svg{
-            font-size: 1.4em;
+    //style for added Items...
+
+    &_items_container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        overflow-y: scroll;
+        width: 103%;
+        height: 100%;
+        margin-top: 5px;
+        // border: 1px solid rgb(238, 43, 43);
+    }
+
+    &_item{
+
+        width: 95%;
+        height: auto;
+        margin: 5px;
+        // border: 1px solid rgb(32, 29, 223);
+
+        & img{
+            height: 100%;
+            width: 20%;
+        }
+
+        & ul{
+            list-style: none;
+        }
+
+        & li{
+
+            margin: 1rem;
+            border-bottom: 1px solid rgb(134, 132, 132);
         }
 
     }
 
-    &_title{
-        
-        color: rgb(243, 62, 62) ;
-        width: 50%;
-        margin-right: 3em;
-        text-align: center;
-        padding: 5px;
-        border-bottom: 1px solid rgb(163, 158, 158);
-    }
-
 }
 
-.basket_cart_container{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(77, 76, 76);
-}
+
 
 
 

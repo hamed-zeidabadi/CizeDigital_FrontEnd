@@ -27,19 +27,16 @@ const ShopingCart =(props)=>{
                  
                     return(
                        
-                        <li className="" key={item.id}>
+                        <li  key={item.id}>
 
-                            <div className="item-img"> 
+                            <div > 
                                    <img src={item.image} alt={item.image} className=""/>
                             </div>
                                 
-                              <div className="item-desc">
-                                  <span className="title">{item.title}</span>
-                                        
-                                     <p><b>Price: {item.price}$</b></p> 
-                                    <p>
-                                      <b>Quantity: {item.quantity}</b> 
-                                  </p>       
+                              <div >
+                                  <span> <b> مدل :</b> {item.title}</span> 
+                                  <p> <b> قیمت :</b> {item.price}</p> 
+                                  <p> <b>تعداد: </b> {item.quantity}</p>       
                                </div>
                                     
                         </li>
@@ -72,15 +69,23 @@ const ShopingCart =(props)=>{
                  </div>
 
 
-                  <div className="basket_cart_container">
-                      <div className="cart">
-                          <ul className="collection">
+                  <div className="basket_cart_items_container">
+                      <div className="basket_cart_item">
+                          <ul >
                               {addedItems}
                           </ul>
                       </div>       
                   </div>
                   
-                  <a href='#' className='basket_start_shoping'>شروع خرید</a>
+                 
+                    
+                  {data.length > 0
+                   ? <a href='#' className='basket_start_shoping'>تسویه حساب</a> 
+                   : <a href='#' className='basket_start_shoping'>شروع خرید</a>  
+                   }
+                  
+
+                 
 
              </div>
 
