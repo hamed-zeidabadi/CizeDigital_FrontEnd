@@ -16,14 +16,16 @@ const Cards = () => {
 
             {/* <Card title='هدفون' price='200 هزار تومن' image={head1}/> */}
 
-                       {  products.map((item) => (
+                       {  products.items.map( (item) => (
+                         
                             <ShopCard
                               id={item.id}
                               title={item.title}
                               image={item.image}
                               price={item.price}
                             />
-                          ))
+                            
+                          ) )
                        }
             
         </div>

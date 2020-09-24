@@ -1,7 +1,7 @@
 import React from 'react'
 import './RightMenu.scss';
 // import logo from '../../../../Images/mega_menu/home/output.png'
-import logo from '../../../../Images/mega_menu/home/logo3.png'
+import logo from '../../../../Images/mega_menu/home/logo2.png'
 import modern from '../../../../Images/mega_menu/home/home-modern.png'
 import elegant from '../../../../Images/mega_menu/home/home-elegant.png'
 import beauti from '../../../../Images/mega_menu/home/home-metro.jpg'
