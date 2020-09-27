@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation,Pagination} from 'swiper';
 import DiscountCart from './DiscountCart'
 import ScrollAnimation from 'react-animate-on-scroll';
+import {useSelector} from 'react-redux'
+
 
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss';
@@ -11,16 +13,6 @@ import "animate.css/animate.min.css";
 import "./Deals.scss";
 import "./MediaQueries.scss";
  
-import doorbell from '../../../Images/hot_deales/doorbell.jpg'
-import flycamera from '../../../Images/hot_deales/flycamera.jpg'
-import nova3 from '../../../Images/hot_deales/nova3.jpg'
-import speaker from '../../../Images/hot_deales/speaker.jpg'
-import headphone_bt from '../../../Images/hot_deales/headphone_bt.jpg'
-
-
-
-
-
 
 SwiperCore.use([Navigation,Pagination]);
 
@@ -28,6 +20,14 @@ SwiperCore.use([Navigation,Pagination]);
 
 const Deals = () => {
 
+  // const [data, setdata] = useState([]);
+  const products = useSelector( state => state.ProductReducer.ProductsDealsData);
+
+  // console.log("PRODUCT : ", products);
+  
+  // useEffect(() => {
+  //   setdata(DATA);
+  // }, [DATA]);
 
   return (
 
@@ -69,11 +69,34 @@ const Deals = () => {
         // onSwiper={(swiper) => console.log(swiper)}
 
         >
-            <SwiperSlide> <DiscountCart src={headphone_bt} title='هدفون بلوتوث'/> </SwiperSlide>
-            <SwiperSlide> <DiscountCart src={flycamera} title='دوربین پرنده'/> </SwiperSlide>
-            <SwiperSlide> <DiscountCart src={nova3} title='گوشی نوا 3'/> </SwiperSlide>
-            <SwiperSlide> <DiscountCart src={doorbell} title='زنگ ویدئویی '/> </SwiperSlide>
-            <SwiperSlide> <DiscountCart src={speaker} title=' اسپیکر سخنرانی'/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={products[0].image} title={products[0].title}/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={products[1].image} title={products[1].title}/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={products[2].image} title={products[2].title}/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={products[3].image} title={products[3].title}/> </SwiperSlide>
+            <SwiperSlide> <DiscountCart src={products[4].image} title={products[4].title}/> </SwiperSlide>
+            
+
+            {/*
+            در زمان دینامیک شدن ویو پروژه به مشکلات بزرگی میخورد 
+             */}
+
+            {/* <SwiperSlide>
+
+                    {
+                       products.map((item) => (
+                            <DiscountCart
+                              key={item.id}
+                              title={item.title}
+                              src={item.image}
+                              price={item.price}
+                            />
+                          ))
+                        }
+
+            </SwiperSlide> */}
+
+            
+           
 
       </Swiper>
 
@@ -93,4 +116,6 @@ const Deals = () => {
   )
 };
 
-export default Deals;
+
+
+export default Deals ;

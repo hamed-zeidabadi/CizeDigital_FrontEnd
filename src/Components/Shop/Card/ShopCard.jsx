@@ -1,4 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { addToCart } from '../../Store/Actions/ProductsActions'
+
 import './ShopCard.scss'
 import { FaRegListAlt} from "react-icons/fa";
 import { FaRegHeart} from "react-icons/fa";
@@ -21,6 +24,13 @@ const Cart = (props) => {
     //   });
 
 
+
+    const handleClick = (id) => {
+      props.addToCart(id)
+      alert('item Added')
+     }
+
+
     return (
 
     <div>
@@ -39,8 +49,11 @@ const Cart = (props) => {
 
                     <div className='icons '>
 
-                    <a className='animate__animated el_one'> <BsBag />
-                        <span className='span'>سبد خرید</span>
+                    <a className='animate__animated el_one'
+                      onClick={ ()=> {handleClick(props.id)}}> <BsBag />
+                        <span className='span'
+                          
+                        >سبد خرید</span>
                         </a>
 
                       
@@ -70,4 +83,22 @@ const Cart = (props) => {
     )
 }
 
-export default Cart
+
+const mapStateToProps = (state)=>{
+  return{
+
+      items: state.ProductReducer.ProductsShopData.addedItems,
+      //addedItems: state.addedItems
+  }
+}
+
+
+const mapDispatchToProps= (dispatch)=>{
+    
+  return{
+      addToCart: (id)=>{dispatch(addToCart(id))}
+  }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(Cart)

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation,Pagination} from 'swiper';
+import {useSelector} from 'react-redux'
 import Cart from './Cart'
 
 import 'swiper/swiper.scss'
@@ -8,19 +9,18 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import './Favorites.scss'
 
-import headphone from '../../../Images/features/headphone.jpg'
-import btx10 from '../../../Images/features/btx10.jpg'
-import redWatch from '../../../Images/features/redWatch.jpg'
-import speaker from '../../../Images/features/speaker.jpg'
-import speaker2 from '../../../Images/features/speaker2.jpg'
-
-
 
 
 SwiperCore.use([Navigation,Pagination]);
 
 
 const Newest = () => {
+
+  const products = useSelector(
+    state => state.ProductReducer.ProductsNewestData
+    );
+
+   console.log(products);
 
     return (
 
@@ -50,11 +50,11 @@ const Newest = () => {
               },
             }}  >
 
-                <SwiperSlide> <Cart Image={headphone} Title="هدفون بیتس" /></SwiperSlide>
-                <SwiperSlide> <Cart Image={speaker} Title=" اسپیکر بلوتوث" /></SwiperSlide>
-                <SwiperSlide> <Cart Image={redWatch} Title="ساعت هوشمند" /></SwiperSlide>
-                <SwiperSlide> <Cart Image={speaker2} Title="اسپیکر پرتابل" /></SwiperSlide>
-                <SwiperSlide> <Cart Image={btx10} Title="اسپیکرویژه" /></SwiperSlide>
+                <SwiperSlide> <Cart Image={products[0].image} Title={products[0].title} /></SwiperSlide>
+                <SwiperSlide> <Cart Image={products[1].image} Title={products[1].title} /></SwiperSlide>
+                <SwiperSlide> <Cart Image={products[2].image} Title={products[2].title} /></SwiperSlide>
+                <SwiperSlide> <Cart Image={products[3].image} Title={products[3].title}/></SwiperSlide>
+                <SwiperSlide> <Cart Image={products[4].image} Title={products[4].title} /></SwiperSlide>
                 
             </Swiper>
                 
