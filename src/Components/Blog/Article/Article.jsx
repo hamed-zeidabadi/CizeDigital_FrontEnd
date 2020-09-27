@@ -41,6 +41,7 @@ const Article = () => {
     },
   ];
 
+  
   return (
     <>
       <div className="article_blog">
